@@ -7,9 +7,9 @@
 - Sai Manikanta Durga Prasad Vinukonda
 
 ## Team Members Repositories:
-- https://github.com/malli9999
-- https://github.com/Swathi4717
-- https://github.com/sneharao0806
-- https://github.com/VamshiKrishnaNuka
-- https://github.com/VSMDURGAPRASAD
+- Mallikarjuna Bodepudi  https://github.com/malli9999
+- Swathi Challagundla  https://github.com/Swathi4717
+- Sneha Madhavaram  https://github.com/sneharao0806
+- Vamsi Krishna Nuka https://github.com/VamshiKrishnaNuka
+-  Sai Manikanta Durga Prasad Vinukonda https://github.com/VSMDURGAPRASAD
 
