@@ -47,7 +47,7 @@
         "password":"SWATHI",
         "first_name":"Swathi Sree",
         "last_name":"Challa",
-        "role":"student"
+        "role":"Instructor"
     },
     {
         "email_id":"challagundlaswathi15@gmail.com",
@@ -68,21 +68,21 @@
         "password":"PASSWORD",
         "first_name":"TRAY",
         "last_name":"Wind",
-        "role":"student"
+        "role":"Instructor"
     },
      {
         "email_id":"jillianlove@gmail.com",
         "password":"SPREADLOVE@",
         "first_name":"Jillian",
         "last_name":"Giller",
-        "role":"student"
+        "role":"Instructor"
     },
      {
         "email_id":"krishnab111@gmail.com",
         "password":"RAMRAMRAM",
         "first_name":"krishna",
         "last_name":"Bolla",
-        "role":"student"
+        "role":"Instructor"
     },
      {
         "email_id":"naveenb54@gmail.com",
@@ -96,14 +96,14 @@
         "password":"NoPassword#",
         "first_name":"Twinkle",
         "last_name":"janar",
-        "role":"student"
+        "role":"Instructor"
     },
      {
         "email_id":"kamalabrown@gmail.com",
         "password":"proveYourself@3",
         "first_name":"Kamala",
         "last_name":"Brown",
-        "role":"student"
+        "role":"Instructor"
     },
      {
         "email_id":"sirigiris@gmail.com",
@@ -121,10 +121,109 @@
     },
     {
         "email_id":"sneh123h@gmail.com",
-        "password":"sneharao",
+        "password":"password",
+        "first_name":"swathi",
+        "last_name":"Madhavar",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"malli@gmail.com",
+        "password":"password",
         "first_name":"Sneha",
         "last_name":"Madhavar",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"billi@gmail.com",
+        "password":"password",
+        "first_name":"Sneha",
+        "last_name":"Madhavar",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"gilli@gmail.com",
+        "password":"password",
+        "first_name":"Malli",
+        "last_name":"Bodepudi",
         "role":"student"
+    },
+    {
+        "email_id":"chillih@gmail.com",
+        "password":"password",
+        "first_name":"prasad",
+        "last_name":"Vinukonda",
+        "role":"student"
+    },
+    {
+        "email_id":"rayronb@gmail.com",
+        "password":"password",
+        "first_name":"Sai",
+        "last_name":"Vinukonda",
+        "role":"student"
+    },
+    {
+        "email_id":"shasshii@gmail.com",
+        "password":"password",
+        "first_name":"Mani",
+        "last_name":"Vinukonda",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"siddavatm@gmail.com",
+        "password":"password",
+        "first_name":"chiranjeevi",
+        "last_name":"Konidela",
+        "role":"student"
+    },
+    {
+        "email_id":"rajshkt@gmail.com",
+        "password":"password",
+        "first_name":"Sneha",
+        "last_name":"Madhavar",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"ajay345@gmail.com",
+        "password":"password",
+        "first_name":"Pawan",
+        "last_name":"Konidela",
+        "role":"student"
+    },
+    {
+        "email_id":"swathi745@gmail.com",
+        "password":"password",
+        "first_name":"ramcharn",
+        "last_name":"Konidela",
+        "role":"student"
+    },
+    {
+        "email_id":"preetam745@gmail.com",
+        "password":"password",
+        "first_name":"kalyan",
+        "last_name":"konidela",
+        "role":"student"
+    },
+    {
+        "email_id":"vamshi745@gmail.com",
+        "password":"password",
+        "first_name":"saidhram",
+        "last_name":"Madhavar",
+        "role":"student"
+    },
+    {
+        "email_id":"prasad745@gmail.com",
+        "password":"password",
+        "first_name":"abhi",
+        "last_name":"Madugula",
+        "role":"Instructor"
+    },
+    {
+        "email_id":"saigadu745@gmail.com",
+        "password":"password",
+        "first_name":"preetam",
+        "last_name":"potu",
+        "role":"Instructor"
     }
+
 
 ]
