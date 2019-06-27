@@ -129,4 +129,229 @@
 "codeword" : "BELT",
 "is_assigned": true
 },
+ {
+"codewordset_type" : "Small",
+"codeword" : "WINTER",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "LINK",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "TRUNK",
+"is_assigned": false
+},
+{
+ "codewordset_type" : "Medium",
+"codeword" : "KINGFISHER",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "LITTLE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "RIVER",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "MOBILE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "STAR",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Small",
+"codeword" : "TWINKLE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "LATITUDE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "GINGER",
+"is_assigned": false
+},
+{
+ "codewordset_type" : "Medium",
+"codeword" : "HORIZONTAL",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Small",
+ "codeword" : "VANILLA",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "FLYER",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "WIRED",
+"is_assigned": false
+},
+ {
+ "codewordset_type" : "Small",
+ "codeword" : "MODERN",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Medium",
+"codeword" : "TORNADO",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "CHANGES",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "BRANCH",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Extra Large",
+"codeword" : "CREATE",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "LUMB",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "DESK",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "FROZEN",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "MASTER",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Medium",
+"codeword" : "SAFARI",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "kING",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "TWITER",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Medium",
+"codeword" : "DRAGON",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "PARK",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "snake",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "walk",
+"is_assigned": false
+},
+ {
+ "codewordset_type" : "Small",
+ "codeword" : "YOGA",
+"is_assigned": true
+},
+ {
+ "codewordset_type" : "Extra Large",
+"codeword" : "JEEP",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "HUNGER",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "DRUNK",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "FRIDGE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "JUMP",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Medium",
+"codeword" : "ALARM",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "SAND",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "SWIFT",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+"codeword" : "OPTIONAL",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "SOAR",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "CRACKED",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Lare",
+"codeword" : "OCEAN",
+"is_assigned": false
+},
+ {
+ "codewordset_type" : "Large",
+ "codeword" : "OAKTREE",
+"is_assigned": true
+},
 ]
