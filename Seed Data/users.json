@@ -1,27 +1,47 @@
 [
     {
-        "Email":"bmallikarjuna66@gmail.com",
-        "Password": "password",
-        "Name":"Mallikarjun"
+        "email_id":"bmallikarjuna66@gmail.com",
+        "password": "bmalli",
+        "first_name":"Mallikarjun",
+        "last_name":"Bodepudi",
+        "acc_created":"2019-06-10T10:15:20",
+        "last_seen":"2019-06-26T10:15:20",
+        "role":"student"
     },
     {
-        "Email":"geniusdexter833@gmail.com",
-        "Password":"password",
-        "Name": "Vamshi Nukka"
+        "email_id":"Geniusdexter833@gmail.com",
+        "password":"vamshi",
+        "first_name":"Vamshi Krishna",
+        "last_name":"Nuka",
+        "acc_created":"2019-06-10T10:15:20",
+        "last_seen":"2019-06-25T10:15:20",
+        "role":"student"        
     },
     {
-        "Email":"dp.vinukonda@gmail.com",
-        "Password":"password",
-        "Name":"Durga Prasad"
+        "email_id":"dp.Vinukonda@gmail.com",
+        "password":"password",
+        "first_name":"Durga Prasad",
+        "last_name":"Vinukonda",
+        "acc_created":"2019-06-10T10:15:20",
+        "last_seen":"2019-10-20T10:15:20",
+        "role":"student"
     },
     {
-        "Email":"swathich417@gmail.com",
-        "Password":"password",
-        "Name":"Swathii"
+        "email_id":"12345678@gmail.com",
+        "password":"password",
+        "first_name":"Swathi",
+        "last_name":"Challagundla",
+        "acc_created":"2019-06-10T10:15:20",
+        "last_seen":"2019-06-26T14:15:20",
+        "role":"student"
     },
     {
-        "Email":"sneharao0806@gmail.com",
-        "Password":"password",
-        "Name":"Sneha Rao"
+        "email_id":"@#$%^&*(@gmail.com",
+        "password":"password",
+        "name":"Sneha Rao",
+        "last_name":"Madhavaram",
+        "acc_created":"2019-06-10T10:15:20",
+        "last_seen":"2019-06-26T12:45:20",
+        "role":"student"
     }
 ]
