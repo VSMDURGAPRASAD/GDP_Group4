@@ -34,24 +34,95 @@
 "course_name" : "GDP",
 "codeword" : "elephant",
 "is_displayed" : true
-}
+},
  {
 "email_id" : "swathibapatla8@gmail.com",
 "course_name" : "GDP",
 "codeword" : "TURN",
 "is_displayed" : true
-}
+},
  {
 "email_id" : "swathibapatla8@gmail.com",
 "course_name" : "GDP",
+"codeword" : "ring",
+"is_displayed" : true
+},
+  {
+"email_id" : "challagundlaswathi15@gmail.com",
+"course_name" : "GDP",
 "codeword" : "TURN",
 "is_displayed" : true
-}
-{
+},
+ {
+ "email_id" : "sneh123h@gmail.com",
+"course_name" : "GDP",
+"codeword" : "YARN",
+"is_displayed" : true
+},
+ {
+ "email_id" : "bmalli678@gmail.com",
+"course_name" : "GDP",
+"codeword" : "CORN",
+"is_displayed" : true
+},
+ {
+ "email_id" : "swathi33@gmail.com",
+"course_name" : "GDP",
+"codeword" : "EARTH",
+"is_displayed" : true
+},
+ {
+ "email_id" : "dpyuva343h@gmail.com",
+"course_name" : "GDP",
+"codeword" : "SUN",
+"is_displayed" : true
+},
+ {
+ "email_id" : "arjun9999@gmail.com",
+"course_name" : "GDP",
+"codeword" : "TARAK",
+"is_displayed" : true
+},
+ {
+ "email_id" : "swch@gmail.con",
+"course_name" : "GDP",
+"codeword" : "MERGE",
+"is_displayed" : true
+},
+ {
+ "email_id" : "gp@123gmail.com",
+"course_name" : "GDP",
+"codeword" : "KRYPTON",
+"is_displayed" : true
+},
+ {
+ "email_id" : "sneha66@gmail.com",
+"course_name" : "GDP",
+"codeword" : "FARM",
+"is_displayed" : true
+},
+ {
+ "email_id" : "nukakrishana63@gmail.com",
+"course_name" : "GDP",
+"codeword" : "TONY",
+"is_displayed" : true
+},
+ {
 "email_id" : "sneharao0806@gmail.com",
 "course_name" : "GDP",
 "codeword" : "SLATES",
 "is_displayed" : true
 },
-
+{
+ "email_id" : "mayur76@gmail.com",
+"course_name" : "GDP",
+"codeword" : "GUNTUR",
+"is_displayed" : true
+},
+ {
+ "email_id" : "trayrr@gmail.com",
+"course_name" : "GDP",
+"codeword" : "MELVIN",
+"is_displayed" : true
+},
 ]
