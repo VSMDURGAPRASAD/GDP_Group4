@@ -1,1 +1,14 @@
-
+[
+{
+"email_id" : "sneharao0806@gmail.com",
+"course_name" : "GDP",
+"codeword" : "SLATES",
+"is_displayed" : true
+},
+{
+"email_id" : "swathich417@gmail.com",
+"course_name" : "GDP",
+"codeword" : "elephant",
+"is_displayed" : true
+}
+]
