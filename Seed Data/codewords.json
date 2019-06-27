@@ -11,7 +11,32 @@
 },
 {
 "codewordset_type" : "Large",
-"codeword" : "Elephant",
+"codeword" : "elephant",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Extra Large",
+"codeword" : "StaIRs",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Large",
+ "codeword" : "elepcod",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "elepstand",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "RUN@120",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "#$%^&*@",
 "is_assigned": true
 }
 ]
