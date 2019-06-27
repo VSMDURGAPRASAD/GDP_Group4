@@ -6,7 +6,7 @@
 },
 {
 "codewordset_type" : "Medium",
-"codeword" : "xyz",
+"codeword" : "SCALES",
 "is_assigned": true
 },
 {
@@ -16,27 +16,27 @@
 },
 {
  "codewordset_type" : "Extra Large",
-"codeword" : "StaIRs",
+"codeword" : "STAIRS",
 "is_assigned": true
 },
 {
  "codewordset_type" : "Large",
- "codeword" : "elepcod",
+ "codeword" : "FLIGHT",
 "is_assigned": true
 },
 {
 "codewordset_type" : "Small",
-"codeword" : "elepstand",
+"codeword" : "DANCES",
 "is_assigned": true
 },
 {
 "codewordset_type" : "Small",
-"codeword" : "RUN@120",
+"codeword" : "running",
 "is_assigned": true
 },
 {
 "codewordset_type" : "Medium",
-"codeword" : "#$%^&*@",
+"codeword" : "singing",
 "is_assigned": true
 }
 ]
