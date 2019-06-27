@@ -1,1 +1,11 @@
-
+[
+{
+"course_name" : "GDP",
+"start_date" : "2019-06-21T10:15:00",
+"end_date" : "2019-10-21T10:15:00",
+"initial_survey" : "initial",
+"final_survey" : "final",
+"course_created_date" : "2019-06-19T11:15:15",
+"codewordset_type" : "Large"
+}
+]
