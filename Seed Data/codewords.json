@@ -31,12 +31,102 @@
 },
 {
 "codewordset_type" : "Small",
-"codeword" : "running",
+"codeword" : "RUNNING",
 "is_assigned": true
 },
 {
 "codewordset_type" : "Medium",
-"codeword" : "singing",
+"codeword" : "SIGNING",
 "is_assigned": true
-}
+},
+ {
+"codewordset_type" : "Small",
+"codeword" : "SATURN",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "LONG",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Large",
+"codeword" : "PHYSCHOLOGY",
+"is_assigned": false
+},
+{
+ "codewordset_type" : "small",
+"codeword" : "LIFT",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "Small",
+ "codeword" : "PLUTO",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "snake",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "walk",
+"is_assigned": false
+},
+ {
+ "codewordset_type" : "Small",
+ "codeword" : "YOGA",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "lOVE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "GROUND",
+"is_assigned": false
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "PARTICIPATION",
+"is_assigned": true
+},
+ {
+"codewordset_type" : "Small",
+"codeword" : "MOON",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "BELL",
+"is_assigned": false
+},
+{
+"codewordset_type" : "medium",
+"codeword" : "MOBILITY",
+"is_assigned": true
+},
+{
+ "codewordset_type" : "small",
+"codeword" : "APPLE",
+"is_assigned": false
+},
+{
+ "codewordset_type" : "Small",
+ "codeword" : "TOY",
+"is_assigned":  true
+},
+{
+"codewordset_type" : "Medium",
+"codeword" : "JUNGLE",
+"is_assigned": true
+},
+{
+"codewordset_type" : "Small",
+"codeword" : "BELT",
+"is_assigned": true
+},
 ]
