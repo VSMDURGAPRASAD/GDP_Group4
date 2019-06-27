@@ -56,6 +56,69 @@
         "last_name":"Challgun",
         "role":"student"
     },
+     {
+        "email_id":"melvingray@gmail.com",
+        "password":"MRNOKIA",
+        "first_name":"Melvin",
+        "last_name":"Gray",
+        "role":"student"
+    },
+     {
+        "email_id":"tray124@gmail.com",
+        "password":"PASSWORD",
+        "first_name":"TRAY",
+        "last_name":"Wind",
+        "role":"student"
+    },
+     {
+        "email_id":"jillianlove@gmail.com",
+        "password":"SPREADLOVE@",
+        "first_name":"Jillian",
+        "last_name":"Giller",
+        "role":"student"
+    },
+     {
+        "email_id":"krishnab111@gmail.com",
+        "password":"RAMRAMRAM",
+        "first_name":"krishna",
+        "last_name":"Bolla",
+        "role":"student"
+    },
+     {
+        "email_id":"naveenb54@gmail.com",
+        "password":"Bhavya123@",
+        "first_name":"Naveen",
+        "last_name":"Bodepudi",
+        "role":"student"
+    },
+     {
+        "email_id":"twinklej33@gmail.com",
+        "password":"NoPassword#",
+        "first_name":"Twinkle",
+        "last_name":"janar",
+        "role":"student"
+    },
+     {
+        "email_id":"kamalabrown@gmail.com",
+        "password":"proveYourself@3",
+        "first_name":"Kamala",
+        "last_name":"Brown",
+        "role":"student"
+    },
+     {
+        "email_id":"sirigiris@gmail.com",
+        "password":"srinuvasa1232",
+        "first_name":"Srinu",
+        "last_name":"Sirigiri",
+        "role":"student"
+    },
+     {
+        "email_id":"manigiri11@gmail.com",
+        "password":"haollywood@123",
+        "first_name":"Mani",
+        "last_name":"Giridar",
+        "role":"student"
+    },
     {
         "email_id":"sneh123h@gmail.com",
         "password":"sneharao",
