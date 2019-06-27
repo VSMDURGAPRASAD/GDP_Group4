@@ -7,5 +7,50 @@
 "final_survey" : "final",
 "course_created_date" : "2019-06-19T11:15:15",
 "codewordset_type" : "Large"
+},
+  {
+"course_name" : "PROJECTMANAGMENT",
+"start_date" : "2019-05-12T10:15:00",
+"end_date" : "2019-06-20T10:15:00",
+"initial_survey" : "initial",
+"final_survey" : "final",
+"course_created_date" : "2019-05-11T12:15:15",
+"codewordset_type" : "Large"
+},
+  {
+"course_name" : "ANDROID",
+"start_date" : "2019-09-13T10:15:00",
+"end_date" : "2019-12-21T10:15:00",
+"initial_survey" : "initial",
+"final_survey" : "final",
+"course_created_date" : "2019-09-19T08:22:15",
+"codewordset_type" : "Large"
+},
+  {
+"course_name" : "GDP2",
+"start_date" : "2019-09-14T10:15:00",
+"end_date" : "2019-12-20T10:15:00",
+"initial_survey" : "initial",
+"final_survey" : "final",
+"course_created_date" : "2019-09-19T09:33:15",
+"codewordset_type" : "Large"
+},
+  {
+"course_name" : "WEBAPPS",
+"start_date" : "2020-02-04T10:15:00",
+"end_date" : "2020-05-21T11:15:00",
+"initial_survey" : "initial",
+"final_survey" : "final",
+"course_created_date" : "2019-02-01T08:25:45",
+"codewordset_type" : "Large"
+},
+  {
+"course_name" : "Object Oriented",
+"start_date" : "2020-02-04T08:08:00",
+"end_date" : "2020-05-21T08:15:00",
+"initial_survey" : "initial",
+"final_survey" : "final",
+"course_created_date" : "2019-02-03T11:15:15",
+"codewordset_type" : "Large"
 }
 ]
