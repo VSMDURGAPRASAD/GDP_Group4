@@ -1,13 +1,14 @@
 [
 {
-"course_name" : "GRADUATED  DIRECTED PROJECT I",
-  "term " : "summer 2019",
+"course_name" : "GRADUATED  DIRECTED PROJECT I SUMMER 2019",
+"email_course" : "nathan@nwmissouri.edu",
 "start_date" : "2019-06-21T10:15:00",
 "end_date" : "2019-10-21T10:15:00",
 "initial_survey" : "initial",
 "final_survey" : "final",
 "course_created_date" : "2019-06-19T11:15:15",
-"codewordset_type" : "Large"
+"course_updated_date" : "2019-06-19T11:15:15",
+"codewordset_name" : "Large_one"
 },
   {
 "course_name" : "PROJECT MANAGMENT",
