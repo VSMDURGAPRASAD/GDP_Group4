@@ -421,7 +421,7 @@
 },
  {
  "email_id" : "akhila@gmail.com",
-"course_name" : "DEVELOPING WEB APPLICATIONS AND SERVICES FALL  2018,
+"course_name" : "DEVELOPING WEB APPLICATIONS AND SERVICES FALL  2018",
 "codeword" : "REASON",
 "is_displayed" : true
 },
@@ -485,7 +485,6 @@
 "codeword" : "SERVER",
 "is_displayed" : true
 },
- V
   {
  "email_id" : "bachu@gmail.com",
 "course_name" : "OBJECT ORIENTED FALL 2018",
