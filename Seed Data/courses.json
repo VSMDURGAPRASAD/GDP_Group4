@@ -1,6 +1,7 @@
 [
 {
-"course_name" : "GDP",
+"course_name" : "GRADUATED  DIRECTED PROJECT I",
+  "term " : "summer 2019",
 "start_date" : "2019-06-21T10:15:00",
 "end_date" : "2019-10-21T10:15:00",
 "initial_survey" : "initial",
@@ -9,7 +10,8 @@
 "codewordset_type" : "Large"
 },
   {
-"course_name" : "PROJECTMANAGMENT",
+"course_name" : "PROJECT MANAGMENT",
+     "term " : "summer 2019",
 "start_date" : "2019-05-12T10:15:00",
 "end_date" : "2019-06-20T10:15:00",
 "initial_survey" : "initial",
@@ -19,6 +21,7 @@
 },
   {
 "course_name" : "ANDROID",
+     "term " : "spring 2019",
 "start_date" : "2019-09-13T10:15:00",
 "end_date" : "2019-12-21T10:15:00",
 "initial_survey" : "initial",
@@ -27,7 +30,8 @@
 "codewordset_type" : "Large"
 },
   {
-"course_name" : "GDP2",
+"course_name" : "GRADUATED  DIRECTED PROJECT II",
+     "term " : "fall 2019",
 "start_date" : "2019-09-14T10:15:00",
 "end_date" : "2019-12-20T10:15:00",
 "initial_survey" : "initial",
@@ -36,7 +40,8 @@
 "codewordset_type" : "Large"
 },
   {
-"course_name" : "WEBAPPS",
+"course_name" : "DEVELOPING WEB APPLICATIONS AND SERVICES",
+     "term " : "fall  2018",
 "start_date" : "2020-02-04T10:15:00",
 "end_date" : "2020-05-21T11:15:00",
 "initial_survey" : "initial",
@@ -45,7 +50,8 @@
 "codewordset_type" : "Large"
 },
   {
-"course_name" : "Object Oriented",
+"course_name" : "OBJECT  ORIENTED",
+    "term" : "fall 2018",
 "start_date" : "2020-02-04T08:08:00",
 "end_date" : "2020-05-21T08:15:00",
 "initial_survey" : "initial",
