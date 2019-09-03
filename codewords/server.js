@@ -1,6 +1,7 @@
 const express = require("express")
 const http = require('http')
 const expressLayouts = require('express-ejs-layouts')
+const users=[]
 const favicon = require('serve-favicon')
 const path = require('path')
 const bodyParser = require('body-parser')
@@ -61,6 +62,7 @@ app.use('/', routes)  // load routing
 
 
 LOG.info('Loaded routing.')
+app.use(express.urlencoded({extended : false}))
 
 app.get("/", function(req, res){
   res.render("index.ejs")
@@ -70,10 +72,16 @@ app.get('/login',function(req,res){
     res.render('login.ejs');
 
 })
+app.post('/login',function(req,res){
+  req.body.email
+
+})
 app.get('/register',function(req,res){
     res.render('register.ejs');
 })
+app.post('/register',function(req,res){
 
+})
 app.use((req, res) => { 
   res.status(404).render('404.ejs') 
 }) // handle page not found errors
