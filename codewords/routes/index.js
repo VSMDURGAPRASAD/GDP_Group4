@@ -18,12 +18,17 @@ router.get('/', (req, res, next) => {
   LOG.debug('Request to /')
   res.render('index.ejs', { title: 'Express App' })
 })
+router.get('/login', (req, res, next) => {
+  LOG.debug('Request to /')
+  res.render('login.ejs', { title: 'Express App' })
+})
+router.get('/register', (req, res, next) => {
+  LOG.debug('Request to /')
+  res.render('register.ejs', { title: 'Express App' })
+})
+
 // Defer path requests to a particular controller
 router.use('sample',require('../controllers/sample'))
-// router.use('/Customers', require('../controllers/Customers'))
-
-
-// router.use('/puppy', require('../controllers/puppy.js'))
 
 LOG.debug('END routing')
 module.exports = router
