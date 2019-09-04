@@ -26,6 +26,10 @@ router.get('/register', (req, res, next) => {
   LOG.debug('Request to /')
   res.render('register.ejs', { title: 'Express App' })
 })
+router.get('/forgotpassword', (req, res, next) => {
+  LOG.debug('Request to /')
+  res.render('forgotpassword.ejs', { title: 'Express App' })
+})
 
 // Defer path requests to a particular controller
 router.use('sample',require('../controllers/sample'))

@@ -34,6 +34,7 @@ app.set('port', process.env.PORT || port)
 
 // set the root view folder
 app.set('views', path.join(__dirname, 'views'))
+app.use("/public", express.static(path.join(__dirname, 'public')));
 
 // specify desired view engine
 app.set('view engine', 'ejs')
