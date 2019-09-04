@@ -62,6 +62,17 @@ function(token, user, done){
           ' To reset your password Please click the link below'+'http://'+req.header.host + '/reset/' + token + '\n\n' + 
           'If you did not requested to change password ignore this email'
   };
+  smptTransport.sendMail(mailOption,function(err){
+    console.log('mail sent');
+    req.flash('Success','An email sent to your' +  user.email);
+    done(err,'done');
+  });
+}
+], function(err){
+if (err) return next(err);
+res.redirect('/forgot');
+});
+});
 // Defer path requests to a particular controller
 router.use('sample',require('../controllers/sample'))
 
