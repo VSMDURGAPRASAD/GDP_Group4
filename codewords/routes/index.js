@@ -29,8 +29,15 @@ router.get('/register', (req, res, next) => {
 router.get('/forgotpassword', (req, res, next) => {
   LOG.debug('Request to /')
   res.render('forgotpassword.ejs', { title: 'Express App' })
-})
+});
 
+},
+function(token,done){
+  User.findOne({ email:req.body.email}, function(err,user){
+    if(!user){
+      req.flash('error', "The entered email address is not registered with the Express App");
+      return res.redirect('/forgotpassword');
+    }
 // Defer path requests to a particular controller
 router.use('sample',require('../controllers/sample'))
 
