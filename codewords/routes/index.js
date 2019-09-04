@@ -38,6 +38,14 @@ function(token,done){
       req.flash('error', "The entered email address is not registered with the Express App");
       return res.redirect('/forgotpassword');
     }
+    user.resetPasswordToken = token;
+    user.resetPasswordExpires = Date.now() + 3600000;
+
+    user.save(function(err){
+      done(err,token,user);
+    });
+  });
+},
 // Defer path requests to a particular controller
 router.use('sample',require('../controllers/sample'))
 
