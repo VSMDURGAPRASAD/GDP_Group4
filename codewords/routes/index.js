@@ -91,6 +91,18 @@ router.get('/reset/:token', function(req, res){
   }
   });
 });
+router.post('/reset/:token', function(req, res){
+  async.waterfall([
+    function(done){
+      User.findOne({resetPasswordToken: req.params.token, resetPasswordExpires:{$gt: Date.now()},
+      if(!user){
+        req.flash('error', 'Password reset token was invalid or expired');
+        return res.redirect('back');
+      }
+      })
+    }
+  ])
+})
 // Defer path requests to a particular controller
 router.use('sample',require('../controllers/sample'))
 
