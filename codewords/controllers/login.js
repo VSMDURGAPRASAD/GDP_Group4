@@ -31,3 +31,26 @@ let signIn = (req,res) => {
     })
 }
 
+module.exports.validateEmail = validateEmail;
+// this function is for getting temporary password
+let tempPassword = (req, res ) => {
+    var body = _.pick(req.body,['email']);
+    var chars = "abcdefghijklmnopqrstuvwxyz@#$%&*ABCDEFGHIJKLMNOP123456789";
+    var temporaryPassword = "";
+    for (var x = 0; x < 5; x++) {
+        var i = Math.floor(Math.random() * chars.length);
+        temporaryPassword += chars.charAt(i);
+    }
+    bcrypt.genSalt(10, (err,salt) => {
+        bcrypt.hash(temporaryPassword,salt,(err,hash) => {
+        hashPassword = hash;
+        UserModel.updateOne({emailKey: body.email },{$set: {password: hashPassword}}, (err,result) =>{
+        if(!res){
+            return  res.status(400).send("Error");
+        }
+        mailController.sendMail(body.email,temporaryPassword);
+        return res.json({ code: 200, message: true});
+     });
+     });
+    });
+}
