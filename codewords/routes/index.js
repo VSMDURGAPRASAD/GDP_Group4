@@ -54,6 +54,14 @@ function(token, user, done){
       pass: process.env.GMAILPW
     }
   });
+  var mailOption = {
+    to: user.email,
+    from: 'sneharao0806@gmail.com',
+    subject: 'password reset',
+    text: 'You have requrested for the password  reset link for express app'+
+          ' To reset your password Please click the link below'+'http://'+req.header.host + '/reset/' + token + '\n\n' + 
+          'If you did not requested to change password ignore this email'
+  };
 // Defer path requests to a particular controller
 router.use('sample',require('../controllers/sample'))
 
