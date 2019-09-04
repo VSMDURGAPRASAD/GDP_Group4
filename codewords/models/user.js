@@ -10,6 +10,8 @@ var UserModel = mongoose.model('UserModel', {
         minlength: 5,
         
         },
+        resetPasswordToken: String,
+        resetPasswordExpire: Date,
     first_name: {
         type: String
     },
