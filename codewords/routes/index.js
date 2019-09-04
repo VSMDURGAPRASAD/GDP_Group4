@@ -46,6 +46,14 @@ function(token,done){
     });
   });
 },
+function(token, user, done){
+  var smptTransport = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+      user: 'sneharao0806@gmail.com',
+      pass: process.env.GMAILPW
+    }
+  });
 // Defer path requests to a particular controller
 router.use('sample',require('../controllers/sample'))
 
