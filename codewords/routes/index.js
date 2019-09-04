@@ -73,6 +73,24 @@ if (err) return next(err);
 res.redirect('/forgot');
 });
 });
+ smptTransport.sendMail(mailOption,function(err){
+        console.log('mail sent');
+        req.flash('Success','An email sent' +  user.email);
+        done(err,'done');
+      });
+    }
+  ], function(err){
+    if (err) return next(err);
+    res.redirect('/forgot');
+  });
+});
+router.get('/reset/:token', function(req, res){
+  User.findOne({resetPasswordToken: req.params.token, resetPasswordExpires: {$gt: Date.now()},
+  if(!user){
+    req.flash('error', 'Password reset token is invalid or expired')
+  }
+  });
+});
 // Defer path requests to a particular controller
 router.use('sample',require('../controllers/sample'))
 
