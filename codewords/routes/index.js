@@ -79,7 +79,8 @@ res.redirect('/forgot');
         done(err,'done');
       });
     }
-  ], function(err){
+  
+    ], function(err){
     if (err) return next(err);
     res.redirect('/forgot');
   });
