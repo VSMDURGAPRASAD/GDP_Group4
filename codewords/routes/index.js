@@ -31,6 +31,14 @@ router.get('/forgotpassword', (req, res, next) => {
   res.render('forgotpassword.ejs', { title: 'Express App' })
 })
 
+router.post('/forgotpassword',function(req,res,next){
+  async.waterfall([
+    function (done) {
+      crypto.randomBytes(20,function(err,buf){
+        var token = buf.toString('hex');
+        done(err,token)
+      });
+      
 // Defer path requests to a particular controller
 router.use('sample',require('../controllers/sample'))
 
