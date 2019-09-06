@@ -27,7 +27,8 @@ dotenv.load({ path: '.env' })
 LOG.info('Environment variables loaded.')
 
 // app variables
-const port = 8081 || process.env.PORT
+const port = 3000 || process.env.PORT
+
 
 // configure app.settings.............................
 app.set('port', process.env.PORT || port)
@@ -80,7 +81,17 @@ app.post('/login',function(req,res){
 app.get('/register',function(req,res){
     res.render('register.ejs');
 })
-app.post('/register',function(req,res){
+
+app.get('/student',function(req,res){
+  res.render('student.ejs');
+})
+app.post('/student',function(req,res){
+
+})
+app.get('/fpwd' ,function(req,res){
+  res.render('fpwd.ejs');
+})
+app.post('/fpwd',function(req,res){
 
 })
 app.use((req, res) => { 
