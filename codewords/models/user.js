@@ -5,7 +5,6 @@ var UserModel = mongoose.model('UserModel', {
     email_id: {
         type: String,
         required: true,
-        
         unique: true,
         minlength: 5,
         
