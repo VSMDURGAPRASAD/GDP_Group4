@@ -1,15 +1,37 @@
 <header>
-<!DOCTYPE HTML>
-<html>
-    <body>
-        head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  </head>
-    </body>
-</html>
+  <!-- Fixed navbar -->
+  <!-- https://fezvrasta.github.io/bootstrap-material-design/docs/4.0/examples/sticky-footer-navbar/ -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/customer">Instructors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/product">Student</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/order">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/orderLineItem">Lines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/puppy">Puppies</a>
+        </li>
+
+        <!-- view-source:https://fezvrasta.github.io/bootstrap-material-design/docs/4.0/examples/navbars/ -->
+        
+
+      </ul>
+    </div>
+  </nav>
 </header>

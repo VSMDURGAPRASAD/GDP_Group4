@@ -69,6 +69,9 @@ app.use(express.urlencoded({extended : false}))
 app.get("/", function(req, res){
   res.render("index.ejs")
 })
+app.get('/instructor' ,function(req,res){
+  res.render('instructor.ejs');
+})
 
 app.get('/login',function(req,res){
     res.render('login.ejs');
@@ -92,6 +95,10 @@ app.get('/fpwd' ,function(req,res){
   res.render('fpwd.ejs');
 })
 app.post('/fpwd',function(req,res){
+
+})
+
+app.post('/instructor',function(req,res){
 
 })
 app.use((req, res) => { 
