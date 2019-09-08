@@ -1,17 +1,15 @@
-var mongoose = require('mongoose');
-var validator = require('validator');
+const mongoose = require('mongoose');
 
-var CodeWord = mongoose.model('codeword', {
-    CodeWordSetName: {
+const codewordSchema = new mongoose.Schema({
+    codeWordSetName: {
         type: String,
         require: true,
         minlength: 5
     },
-    Codeword: {
+    codeword: {
         type: String,
         require: true,
         minlength: 5
     }
-
 });
-module.exports.CodeWord = CodeWord
+module.exports= mongoose.model(Codeword,codewordSchema)
