@@ -24,6 +24,11 @@ smp.save(function(error){
     return console.log('saving data error',error)
 })
 
+sample.collection.insertMany(sampleJson,function(err){
+    if(err){
+        return console.log("error in adding json", err);
+    }
+})
 
 
 
