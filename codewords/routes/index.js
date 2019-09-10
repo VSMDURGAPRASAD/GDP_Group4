@@ -31,8 +31,7 @@ router.get('/forgotpassword', (req, res, next) => {
   res.render('forgotpassword.ejs', { title: 'Express App' })
 });
 
-},
-function(token,done){
+function checkEmail(token,done){
   User.findOne({ email:req.body.email}, function(err,user){
     if(!user){
       req.flash('error', "The entered email address is not registered with the Express App");
@@ -45,8 +44,8 @@ function(token,done){
       done(err,token,user);
     });
   });
-},
-function(token, user, done){
+}
+function authMail(token, user, done){
   var smptTransport = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
@@ -68,11 +67,10 @@ function(token, user, done){
     done(err,'done');
   });
 }
-], function(err){
+ function end(err){
 if (err) return next(err);
 res.redirect('/forgot');
-});
-});
+ }
 // Defer path requests to a particular controller
 router.use('sample',require('../controllers/sample'))
 
