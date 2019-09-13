@@ -13,8 +13,7 @@ mongoose.connect(MONGODB_URI)
 }, err => {
     console.log(err);
 });
-
-
+ 
 const smp = new sample({
     User_name: 'krishna',
     User_number: '3'
