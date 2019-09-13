@@ -6,8 +6,8 @@ const sample = require('../models/Sample');
 
 var app = express();
 
-
-mongoose.connect('mongodb://localhost/GDP-4')
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/GDP-4'
+mongoose.connect(MONGODB_URI)
 .then(() => {
     console.log('DB Connected');
 }, err => {
