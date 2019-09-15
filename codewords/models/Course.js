@@ -14,9 +14,24 @@ var courseSchema = new Schema ({
 
     EndDate: {
         type: DataView
-    }
+    },
 
-     
+    InitialSurveyLink: {
+         type: URL
+    },
+
+    FinalSurveyLink: {
+        type: URL
+
+    },
+
+    StudentList: {
+        type: File
+    },
+
+    CodewordSet: {
+        type: String
+    }
 
 });
 
