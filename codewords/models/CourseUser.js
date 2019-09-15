@@ -48,7 +48,7 @@ var CourseUserSchema = new Schema ({
      require: true
     }
     
-
+   
 });
  
  module.exports = mongoose.model('CourseUser',CourseUserSchema)
