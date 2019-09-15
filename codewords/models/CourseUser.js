@@ -19,17 +19,36 @@ var CourseUserSchema = new Schema ({
         validate:{
             validator: (value) =>{
                 return validator.isEmail(value);
-            }        
+            }
+        }        
     },
 
     first_name: {
         type: String
     },
+
     last_name: {
         type: String
     },
 
+    codeword: {
+        type: String,
+        require: true,
+        minlength: 5
+    },
 
+    Acknowledged: {
+     type: Boolean,
+     require: true,
+     default: false
+    },
+
+    courseCreater: {
+     type: String,
+     require: true
+    }
+    
 
 });
-
+ 
+ module.exports = mongoose.model('CourseUser',CourseUserSchema)
