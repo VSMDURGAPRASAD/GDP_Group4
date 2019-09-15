@@ -16,7 +16,7 @@ var courseSchema = new Schema ({
         type: DataView
     }
 
-    
+     
 
 });
 
