@@ -69,6 +69,16 @@ app.use(express.urlencoded({extended : false}))
 app.get("/", function(req, res){
   res.render("index.ejs")
 })
+app.get('/course',function(req,res){
+  res.render("course.ejs");
+})
+app.get('/admin',function(req,res){
+  res.render("admin.ejs");
+})
+
+app.get('/student' ,function(req,res){
+  res.render('student.ejs');
+})
 app.get('/instructor' ,function(req,res){
   res.render('instructor.ejs');
 })
@@ -85,8 +95,8 @@ app.get('/register',function(req,res){
     res.render('register.ejs');
 })
 
-app.get('/student',function(req,res){
-  res.render('student.ejs');
+app.post('/admin',function(req,res){
+
 })
 app.post('/student',function(req,res){
 
