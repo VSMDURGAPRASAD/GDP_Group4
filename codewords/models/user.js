@@ -51,6 +51,7 @@ var UserModel = mongoose.model('UserModel', {
     updated_at: {
         type: Date,
     }
+    
 
 
 });

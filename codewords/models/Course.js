@@ -32,6 +32,7 @@ var courseSchema = new Schema ({
     CodewordSet: {
         type: String
     }
+    
 
 });
 
