@@ -3,6 +3,8 @@ const express = require("express");
 const http = require('http');
 const sampleJson = require('../data/sample');
 const sample = require('../models/Sample');
+const codewordsjson = require('../data/codewords');
+const codewords = require ('../models/Codeword');
 
 var app = express();
 

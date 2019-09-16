@@ -1,7 +1,7 @@
 var mongoose = require('mongoose'),
-Schema = mongoose.Schema;
+// Schema = mongoose.Schema;
 
-var codeWordSetSchema = new Schema({
+var codeWordSetSchema = new mongoose.Schema({
         CodeWordSetName: {
             type: String,
             require: true,

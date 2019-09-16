@@ -1,7 +1,7 @@
 var mongoose = rewuire ('mongoose');
 var validator = require('validator');
 
-var courseSchema = new Schema ({
+var courseSchema = new mongoose.Schema ({
     CourseName: {
         type: String,
         require: true,
