@@ -7,7 +7,8 @@ const codewordsetjson = require('../data/codewordset.json');
 const Codewordset = require('../models/Codewordset');
 const coursejson = require('../data/courses.json');
 const Course = require('../models/Course');
-const 
+const courseuserjson = require('../data/courseuser.json');
+const Courseuser = require('../models/CourseUser');
 const sampleJson = require('../data/sample');
 const sample = require('../models/Sample');
 const userjson = require('../data/users.json');
@@ -44,23 +45,17 @@ mongoose.connect(MONGODB_URI)
 //     return console.log('saving codeword data error',error)
 // })
 
-// codeword.collection.insertMany(codewordsjson,function(err){
-//     if(err){
-//         return console.log("error in adding codeword json", err);
-//     }
-// })
+codeword.collection.insertMany(codewordsjson,function(err){
+    if(err){
+        return console.log("error in adding codeword json", err);
+    }
+})
 
-// Codewordset.collection.insertMany(codewordsetjson,function(err){
-//     if(err){
-//         return console.log("error in adding codewordset json", err);
-//     }
-// })
-
-// Course.collection.insertMany(coursejson,function(err){
-//     if(err){
-//         return console.log("error in adding course json", err);
-//     }
-// })
+Codewordset.collection.insertMany(codewordsetjson,function(err){
+    if(err){
+        return console.log("error in adding codewordset json", err);
+    }
+})
 
 Course.collection.insertMany(coursejson,function(err){
     if(err){
@@ -68,14 +63,20 @@ Course.collection.insertMany(coursejson,function(err){
     }
 })
 
-// sample.collection.insertMany(sampleJson,function(err){
-//     if(err){
-//         return console.log("error in adding sample json", err);
-//     }
-// })
+Courseuser.collection.insertMany(courseuserjson,function(err){
+    if(err){
+        return console.log("error in adding course user json", err);
+    }
+})
 
-// user.collection.insertMany(userjson,function(err){
-//     if(err){
-//         return console.log("error in adding user json", err);
-//     }
-// })
+sample.collection.insertMany(sampleJson,function(err){
+    if(err){
+        return console.log("error in adding sample json", err);
+    }
+})
+
+user.collection.insertMany(userjson,function(err){
+    if(err){
+        return console.log("error in adding user json", err);
+    }
+})

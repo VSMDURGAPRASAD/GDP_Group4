@@ -3,7 +3,7 @@ const validator = require('validator');
 //const mongoosePaginate = require('mongoose-paginate');
 
 
-const CourseUserSchema = new Schema ({
+const CourseUserSchema = new mongoose.Schema ({
 
     CourseName: {
         type: String,
