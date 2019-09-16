@@ -5,6 +5,8 @@ const sampleJson = require('../data/sample');
 const sample = require('../models/Sample');
 const codewordsjson = require('../data/codewords.json');
 const codeword = require('../models/codeword');
+const userjson = require('../data/users.json');
+const user = require('../models/user');
 
 var app = express();
 
@@ -25,11 +27,11 @@ mongoose.connect(MONGODB_URI)
 //     return console.log('saving data error',error)
 // })
 
-// sample.collection.insertMany(sampleJson,function(err){
-//     if(err){
-//         return console.log("error in adding sample json", err);
-//     }
-// })
+sample.collection.insertMany(sampleJson,function(err){
+    if(err){
+        return console.log("error in adding sample json", err);
+    }
+})
 
 // const cdw = new codeword({
 //     codeWordSetName : 'Medium',
@@ -44,5 +46,11 @@ mongoose.connect(MONGODB_URI)
 codeword.collection.insertMany(codewordsjson,function(err){
     if(err){
         return console.log("error in adding codeword json", err);
+    }
+})
+
+user.collection.insertMany(userjson,function(err){
+    if(err){
+        return console.log("error in adding user json", err);
     }
 })

@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var validator = require('validator');
 
-var UserModel = mongoose.model('UserModel', {
+var UserSchema = new mongoose.Schema({
     email_id: {
         type: String,
         required: true,
@@ -51,7 +51,6 @@ var UserModel = mongoose.model('UserModel', {
     updated_at: {
         type: Date,
     }
-    
-
 
 });
+module.exports = mongoose.model('user',UserSchema)
