@@ -15,10 +15,10 @@
 "is_assigned": true
 },
 {
- "codewordset_type" : "Extra Large",
-"codeword" : "STAIRS",
-"is_assigned": true
-},
+    "codewordset_type" : "Extra Large",
+   "codeword" : "STAIRS",
+   "is_assigned": true
+   },
 {
  "codewordset_type" : "Large",
  "codeword" : "FLIGHT",
