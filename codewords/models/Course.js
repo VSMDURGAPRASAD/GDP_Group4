@@ -11,7 +11,7 @@ var courseSchema = new mongoose.Schema ({
     StartDate: {
         type: DataView
     },
-
+    
     EndDate: {
         type: DataView
     },
