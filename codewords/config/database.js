@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
 const express = require("express");
 const http = require('http');
-const sampleJson = require('../data/sample');
-const sample = require('../models/Sample');
 const codewordsjson = require('../data/codewords.json');
 const codeword = require('../models/codeword');
+const codewordsetjson = require('../data/codewords.json');
+const Codewordset = require('../models/codeword');
+const sampleJson = require('../data/sample');
+const sample = require('../models/Sample');
 const userjson = require('../data/users.json');
 const user = require('../models/user');
 
