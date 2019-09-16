@@ -1,39 +1,33 @@
-var mongoose = rewuire ('mongoose');
-var validator = require('validator');
+const mongoose = require ('mongoose');
+// const validator = require('validator');
 
-var courseSchema = new mongoose.Schema ({
+const courseSchema = new mongoose.Schema ({
     CourseName: {
-        type: String,
-        require: true,
-        unique: true
+        type: String
+        //require: true,
+        //unique: true
     },
 
     StartDate: {
-        type: DataView
+        type: String
     },
-
+    
     EndDate: {
-        type: DataView
+        type: String
     },
 
     InitialSurveyLink: {
-         type: URL
+         type: String
     },
 
     FinalSurveyLink: {
-        type: URL
+        type: String
 
-    },
-
-    StudentList: {
-        type: File
     },
 
     CodewordSet: {
         type: String
     }
-    
-
 });
 
-module.exports = mongoose.modle('Course',courseSchema)
+module.exports = mongoose.model('Course',courseSchema)

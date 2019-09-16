@@ -1,9 +1,9 @@
-var mongoose = require ('mongoose');
-var validator = require('validator');
-var mongoosePaginate = require('mongoose-paginate');
+const mongoose = require ('mongoose');
+const validator = require('validator');
+//const mongoosePaginate = require('mongoose-paginate');
 
 
-var CourseUserSchema = new Schema ({
+const CourseUserSchema = new mongoose.Schema ({
 
     CourseName: {
         type: String,
@@ -42,11 +42,6 @@ var CourseUserSchema = new Schema ({
      require: true,
      default: false
     },
-
-    courseCreater: {
-     type: String,
-     require: true
-    }
     
    
 });
