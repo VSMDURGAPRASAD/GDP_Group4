@@ -3,8 +3,8 @@ const express = require("express");
 const http = require('http');
 const sampleJson = require('../data/sample');
 const sample = require('../models/Sample');
-const codewordsjson = require('../data/codewords');
-const codewords = require ('../models/Codeword');
+const codewordsjson = require('../data/codewords.json');
+const codeword = require('../models/codeword');
 
 var app = express();
 
@@ -16,21 +16,33 @@ mongoose.connect(MONGODB_URI)
     console.log(err);
 });
  
-const smp = new sample({
-    User_name: 'krishna',
-    User_number: '3'
-})
-smp.save(function(error){
-    if(error)
-    return console.log('saving data error',error)
-})
+// const smp = new sample({
+//     User_name: 'krishna',
+//     User_number: '3'
+// })
+// smp.save(function(error){
+//     if(error)
+//     return console.log('saving data error',error)
+// })
 
-sample.collection.insertMany(sampleJson,function(err){
+// sample.collection.insertMany(sampleJson,function(err){
+//     if(err){
+//         return console.log("error in adding sample json", err);
+//     }
+// })
+
+// const cdw = new codeword({
+//     codeWordSetName : 'Medium',
+//     codeword : 'SCALES'    
+// })
+
+// cdw.save(function(error){
+//     if(error)
+//     return console.log('saving codeword data error',error)
+// })
+
+codeword.collection.insertMany(codewordsjson,function(err){
     if(err){
-        return console.log("error in adding json", err);
+        return console.log("error in adding codeword json", err);
     }
 })
-
-
-
-
