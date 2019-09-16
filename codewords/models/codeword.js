@@ -13,4 +13,4 @@ const codewordSchema = new mongoose.Schema({
     } 
     
 });
-module.exports= mongoose.model(codeword,codewordSchema)
+module.exports= mongoose.model('codeword',codewordSchema)
