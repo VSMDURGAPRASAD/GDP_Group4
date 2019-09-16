@@ -1,9 +1,9 @@
-var mongoose = require ('mongoose');
-var validator = require('validator');
-var mongoosePaginate = require('mongoose-paginate');
+const mongoose = require ('mongoose');
+const validator = require('validator');
+const mongoosePaginate = require('mongoose-paginate');
 
 
-var CourseUserSchema = new Schema ({
+const CourseUserSchema = new Schema ({
 
     CourseName: {
         type: String,

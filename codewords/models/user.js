@@ -1,7 +1,7 @@
-var mongoose = require('mongoose');
-var validator = require('validator');
+const mongoose = require('mongoose');
+const validator = require('validator');
 
-var UserSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
     email_id: {
         type: String,
         required: true,

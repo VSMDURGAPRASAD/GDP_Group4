@@ -1,4 +1,4 @@
-var mongoose = require('mongoose'),
+const mongoose = require('mongoose');
 // Schema = mongoose.Schema;
 
 var codeWordSetSchema = new mongoose.Schema({
@@ -10,7 +10,7 @@ var codeWordSetSchema = new mongoose.Schema({
         },
         CodeWordCreator: {
                 type: String,
-                required: true,
+                required: true
         },
         isPermanent : {
                 type: Boolean,
@@ -20,8 +20,6 @@ var codeWordSetSchema = new mongoose.Schema({
                 type: Array,
                 required: true
         }
-        
-
 });
 
 module.exports = mongoose.model('Codewordset',codeWordSetSchema);

@@ -29,11 +29,7 @@ mongoose.connect(MONGODB_URI)
 //     return console.log('saving data error',error)
 // })
 
-sample.collection.insertMany(sampleJson,function(err){
-    if(err){
-        return console.log("error in adding sample json", err);
-    }
-})
+
 
 // const cdw = new codeword({
 //     codeWordSetName : 'Medium',
@@ -48,6 +44,18 @@ sample.collection.insertMany(sampleJson,function(err){
 codeword.collection.insertMany(codewordsjson,function(err){
     if(err){
         return console.log("error in adding codeword json", err);
+    }
+})
+
+Codewordset.collection.insertMany(codewordsetjson,function(err){
+    if(err){
+        return console.log("error in adding codewordset json", err);
+    }
+})
+
+sample.collection.insertMany(sampleJson,function(err){
+    if(err){
+        return console.log("error in adding sample json", err);
     }
 })
 
