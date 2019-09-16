@@ -3,37 +3,31 @@ const mongoose = require ('mongoose');
 
 const courseSchema = new mongoose.Schema ({
     CourseName: {
-        type: String,
-        require: true,
+        type: String
+        //require: true,
         //unique: true
     },
 
     StartDate: {
-        type: DataView
+        type: String
     },
     
     EndDate: {
-        type: DataView
+        type: String
     },
 
     InitialSurveyLink: {
-         type: URL
+         type: String
     },
 
     FinalSurveyLink: {
-        type: URL
-
-    },
-
-    StudentList: {
         type: String
+
     },
 
     CodewordSet: {
         type: String
     }
-    
-
 });
 
 module.exports = mongoose.model('Course',courseSchema)

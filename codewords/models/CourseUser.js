@@ -1,6 +1,6 @@
 const mongoose = require ('mongoose');
 const validator = require('validator');
-const mongoosePaginate = require('mongoose-paginate');
+//const mongoosePaginate = require('mongoose-paginate');
 
 
 const CourseUserSchema = new Schema ({
@@ -42,11 +42,6 @@ const CourseUserSchema = new Schema ({
      require: true,
      default: false
     },
-
-    courseCreater: {
-     type: String,
-     require: true
-    }
     
    
 });

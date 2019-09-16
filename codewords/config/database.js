@@ -7,6 +7,7 @@ const codewordsetjson = require('../data/codewordset.json');
 const Codewordset = require('../models/Codewordset');
 const coursejson = require('../data/courses.json');
 const Course = require('../models/Course');
+const 
 const sampleJson = require('../data/sample');
 const sample = require('../models/Sample');
 const userjson = require('../data/users.json');
@@ -52,6 +53,12 @@ mongoose.connect(MONGODB_URI)
 // Codewordset.collection.insertMany(codewordsetjson,function(err){
 //     if(err){
 //         return console.log("error in adding codewordset json", err);
+//     }
+// })
+
+// Course.collection.insertMany(coursejson,function(err){
+//     if(err){
+//         return console.log("error in adding course json", err);
 //     }
 // })
 
