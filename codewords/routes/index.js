@@ -18,6 +18,8 @@ router.get('/', (req, res, next) => {
   LOG.debug('Request to /')
   res.render('index.ejs', { title: 'Express App' })
 })
+// router.get('/', forwardAuthenticated, (req, res) => res.render('index.ejs'));
+
 router.get('/login', (req, res, next) => {
   LOG.debug('Request to /')
   res.render('login.ejs', { title: 'Express App' })
@@ -75,4 +77,5 @@ res.redirect('/forgot');
 // router.use('sample',require('../controllers/sample'))
 
 LOG.debug('END routing')
+
 module.exports = router
