@@ -116,7 +116,7 @@ app.use((req, res) => {
 }) // handle page not found errors
 
 // initialize data ............................................
-require('./config/database.js')(app)  // load seed data
+require('./config/database.js')  // load seed data
 
 // start Express app
 app.listen(process.env.PORT || port, function() {
@@ -124,5 +124,5 @@ app.listen(process.env.PORT || port, function() {
   console.log('\n Logs will be sent to this terminal and ' + logFile )
 })
 
-//module.exports = app
+module.exports = app
 
