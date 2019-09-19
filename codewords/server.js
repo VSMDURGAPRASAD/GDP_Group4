@@ -34,6 +34,9 @@ mongoose
   .catch(err => console.log(err));
 
 
+// Express body parser
+app.use(express.urlencoded({ extended: false }));
+
 // Load environment variables from .env file, where API keys and passwords are configured.
 // dotenv.load({ path: '.env.example' })
 dotenv.load({ path: '.env' })
