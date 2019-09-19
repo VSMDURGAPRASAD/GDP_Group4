@@ -72,7 +72,7 @@ if (err) return next(err);
 res.redirect('/forgot');
  }
 // Defer path requests to a particular controller
-router.use('sample',require('../controllers/sample'))
+// router.use('sample',require('../controllers/sample'))
 
 LOG.debug('END routing')
 module.exports = router

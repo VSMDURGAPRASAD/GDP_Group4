@@ -6,7 +6,7 @@ var codeWordSetSchema = new mongoose.Schema({
             type: String,
             require: true,
             minlength: 5,
-            unique:true
+            //unique:true
         },
         CodeWordCreator: {
                 type: String,
