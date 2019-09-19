@@ -21,6 +21,19 @@ const LOG = require('./utils/logger.js')
 const app = express()
 // const fs = require("fs")
 
+// DB Config
+const db = require('./config/keys').mongoURI;
+
+// Connect to MongoDB
+mongoose
+  .connect(
+    db,
+    { useNewUrlParser: true }
+  )
+  .then(() => console.log('MongoDB Connected'))
+  .catch(err => console.log(err));
+
+
 // Load environment variables from .env file, where API keys and passwords are configured.
 // dotenv.load({ path: '.env.example' })
 dotenv.load({ path: '.env' })
@@ -115,6 +128,8 @@ app.use((req, res) => {
   res.status(404).render('404.ejs') 
 }) 
 // handle page not found errors
+
+
 
 // initialize data ............................................
 require('./config/database.js')  // load seed data
