@@ -20,14 +20,14 @@ router.get('/', (req, res, next) => {
 })
 // router.get('/', forwardAuthenticated, (req, res) => res.render('index.ejs'));
 
-router.get('/login', (req, res, next) => {
-  LOG.debug('Request to /')
-  res.render('login.ejs', { title: 'Express App' })
-})
-router.get('/register', (req, res, next) => {
-  LOG.debug('Request to /')
-  res.render('register.ejs', { title: 'Express App' })
-})
+// router.get('/login', (req, res, next) => {
+//   LOG.debug('Request to /')
+//   res.render('login.ejs', { title: 'Express App' })
+// })
+// router.get('/register', (req, res, next) => {
+//   LOG.debug('Request to /')
+//   res.render('register.ejs', { title: 'Express App' })
+// })
 router.get('/forgotpassword', (req, res, next) => {
   LOG.debug('Request to /')
   res.render('forgotpassword.ejs', { title: 'Express App' })
