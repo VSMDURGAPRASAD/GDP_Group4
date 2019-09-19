@@ -8,13 +8,13 @@ const CourseUserSchema = new mongoose.Schema ({
     CourseName: {
         type: String,
         require: true,
-        unique: true
+        //unique: true
     },
     
     email_id: {
         type: String,
         required: true,
-        unique: true,
+        //unique: true,
         minlength: 5,
         validate:{
             validator: (value) =>{

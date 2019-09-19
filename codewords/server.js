@@ -19,7 +19,7 @@ const LOG = require('./utils/logger.js')
 // create express app ..................................
 
 const app = express()
-const fs = require("fs")
+// const fs = require("fs")
 
 // Load environment variables from .env file, where API keys and passwords are configured.
 // dotenv.load({ path: '.env.example' })
@@ -116,7 +116,7 @@ app.use((req, res) => {
 }) // handle page not found errors
 
 // initialize data ............................................
-//require('./utils/seeder.js')(app)  // load seed data
+require('./config/database.js')(app)  // load seed data
 
 // start Express app
 app.listen(process.env.PORT || port, function() {
@@ -124,5 +124,5 @@ app.listen(process.env.PORT || port, function() {
   console.log('\n Logs will be sent to this terminal and ' + logFile )
 })
 
-module.exports = app
+//module.exports = app
 
