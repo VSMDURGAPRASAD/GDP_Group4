@@ -113,10 +113,15 @@ app.post('/instructor',function(req,res){
 })
 app.use((req, res) => { 
   res.status(404).render('404.ejs') 
-}) // handle page not found errors
+}) 
+// handle page not found errors
 
 // initialize data ............................................
 require('./config/database.js')  // load seed data
+
+// Routes
+app.use('/', require('./routes/index.js'));
+app.use('/users', require('./routes/users.js'));
 
 // start Express app
 app.listen(process.env.PORT || port, function() {
