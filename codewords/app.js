@@ -1,6 +1,7 @@
 const express = require("express")
 const http = require('http')
 const expressLayouts = require('express-ejs-layouts')
+const favicon =require('serve-favicon')
 const users=[]
 const favicon = require('serve-favicon')
 const path = require('path')
@@ -14,6 +15,7 @@ const mongoose = require('mongoose')
 const expressValidator = require('express-validator')
 const expressStatusMonitor = require('express-status-monitor')
 const LOG = require('./utils/logger.js')
+const flash = require('connect-flash')
 
 
 // create express app ..................................
