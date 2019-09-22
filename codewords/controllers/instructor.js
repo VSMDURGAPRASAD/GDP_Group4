@@ -59,3 +59,19 @@ api.get('/create', (req, res) => {
       instructor: item
     })
 })
+
+// GET /delete/:id
+api.get('/delete/:id', (req, res) => {
+  LOG.info(`Handling GET /delete/:id ${req}`)
+  const id = parseInt(req.params.id)
+  const data = req.app.locals.instructors.query
+  const item = find(data, { _id: id })
+  if (!item) { return res.end(notfoundstring) }
+  LOG.info(`RETURNING VIEW FOR ${JSON.stringify(item)}`)
+  return res.render('instructor/delete.ejs',
+    {
+      title: 'Delete instructor',
+      layout: 'layout.ejs',
+      instructor: item
+    })
+})
