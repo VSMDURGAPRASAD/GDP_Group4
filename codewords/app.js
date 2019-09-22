@@ -72,3 +72,33 @@ app.use(passport.session());
 // Connect flash
 app.use(flash())
 console.log("flash")
+
+// Global variables
+app.use(function(req, res, next) {
+  console.log("hoslsdlfns;dfjs")
+  res.locals.success_msg = req.flash('success_msg');
+  res.locals.error_msg = req.flash('error_msg');
+  res.locals.error = req.flash('error');
+  next();
+});
+
+const routes = require('./routes/index.js')
+app.use('/', routes)  // load routing to handle all requests
+LOG.info('Loaded routing.')
+require('./config/database.js')
+app.use((req, res) => { res.status(404).render('404.ejs') }) // handle page not found errors
+// initialize data ............................................
+require('./utils/seeder.js')(app)  // load seed data by passing in the app
+
+// call app.listen to start server
+const port = app.get('port')
+const host = app.get('host')
+const env = app.get('env')
+
+app.listen(port, host, () => {
+  console.log(`\nApp running at http://${host}:${port}/ in ${env} mode`)
+  console.log('Press CTRL-C to stop\n')
+})
+
+module.exports = app
+
