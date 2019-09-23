@@ -2,7 +2,8 @@ const mongoose = require('mongoose')
 
 const InstructorSchema = new mongoose.Schema({
 
-  _id: { type: Number, required: true },
+  //_id: { type: Number, required: true },
+  instructoremail: {type:String,required: false},
   coursename: {
     type: String,
     required: true,
@@ -10,12 +11,12 @@ const InstructorSchema = new mongoose.Schema({
     
   },
   startdate: {
-    type: String,
+    type: Date,
     required: false
     
   },
   enddate: {
-    type:String,
+    type:Date,
     required: true,
     required: false
    

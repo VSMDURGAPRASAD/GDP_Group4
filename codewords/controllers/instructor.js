@@ -13,6 +13,7 @@ const find = require('lodash.find')
 const remove = require('lodash.remove')
 const Model = require('../models/instructor.js')
 const notfoundstring = 'instructor not found'
+var mongoose = require('mongoose');
 
 // RESPOND WITH JSON DATA  --------------------------------------------
 
@@ -61,11 +62,11 @@ api.get('/create', (req, res) => {
 })
 
 // GET /delete/:id
-api.get('/delete/:id', (req, res) => {
+api.get('/delete/:id',async (req, res) => {
   LOG.info(`Handling GET /delete/:id ${req}`)
-  const id = parseInt(req.params.id)
+  const id = req.params.id
   const data = req.app.locals.instructors.query
-  const item = find(data, { _id: id })
+  const item =await Model.findOne( { _id: id })
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR ${JSON.stringify(item)}`)
   return res.render('instructor/delete.ejs',
@@ -95,7 +96,7 @@ api.get('/details/:id', (req, res) => {
 // GET one
 api.get('/edit/:id',async (req, res) => {
   LOG.info(`Handling GET /edit/:id ${req}`)
-  const id = parseInt(req.params.id)
+  const id = req.params.id
   //const data = req.app.locals.instructors.query
   const item = await Model.find({ _id:id})
   console.log(item)
@@ -120,20 +121,22 @@ api.post('/save', async (req, res) => {
   const item = new Model()
   LOG.info(`NEW ID ${req.body._id}`)
   //console.log('usser'+req.user.)
+  console.log(req.user)
   item._id = parseInt(req.body._id)
+  item.instructoremail=req.user.email
   item.coursename=req.body.coursename
   item.startdate = req.body.startdate
   item.enddate = req.body.enddate
   item.intiallink= req.body.finallink
-  item.studentlist = req.body.studentlist
-  item.codewordsetname = req.body.codewordsetname
+  //item.studentlist = req.body.studentlist
+  //item.codewordsetname = req.body.codewordsetname
 
 
 
   try {
    
      await item.save();
-     res.send(item);
+    // res.send(item);
    } catch (err) {
      res.status(500).send(err);
    }
@@ -145,12 +148,14 @@ api.post('/save', async (req, res) => {
 })
 
 // POST update
-api.post('/save/:id', (req, res) => {
+api.post('/save/:id', async (req, res) => {
   LOG.info(`Handling SAVE request ${req}`)
-  const id = parseInt(req.params.id)
+  const id = req.params.id
   LOG.info(`Handling SAVING ID=${id}`)
 
-  const item = Model.find({ _id: id })
+  const items =  await Model.find({ _id: id })
+  console.log(items)
+  var item=items[0]
   //item= item[0]
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`ORIGINAL VALUES ${JSON.stringify(item)}`)
@@ -161,24 +166,31 @@ api.post('/save/:id', (req, res) => {
   item.intiallink= req.body.finallink
   item.studentlist = req.body.studentlist
   item.codewordsetname = req.body.codewordsetname
+  try {
+   
+    await item.save();
+   // res.send(item);
+  } catch (err) {
+    res.status(500).send(err);
+  }
   //item.unitPrice = parseInt(req.body.unitPrice)
   LOG.info(`SAVING UPDATED instructor ${JSON.stringify(item)}`)
   return res.redirect('/instructor')
 })
 
 // DELETE id (uses HTML5 form method POST)
-api.post('/delete/:id', (req, res) => {
+api.post('/delete/:id', async (req, res) => {
   LOG.info(`Handling DELETE request ${req}`)
-  const id = parseInt(req.params.id)
+  const id = req.params.id
   LOG.info(`Handling REMOVING ID=${id}`)
-  const data = req.app.locals.instructors.query
-  const item = find(data, { _id: id })
+  const item =await Model.findOne({ _id: id })
+  console.log(item)
   if (!item) { return res.end(notfoundstring) }
   if (item.isActive) {
     item.isActive = false
     console.log(`Deacctivated item ${JSON.stringify(item)}`)
   } else {
-    const item = remove(data, { _id: id })
+    const item =await Model.remove( { _id: id })
     console.log(`Permanently deleted item ${JSON.stringify(item)}`)
   }
   return res.redirect('/instructor')
