@@ -1,0 +1,23 @@
+[
+    {
+        "_id": 1,
+        "coursename": "Coffee Mug",
+        "startdate": "Best mug ever!",
+        "enddate": "find",
+        "intiallink":"error",
+        "finallink":"all",
+        "studentlist":"",
+        "codewordsetname":"King"
+    },
+    {
+        "_id": 2,
+        "coursename": "Coffee Mugs",
+        "startdate": "Best mug evers!",
+        "enddate": "finds",
+        "intiallink":"errors",
+        "finallink":"alls",
+        "studentlist":"",
+        "codewordsetname":"King"
+    },
+    
+]
