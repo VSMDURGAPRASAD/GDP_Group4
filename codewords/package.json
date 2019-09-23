@@ -23,7 +23,7 @@
     "ejs": "latest",
     "errorhandler": "latest",
     "express": "latest",
-    "express-ejs-layouts": "latest",
+    "express-ejs-layouts": "^2.5.0",
     "express-flash": "^0.0.2",
     "express-session": "^1.16.2",
     "express-status-monitor": "latest",

@@ -122,7 +122,7 @@ api.post('/save', async (req, res) => {
   LOG.info(`NEW ID ${req.body._id}`)
   //console.log('usser'+req.user.)
   console.log(req.user)
-  item._id = parseInt(req.body._id)
+  
   item.instructoremail=req.user.email
   item.coursename=req.body.coursename
   item.startdate = req.body.startdate

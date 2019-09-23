@@ -1,18 +1,41 @@
-// const Datastore = require('nedb')
-// const LOG = require('../utils/logger.js')
-// const users = require('../data/users.json')
-// module.exports = (app) => {
-//     LOG.info('START seeder.')
-//     const db = {}
+// set up a temporary (in memory) database
+const Datastore = require('nedb')
+const LOG = require('../utils/logger.js')
+
+// require each data file
+
+
+const instructors = require('../data/instructors.json')
+
+
+// inject the app to seed the data
+
+module.exports = (app) => {
+  LOG.info('START seeder.')
+  const db = {}
+
+  // Customers don't depend on anything else...................
+
   
-//     db.users = new Datastore()
-//     db.users.loadDatabase()
+  // Products don't depend on anything else .....................
+
+  db.instructors = new Datastore()
+  db.instructors.loadDatabase()
+
+  // insert the sample data into our data store
+  db.instructors.insert(instructors)
+
+  // initialize app.locals (these objects will be available to our controllers)
+  app.locals.instructors = db.instructors.find(instructors)
+  LOG.debug(`${app.locals.instructors.query.length} instructors seeded`)
+
+  // Orders need a customer beforehand .................................
+
   
-//     // insert the sample data into our data store
-//     db.users.insert(users)
+
+  // extra...
+
   
-//     // initialize app.locals (these objects will be available to our controllers)
-//     app.locals.users = db.users.find(users)
-//     LOG.debug(`${app.locals.users.query.length} products seeded`)
-    
-//     LOG.info('END Seeder. Sample data read and verified.')
+
+  LOG.info('END Seeder. Sample data read and verified.')
+}
