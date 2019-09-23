@@ -1,30 +1,25 @@
-const express = require("express")
 const http = require('http')
+const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
-const favicon =require('serve-favicon')
-const users=[]
 const favicon = require('serve-favicon')
 const path = require('path')
 const bodyParser = require('body-parser')
 const engines = require('consolidate')
-const session = require('express-session')
 const errorHandler = require('errorhandler')
-const dotenv = require('dotenv')
-const logFile = '/access.log'
 const mongoose = require('mongoose')
-const expressValidator = require('express-validator')
-const expressStatusMonitor = require('express-status-monitor')
 const LOG = require('./utils/logger.js')
-const flash = require('connect-flash')
+const flash = require('connect-flash');
+
+passport = require('passport')
+require('./config/passport')(passport);
 
 
 // Load environment variables from .env file, where port, API keys, and passwords are configured.
 LOG.info('Environment variables loaded into process.env.')
 
 // create express app ..................................
-
 const app = express()
-// const fs = require("fs")
+
 
 //app.use(require('serve-static')(__dirname + '/../../public'));
 app.use(require('cookie-parser')());

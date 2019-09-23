@@ -5,7 +5,10 @@
     <div class="col col-md-12">
       <h2>Edit Course </h2>
       <div class="content">
-        <% instructors%> val
+          <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6  ">
+        
         <form method="POST" action="/instructor/save/<%= instructors._id %>">
           
          
@@ -18,7 +21,16 @@
           <input type="submit" value="Return to list" class="btn btn-caution" />
         </form>
       </div>
+      <div class="col-lg-3"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+<script>
+    $( function() {
+      $( "#startdate" ).datepicker();
+      $( "#enddate" ).datepicker();
+    } );
+    </script>
 
