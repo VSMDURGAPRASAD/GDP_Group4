@@ -14,4 +14,29 @@ const InstructorSchema = new mongoose.Schema({
     required: false
     
   },
-  
+  enddate: {
+    type:String,
+    required: true,
+    required: false
+   
+  },
+  intiallink: {
+    type: String,
+    required: false
+    
+  },
+  finallink: {
+    type: String,
+    required: false
+    
+  },
+  studentlist: {
+    type: String,
+    required: false
+  },
+  codewordsetname: {
+    type: String,
+    required : false
+  }
+})
+module.exports = mongoose.model('Instructor', InstructorSchema)
