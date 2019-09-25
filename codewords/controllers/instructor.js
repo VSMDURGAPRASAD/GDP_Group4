@@ -14,6 +14,15 @@ const remove = require('lodash.remove')
 const Model = require('../models/instructor.js')
 const notfoundstring = 'instructor not found'
 var mongoose = require('mongoose');
+const _ = require('lodash');
+let XLSX = require('xlsx')
+const formidable = require('formidable')
+var fs = require('fs');
+var path = require('path');
+var Studencourse = require('../models/studentcourse.js')
+
+//var util = require("util");
+//var fs = require("fs"); 
 
 // RESPOND WITH JSON DATA  --------------------------------------------
 
@@ -39,7 +48,7 @@ api.get('/findone/:id', (req, res) => {
 // GET to this controller base URI (the default)
 api.get('/',async (req, res) => {
 
-  const data = await Model.find({})
+  const data = await Model.find({instructoremail:req.user.email})
   console.log("sdf")
   res.render('instructor/index.ejs',{val:data})
 })
@@ -53,6 +62,9 @@ api.get('/create', (req, res) => {
   LOG.info(`Handling GET /create${req}`)
   const item = new Model()
   LOG.debug(JSON.stringify(item))
+   
+
+
   res.render('instructor/create',
     {
       title: 'Create instructor',
@@ -117,35 +129,107 @@ api.get('/edit/:id',async (req, res) => {
 api.post('/save', async (req, res) => {
   LOG.info(`Handling POST ${req}`)
   LOG.debug(JSON.stringify(req.body))
-  const data = req.app.locals.instructors.query
+  
   const item = new Model()
   LOG.info(`NEW ID ${req.body._id}`)
-  //console.log('usser'+req.user.)
-  console.log(req.user)
-  
+  console.log('form')
+  new formidable.IncomingForm().parse(req, async(err, fields, files) =>  {
+    if (err) {
+      console.error('Error', err)
+      throw err
+    }
+    console.log('Fields', fields)
+    console.log('Files', files)
   item.instructoremail=req.user.email
-  item.coursename=req.body.coursename
-  item.startdate = req.body.startdate
-  item.enddate = req.body.enddate
-  item.intiallink= req.body.finallink
-  //item.studentlist = req.body.studentlist
-  //item.codewordsetname = req.body.codewordsetname
+  item.coursename=fields.coursename
+  item.startdate = fields.startdate
+  item.enddate = fields.enddate
+  item.intiallink= fields.finallink
+  item.codewordsetname = fields.codeword
+  console.log(item)
+  
+
+  var contents = fs.readFileSync("codewords.json");
+  // Define to JSON type
+  var jsonContent = JSON.parse(contents);
+  console.log(jsonContent);
+
+   var f = files[Object.keys(files)[0]];
+    var wb = XLSX.readFile(f.path);
+    
+    var studentEmails= [];
+
+    for (i = 3; i < parseInt(wb.Strings.Count); i++) {
+     var tempe =  wb.Strings[i].t;
+      i++;
+      studentEmails.push(tempe);
+      
+    }
 
 
+    var codewords = searchByKey(item.codewordsetname,jsonContent)
+    console.log(codewords)
 
-  try {
+    shuffle(studentEmails);
+    shuffle(codewords);
+
+    try {
    
-     await item.save();
-    // res.send(item);
-   } catch (err) {
-     res.status(500).send(err);
-   }
+      await item.save();
+     // res.send(item);
+    } catch (err) {
+      res.status(500).send(err);
+    }
+  
+    console.log("saves");
+    console.log(studentEmails);
+
+    for(i=0; i<studentEmails.length; i++){
+     
+    var studentcourse = new Studencourse()
+
+    console.log(item._id);
+    studentcourse.studentEmail = studentEmails[i];
+    studentcourse.courseId = item._id + "";
+    studentcourse.codeword = codewords[i];
+
+    
+
+    try {
+   
+      console.log("saves");
+      await studentcourse.save();
+     // res.send(item);
+    } catch (err) {
+      res.status(500).send(err);
+    }
 
 
+
+
+    }
+
+
+
+  })
 
   LOG.info(`SAVING NEW instructor ${JSON.stringify(item)}`)
   return res.redirect('/instructor')
 })
+
+
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+
+function searchByKey(key,arr) {
+  for (var i = 0, l = arr.length; i < l; i++){
+    if (arr[i].CodeWordSet === key) {
+      return arr[i].CodeWords;
+    }
+  }
+  return false;
+}
 
 // POST update
 api.post('/save/:id', async (req, res) => {

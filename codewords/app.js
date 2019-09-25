@@ -9,6 +9,7 @@ const errorHandler = require('errorhandler')
 const mongoose = require('mongoose')
 const LOG = require('./utils/logger.js')
 const flash = require('connect-flash');
+var multer = require('multer');
 
 passport = require('passport')
 require('./config/passport')(passport);
@@ -28,6 +29,7 @@ app.use(require('cookie-parser')());
 app.set('port', 8080 )
 app.set('host', '127.0.0.1' )
 
+
 // set the root view folder
 app.set('views', path.join(__dirname, 'views'))
 
@@ -43,7 +45,11 @@ app.use((req, res, next) => {
   LOG.debug(`${req.method} ${ req.url}`)
   next()
 })
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
+// app.use(multer({
+//   dest: "./uploads/"
+//   }));
+
 // specify various resources and apply them to our application
 app.use(bodyParser.json())
 //app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))

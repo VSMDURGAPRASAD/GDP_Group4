@@ -10,12 +10,19 @@
 const express = require('express')
 const LOG = require('../utils/logger.js')
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
+var nodemailer= require('nodemailer');
+var crypto= require('crypto');
+var async= require('async');
 
 LOG.debug('START routing')
 const router = express.Router()
 router.get('login/login.ejs', (req, res, next) => {
   LOG.debug('Request to /login')
   res.render('login.ejs', { title: 'Express App' })
+})
+// Code for a forgot password 
+router.get('/forgot',(req,res, next) => {
+  res.render('forgot');
 })
 //Manage top-level request first
 router.get('/', ensureAuthenticated,(req, res, next) => {

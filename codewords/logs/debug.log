@@ -5067,3 +5067,1244 @@
 {"message":"GET /users/login","level":"debug"}
 {"message":"GET /css/main.css","level":"debug"}
 {"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /logout","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /logout","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/register","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/register","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/register","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /forgot","level":"debug"}
+{"message":"GET /forgot","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/register","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /forgot","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /forgot","level":"debug"}
+{"message":"GET /forgot","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /forgot","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /forgot","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /forgot","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"POST /forgot","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /logout","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /forgot","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /logout","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /logout","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /logout","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /logout","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d899fd17e8cb4585de78ab4\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d88c86aa2ae132d69fa3f59","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d88c86aa2ae132d69fa3f59\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"GDP-Group 4\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-11-14T06:00:00.000Z\",\"finallink\":\"www.final.com\",\"intiallink\":\"www.final.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d88c86aa2ae132d69fa3f59","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d88c86aa2ae132d69fa3f59\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"GDP-Group 4\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-11-14T06:00:00.000Z\",\"finallink\":\"www.final.com\",\"intiallink\":\"www.final.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: app.use() requires a middleware function\nTypeError: app.use() requires a middleware function\n    at Function.use (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\express\\lib\\application.js:210:11)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:49:5)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)\n    at startup (internal/bootstrap/node.js:283:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)","stack":"TypeError: app.use() requires a middleware function\n    at Function.use (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\express\\lib\\application.js:210:11)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:49:5)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)\n    at startup (internal/bootstrap/node.js:283:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)","exception":true,"date":"Tue Sep 24 2019 00:09:09 GMT-0500 (Central Daylight Time)","process":{"pid":113812,"uid":null,"gid":null,"cwd":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v10.16.3","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js"],"memoryUsage":{"rss":54165504,"heapTotal":36986880,"heapUsed":23816248,"external":18892854}},"os":{"loadavg":[0,0,0],"uptime":48238},"trace":[{"column":11,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\express\\lib\\application.js","function":"Function.use","line":210,"method":"use","native":false},{"column":5,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js","function":null,"line":49,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":831,"method":"runMain","native":false},{"column":19,"file":"internal/bootstrap/node.js","function":"startup","line":283,"method":null,"native":false},{"column":3,"file":"internal/bootstrap/node.js","function":"bootstrapNodeJSCore","line":622,"method":null,"native":false}]}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: app.use() requires a middleware function\nTypeError: app.use() requires a middleware function\n    at Function.use (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\express\\lib\\application.js:210:11)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:49:5)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)\n    at startup (internal/bootstrap/node.js:283:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)","stack":"TypeError: app.use() requires a middleware function\n    at Function.use (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\express\\lib\\application.js:210:11)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:49:5)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)\n    at startup (internal/bootstrap/node.js:283:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)","exception":true,"date":"Tue Sep 24 2019 00:09:54 GMT-0500 (Central Daylight Time)","process":{"pid":112632,"uid":null,"gid":null,"cwd":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v10.16.3","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js"],"memoryUsage":{"rss":54775808,"heapTotal":39608320,"heapUsed":20208888,"external":17867276}},"os":{"loadavg":[0,0,0],"uptime":48282},"trace":[{"column":11,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\express\\lib\\application.js","function":"Function.use","line":210,"method":"use","native":false},{"column":5,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js","function":null,"line":49,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":831,"method":"runMain","native":false},{"column":19,"file":"internal/bootstrap/node.js","function":"startup","line":283,"method":null,"native":false},{"column":3,"file":"internal/bootstrap/node.js","function":"bootstrapNodeJSCore","line":622,"method":null,"native":false}]}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d89a5d96eacc0c1c11ca829\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{\"coursename\":\"afssdf\",\"startdate\":\"09/14/2019\",\"enddate\":\"09/21/2019\",\"intiallink\":\"sdf\",\"finallink\":\"sdf\",\"studentlist\":\"Screenshot (97).png\"}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"GET /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d89a6066eacc0c1c11ca82a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"afssdf\",\"startdate\":\"2019-09-14T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"sdf\",\"__v\":0}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/delete/5d89a6066eacc0c1c11ca82a","level":"debug"}
+{"message":"Handling DELETE request [object Object]","level":"info"}
+{"message":"Handling REMOVING ID=5d89a6066eacc0c1c11ca82a","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d89a6e46eacc0c1c11ca82b\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"error":{"code":"MODULE_NOT_FOUND"},"level":"error","message":"uncaughtException: Cannot find module 'xlsx'\nError: Cannot find module 'xlsx'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:562:25)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:17:12)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js:35:47)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:86:16)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)","stack":"Error: Cannot find module 'xlsx'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:562:25)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:17:12)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js:35:47)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:86:16)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)","exception":true,"date":"Tue Sep 24 2019 00:44:02 GMT-0500 (Central Daylight Time)","process":{"pid":123228,"uid":null,"gid":null,"cwd":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v10.16.3","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js"],"memoryUsage":{"rss":56991744,"heapTotal":39620608,"heapUsed":25274832,"external":18639744}},"os":{"loadavg":[0,0,0],"uptime":50330},"trace":[{"column":15,"file":"internal/modules/cjs/loader.js","function":"Module._resolveFilename","line":636,"method":"_resolveFilename","native":false},{"column":25,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":562,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":692,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":25,"method":null,"native":false},{"column":12,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js","function":null,"line":17,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":692,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":25,"method":null,"native":false},{"column":47,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js","function":null,"line":35,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":692,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":25,"method":null,"native":false},{"column":16,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js","function":null,"line":86,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false}]}
+{"message":"START routing","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d89ad7b8001b7e599774f3d\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{\"coursename\":\"UXD\",\"startdate\":\"09/07/2019\",\"enddate\":\"09/20/2019\",\"intiallink\":\"sdfsd\",\"finallink\":\"sdfsdf\",\"studentlist\":\"Screenshot (98).png\"}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d89ad918001b7e599774f3e\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"UXD\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"intiallink\":\"sdfsdf\",\"__v\":0}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d89ae66abcdf1e999723891\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{\"coursename\":\"UXD\",\"startdate\":\"09/07/2019\",\"enddate\":\"09/28/2019\",\"intiallink\":\"ghfghfgh\",\"finallink\":\"3456\",\"studentlist\":\"Screenshot (157).png\"}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d89ae7babcdf1e999723892\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"UXD\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-28T05:00:00.000Z\",\"intiallink\":\"3456\",\"__v\":0}","level":"info"}
+{"message":"GET /favicon.ico","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: Unexpected token var\nC:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:20\nvar path = require('path');\n^^^\n\nSyntaxError: Unexpected token var\n    at Module._compile (internal/modules/cjs/loader.js:723:23)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js:35:47)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:86:16)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)","stack":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:20\nvar path = require('path');\n^^^\n\nSyntaxError: Unexpected token var\n    at Module._compile (internal/modules/cjs/loader.js:723:23)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js:35:47)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:86:16)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)","exception":true,"date":"Tue Sep 24 2019 00:54:33 GMT-0500 (Central Daylight Time)","process":{"pid":124736,"uid":null,"gid":null,"cwd":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v10.16.3","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js"],"memoryUsage":{"rss":56766464,"heapTotal":40144896,"heapUsed":24734872,"external":18557195}},"os":{"loadavg":[0,0,0],"uptime":50961},"trace":[{"column":23,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":723,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":692,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":25,"method":null,"native":false},{"column":47,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js","function":null,"line":35,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":692,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":25,"method":null,"native":false},{"column":16,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js","function":null,"line":86,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":831,"method":"runMain","native":false}]}
+{"message":"START routing","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d89afd609ebedf521498962\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d89afe909ebedf521498963\",\"instructoremail\":\"malli@gmail.com\"}","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: files.map is not a function\nTypeError: files.map is not a function\n    at formidable.IncomingForm.parse (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:150:11)\n    at IncomingForm.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:107:9)\n    at IncomingForm.emit (events.js:198:13)\n    at IncomingForm._maybeEnd (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:557:8)\n    at C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:238:12\n    at WriteStream.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js:79:5)\n    at Object.onceWrapper (events.js:286:20)\n    at WriteStream.emit (events.js:198:13)\n    at finishMaybe (_stream_writable.js:646:14)\n    at stream._final (_stream_writable.js:624:5)\n    at WriteStream._final (internal/fs/streams.js:268:3)\n    at callFinal (_stream_writable.js:617:10)\n    at process._tickCallback (internal/process/next_tick.js:63:19)","stack":"TypeError: files.map is not a function\n    at formidable.IncomingForm.parse (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:150:11)\n    at IncomingForm.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:107:9)\n    at IncomingForm.emit (events.js:198:13)\n    at IncomingForm._maybeEnd (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:557:8)\n    at C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:238:12\n    at WriteStream.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js:79:5)\n    at Object.onceWrapper (events.js:286:20)\n    at WriteStream.emit (events.js:198:13)\n    at finishMaybe (_stream_writable.js:646:14)\n    at stream._final (_stream_writable.js:624:5)\n    at WriteStream._final (internal/fs/streams.js:268:3)\n    at callFinal (_stream_writable.js:617:10)\n    at process._tickCallback (internal/process/next_tick.js:63:19)","exception":true,"date":"Tue Sep 24 2019 00:55:53 GMT-0500 (Central Daylight Time)","process":{"pid":128288,"uid":null,"gid":null,"cwd":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v10.16.3","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js"],"memoryUsage":{"rss":48414720,"heapTotal":28045312,"heapUsed":22762072,"external":18569370}},"os":{"loadavg":[0,0,0],"uptime":51041},"trace":[{"column":11,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js","function":"formidable.IncomingForm.parse","line":150,"method":"parse","native":false},{"column":9,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":null,"line":107,"method":null,"native":false},{"column":13,"file":"events.js","function":"IncomingForm.emit","line":198,"method":"emit","native":false},{"column":8,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":"IncomingForm._maybeEnd","line":557,"method":"_maybeEnd","native":false},{"column":12,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":null,"line":238,"method":null,"native":false},{"column":5,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js","function":null,"line":79,"method":null,"native":false},{"column":20,"file":"events.js","function":"Object.onceWrapper","line":286,"method":"onceWrapper","native":false},{"column":13,"file":"events.js","function":"WriteStream.emit","line":198,"method":"emit","native":false},{"column":14,"file":"_stream_writable.js","function":"finishMaybe","line":646,"method":null,"native":false},{"column":5,"file":"_stream_writable.js","function":"stream._final","line":624,"method":"_final","native":false},{"column":3,"file":"internal/fs/streams.js","function":"WriteStream._final","line":268,"method":"_final","native":false},{"column":10,"file":"_stream_writable.js","function":"callFinal","line":617,"method":null,"native":false},{"column":19,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":63,"method":"_tickCallback","native":false}]}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d89affd09ebedf521498964\",\"instructoremail\":\"malli@gmail.com\"}","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8a3e34b3dc88f389ccf1c0\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8a3e49b3dc88f389ccf1c1\",\"instructoremail\":\"malli@gmail.com\"}","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: files.map is not a function\nTypeError: files.map is not a function\n    at formidable.IncomingForm.parse (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:150:11)\n    at IncomingForm.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:107:9)\n    at IncomingForm.emit (events.js:198:13)\n    at IncomingForm._maybeEnd (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:557:8)\n    at C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:238:12\n    at WriteStream.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js:79:5)\n    at Object.onceWrapper (events.js:286:20)\n    at WriteStream.emit (events.js:198:13)\n    at finishMaybe (_stream_writable.js:646:14)\n    at stream._final (_stream_writable.js:624:5)\n    at WriteStream._final (internal/fs/streams.js:268:3)\n    at callFinal (_stream_writable.js:617:10)\n    at process._tickCallback (internal/process/next_tick.js:63:19)","stack":"TypeError: files.map is not a function\n    at formidable.IncomingForm.parse (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:150:11)\n    at IncomingForm.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:107:9)\n    at IncomingForm.emit (events.js:198:13)\n    at IncomingForm._maybeEnd (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:557:8)\n    at C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:238:12\n    at WriteStream.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js:79:5)\n    at Object.onceWrapper (events.js:286:20)\n    at WriteStream.emit (events.js:198:13)\n    at finishMaybe (_stream_writable.js:646:14)\n    at stream._final (_stream_writable.js:624:5)\n    at WriteStream._final (internal/fs/streams.js:268:3)\n    at callFinal (_stream_writable.js:617:10)\n    at process._tickCallback (internal/process/next_tick.js:63:19)","exception":true,"date":"Tue Sep 24 2019 11:03:21 GMT-0500 (Central Daylight Time)","process":{"pid":127880,"uid":null,"gid":null,"cwd":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v10.16.3","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js"],"memoryUsage":{"rss":48467968,"heapTotal":29093888,"heapUsed":22924864,"external":18453443}},"os":{"loadavg":[0,0,0],"uptime":87490},"trace":[{"column":11,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js","function":"formidable.IncomingForm.parse","line":150,"method":"parse","native":false},{"column":9,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":null,"line":107,"method":null,"native":false},{"column":13,"file":"events.js","function":"IncomingForm.emit","line":198,"method":"emit","native":false},{"column":8,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":"IncomingForm._maybeEnd","line":557,"method":"_maybeEnd","native":false},{"column":12,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":null,"line":238,"method":null,"native":false},{"column":5,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js","function":null,"line":79,"method":null,"native":false},{"column":20,"file":"events.js","function":"Object.onceWrapper","line":286,"method":"onceWrapper","native":false},{"column":13,"file":"events.js","function":"WriteStream.emit","line":198,"method":"emit","native":false},{"column":14,"file":"_stream_writable.js","function":"finishMaybe","line":646,"method":null,"native":false},{"column":5,"file":"_stream_writable.js","function":"stream._final","line":624,"method":"_final","native":false},{"column":3,"file":"internal/fs/streams.js","function":"WriteStream._final","line":268,"method":"_final","native":false},{"column":10,"file":"_stream_writable.js","function":"callFinal","line":617,"method":null,"native":false},{"column":19,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":63,"method":"_tickCallback","native":false}]}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8a3e54b3dc88f389ccf1c2\",\"instructoremail\":\"malli@gmail.com\"}","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8ab0cf99d8a93c16e45a4c\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8ab1b36656fb4d824c1fe9\",\"instructoremail\":\"malli@gmail.com\"}","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: files.map is not a function\nTypeError: files.map is not a function\n    at formidable.IncomingForm.parse (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:159:11)\n    at IncomingForm.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:107:9)\n    at IncomingForm.emit (events.js:198:13)\n    at IncomingForm._maybeEnd (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:557:8)\n    at C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:238:12\n    at WriteStream.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js:79:5)\n    at Object.onceWrapper (events.js:286:20)\n    at WriteStream.emit (events.js:198:13)\n    at finishMaybe (_stream_writable.js:646:14)\n    at stream._final (_stream_writable.js:624:5)\n    at WriteStream._final (internal/fs/streams.js:268:3)\n    at callFinal (_stream_writable.js:617:10)\n    at process._tickCallback (internal/process/next_tick.js:63:19)","stack":"TypeError: files.map is not a function\n    at formidable.IncomingForm.parse (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:159:11)\n    at IncomingForm.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:107:9)\n    at IncomingForm.emit (events.js:198:13)\n    at IncomingForm._maybeEnd (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:557:8)\n    at C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:238:12\n    at WriteStream.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js:79:5)\n    at Object.onceWrapper (events.js:286:20)\n    at WriteStream.emit (events.js:198:13)\n    at finishMaybe (_stream_writable.js:646:14)\n    at stream._final (_stream_writable.js:624:5)\n    at WriteStream._final (internal/fs/streams.js:268:3)\n    at callFinal (_stream_writable.js:617:10)\n    at process._tickCallback (internal/process/next_tick.js:63:19)","exception":true,"date":"Tue Sep 24 2019 19:15:47 GMT-0500 (Central Daylight Time)","process":{"pid":150912,"uid":null,"gid":null,"cwd":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v10.16.3","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js"],"memoryUsage":{"rss":49565696,"heapTotal":29663232,"heapUsed":24369408,"external":18432316}},"os":{"loadavg":[0,0,0],"uptime":117035},"trace":[{"column":11,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js","function":"formidable.IncomingForm.parse","line":159,"method":"parse","native":false},{"column":9,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":null,"line":107,"method":null,"native":false},{"column":13,"file":"events.js","function":"IncomingForm.emit","line":198,"method":"emit","native":false},{"column":8,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":"IncomingForm._maybeEnd","line":557,"method":"_maybeEnd","native":false},{"column":12,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":null,"line":238,"method":null,"native":false},{"column":5,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js","function":null,"line":79,"method":null,"native":false},{"column":20,"file":"events.js","function":"Object.onceWrapper","line":286,"method":"onceWrapper","native":false},{"column":13,"file":"events.js","function":"WriteStream.emit","line":198,"method":"emit","native":false},{"column":14,"file":"_stream_writable.js","function":"finishMaybe","line":646,"method":null,"native":false},{"column":5,"file":"_stream_writable.js","function":"stream._final","line":624,"method":"_final","native":false},{"column":3,"file":"internal/fs/streams.js","function":"WriteStream._final","line":268,"method":"_final","native":false},{"column":10,"file":"_stream_writable.js","function":"callFinal","line":617,"method":null,"native":false},{"column":19,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":63,"method":"_tickCallback","native":false}]}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8ab31e3c8cac5702420844\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8ab3643c8cac5702420845\"}","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: files.map is not a function\nTypeError: files.map is not a function\n    at formidable.IncomingForm.parse (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:155:11)\n    at IncomingForm.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:107:9)\n    at IncomingForm.emit (events.js:198:13)\n    at IncomingForm._maybeEnd (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:557:8)\n    at C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:238:12\n    at WriteStream.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js:79:5)\n    at Object.onceWrapper (events.js:286:20)\n    at WriteStream.emit (events.js:198:13)\n    at finishMaybe (_stream_writable.js:646:14)\n    at stream._final (_stream_writable.js:624:5)\n    at WriteStream._final (internal/fs/streams.js:268:3)\n    at callFinal (_stream_writable.js:617:10)\n    at process._tickCallback (internal/process/next_tick.js:63:19)","stack":"TypeError: files.map is not a function\n    at formidable.IncomingForm.parse (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:155:11)\n    at IncomingForm.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:107:9)\n    at IncomingForm.emit (events.js:198:13)\n    at IncomingForm._maybeEnd (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:557:8)\n    at C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js:238:12\n    at WriteStream.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js:79:5)\n    at Object.onceWrapper (events.js:286:20)\n    at WriteStream.emit (events.js:198:13)\n    at finishMaybe (_stream_writable.js:646:14)\n    at stream._final (_stream_writable.js:624:5)\n    at WriteStream._final (internal/fs/streams.js:268:3)\n    at callFinal (_stream_writable.js:617:10)\n    at process._tickCallback (internal/process/next_tick.js:63:19)","exception":true,"date":"Tue Sep 24 2019 19:23:00 GMT-0500 (Central Daylight Time)","process":{"pid":153344,"uid":null,"gid":null,"cwd":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v10.16.3","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js"],"memoryUsage":{"rss":49770496,"heapTotal":30711808,"heapUsed":24598344,"external":18481895}},"os":{"loadavg":[0,0,0],"uptime":117469},"trace":[{"column":11,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js","function":"formidable.IncomingForm.parse","line":155,"method":"parse","native":false},{"column":9,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":null,"line":107,"method":null,"native":false},{"column":13,"file":"events.js","function":"IncomingForm.emit","line":198,"method":"emit","native":false},{"column":8,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":"IncomingForm._maybeEnd","line":557,"method":"_maybeEnd","native":false},{"column":12,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\incoming_form.js","function":null,"line":238,"method":null,"native":false},{"column":5,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\node_modules\\formidable\\lib\\file.js","function":null,"line":79,"method":null,"native":false},{"column":20,"file":"events.js","function":"Object.onceWrapper","line":286,"method":"onceWrapper","native":false},{"column":13,"file":"events.js","function":"WriteStream.emit","line":198,"method":"emit","native":false},{"column":14,"file":"_stream_writable.js","function":"finishMaybe","line":646,"method":null,"native":false},{"column":5,"file":"_stream_writable.js","function":"stream._final","line":624,"method":"_final","native":false},{"column":3,"file":"internal/fs/streams.js","function":"WriteStream._final","line":268,"method":"_final","native":false},{"column":10,"file":"_stream_writable.js","function":"callFinal","line":617,"method":null,"native":false},{"column":19,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":63,"method":"_tickCallback","native":false}]}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor/users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8ab408fdd7725a4e33a939\"}","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: await is only valid in async function\nC:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:165\n      await item.save();\n      ^^^^^\n\nSyntaxError: await is only valid in async function\n    at Module._compile (internal/modules/cjs/loader.js:723:23)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js:35:47)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:86:16)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)","stack":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:165\n      await item.save();\n      ^^^^^\n\nSyntaxError: await is only valid in async function\n    at Module._compile (internal/modules/cjs/loader.js:723:23)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js:35:47)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:86:16)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)","exception":true,"date":"Tue Sep 24 2019 19:26:53 GMT-0500 (Central Daylight Time)","process":{"pid":155076,"uid":null,"gid":null,"cwd":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v10.16.3","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js"],"memoryUsage":{"rss":56729600,"heapTotal":40144896,"heapUsed":25249080,"external":18592295}},"os":{"loadavg":[0,0,0],"uptime":117702},"trace":[{"column":23,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":723,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":692,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":25,"method":null,"native":false},{"column":47,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js","function":null,"line":35,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":692,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":25,"method":null,"native":false},{"column":16,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js","function":null,"line":86,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":831,"method":"runMain","native":false}]}
+{"message":"START routing","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8ab49b5b78865f0e62fee4\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8ab4a45b78865f0e62fee5\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8ab4b65b78865f0e62fee6\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8ab91a0e9b43736a2bbe28\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8ab9540e9b43736a2bbe29\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8aba2a0e9b43736a2bbe2a\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8aba510e9b43736a2bbe2b\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8abb416680507812588e35\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8abb7a6680507812588e36\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8abbd9f869c162bae16d06\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8abc06f869c162bae16d07\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8abc75f869c162bae16d08\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8abcc35dc7e97c4604843c\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8abf89ef199281ca6c618c\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8abfecef199281ca6c618d\"}","level":"info"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8abfecef199281ca6c618e\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8ac5b33415eb847e4373c5\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8ac787696ceba13a1c4cfd\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8acb98b12deb776ab6e0c3\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8acbc2b12deb776ab6e0c4\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8acc82f2ebf1c3c628d53c\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8acd076b7530c5167d0619\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8acd246b7530c5167d061a\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8ad1ba5f6cdbe25296e3c2\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8ad27c9270f0e0c6328252\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"error":{"code":"MODULE_NOT_FOUND"},"level":"error","message":"uncaughtException: Cannot find module '../models/student.js'\nError: Cannot find module '../models/student.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:562:25)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:22:20)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js:35:47)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:86:16)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)","stack":"Error: Cannot find module '../models/student.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:562:25)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js:22:20)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js:35:47)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (internal/modules/cjs/helpers.js:25:18)\n    at Object.<anonymous> (C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js:86:16)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)","exception":true,"date":"Wed Sep 25 2019 00:10:50 GMT-0500 (Central Daylight Time)","process":{"pid":201364,"uid":null,"gid":null,"cwd":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v10.16.3","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js"],"memoryUsage":{"rss":82759680,"heapTotal":73551872,"heapUsed":50151776,"external":21138575}},"os":{"loadavg":[0,0,0],"uptime":134738},"trace":[{"column":15,"file":"internal/modules/cjs/loader.js","function":"Module._resolveFilename","line":636,"method":"_resolveFilename","native":false},{"column":25,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":562,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":692,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":25,"method":null,"native":false},{"column":20,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\controllers\\instructor.js","function":null,"line":22,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":692,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":25,"method":null,"native":false},{"column":47,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\routes\\index.js","function":null,"line":35,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":789,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":653,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":593,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":585,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":692,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":25,"method":null,"native":false},{"column":16,"file":"C:\\Users\\S533980\\Desktop\\GDP_Group4\\codewords\\app.js","function":null,"line":86,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":778,"method":"_compile","native":false}]}
+{"message":"START routing","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8af743843204130b227394\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8af8a3b5196c1703b61d5c\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8af8f05746aa1b03051b80\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8af9fba18fc11f232202e4\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d88dc64b0f49d890446e9fa","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d88dc64b0f49d890446e9fa\",\"instructoremail\":\"dp@gmail.com\",\"coursename\":\"Preetam Potu\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"finallink\":\"www.splunk.com\",\"intiallink\":\"www.google.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save/5d88dc64b0f49d890446e9fa","level":"debug"}
+{"message":"Handling SAVE request [object Object]","level":"info"}
+{"message":"Handling SAVING ID=5d88dc64b0f49d890446e9fa","level":"info"}
+{"message":"ORIGINAL VALUES {\"_id\":\"5d88dc64b0f49d890446e9fa\",\"instructoremail\":\"dp@gmail.com\",\"coursename\":\"Preetam Potu\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"finallink\":\"www.splunk.com\",\"intiallink\":\"www.google.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"UPDATED VALUES: {\"coursename\":\"Preetam Potu\",\"startdate\":\"Sat Sep 07 2019 00:00:00 GMT-0500 (Central Daylight Time)\",\"enddate\":\"Fri Sep 20 2019 00:00:00 GMT-0500 (Central Daylight Time)\",\"intiallink\":\"www.google.com\",\"finallink\":\"www.splunk.com\",\"studentlist\":\"course.js\",\"codeword\":\"\"}","level":"info"}
+{"message":"SAVING UPDATED instructor {\"_id\":\"5d88dc64b0f49d890446e9fa\",\"instructoremail\":\"dp@gmail.com\",\"coursename\":\"Preetam Potu\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"finallink\":\"www.splunk.com\",\"intiallink\":\"www.splunk.com\",\"__v\":0,\"studentlist\":\"course.js\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d88dc64b0f49d890446e9fa","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d88dc64b0f49d890446e9fa\",\"instructoremail\":\"dp@gmail.com\",\"coursename\":\"Preetam Potu\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"finallink\":\"www.splunk.com\",\"intiallink\":\"www.splunk.com\",\"__v\":0,\"studentlist\":\"course.js\"}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor?","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor?","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"POST /instructor/save/5d88dc64b0f49d890446e9fa","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save/5d88dc64b0f49d890446e9fa","level":"debug"}
+{"message":"Handling SAVE request [object Object]","level":"info"}
+{"message":"Handling SAVING ID=5d88dc64b0f49d890446e9fa","level":"info"}
+{"message":"ORIGINAL VALUES {\"_id\":\"5d88dc64b0f49d890446e9fa\",\"instructoremail\":\"dp@gmail.com\",\"coursename\":\"Preetam Potu\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"finallink\":\"www.splunk.com\",\"intiallink\":\"www.splunk.com\",\"__v\":0,\"studentlist\":\"course.js\"}","level":"info"}
+{"message":"UPDATED VALUES: {\"coursename\":\"Preetam Potu\",\"startdate\":\"Sat Sep 07 2019 00:00:00 GMT-0500 (Central Daylight Time)\",\"enddate\":\"Fri Sep 20 2019 00:00:00 GMT-0500 (Central Daylight Time)\",\"intiallink\":\"www.splunk.com\",\"finallink\":\"www.splunk.com\",\"studentlist\":\"test.xlsx\",\"codeword\":\"\"}","level":"info"}
+{"message":"SAVING UPDATED instructor {\"_id\":\"5d88dc64b0f49d890446e9fa\",\"instructoremail\":\"dp@gmail.com\",\"coursename\":\"Preetam Potu\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"finallink\":\"www.splunk.com\",\"intiallink\":\"www.splunk.com\",\"__v\":0,\"studentlist\":\"test.xlsx\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8affeb57c21b23db3933f8\"}","level":"info"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8affec57c21b23db3933f9\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b002f57c21b23db3933fa\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b0121b3c39229178862eb\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b0219a1eeea27573f598a\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b02697d338925a3b87e9b\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b036bf164eb2f276e3cff\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b0605da80622f53fa29f7\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b0628da80622f53fa29f8\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b06ae726e583747b72fa1\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b0e02726e583747b72fa5\"}","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b0e02726e583747b72fa6\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d88c86aa2ae132d69fa3f59","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d88c86aa2ae132d69fa3f59\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"GDP-Group 4\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-11-14T06:00:00.000Z\",\"finallink\":\"www.final.com\",\"intiallink\":\"www.final.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d8acbc2b12deb776ab6e0c4","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d8acbc2b12deb776ab6e0c4\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"Web Applications\",\"startdate\":\"2019-09-06T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"3456\",\"__v\":0}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/users/logout","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d88c86aa2ae132d69fa3f59","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d88c86aa2ae132d69fa3f59\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"GDP-Group 4\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-11-14T06:00:00.000Z\",\"finallink\":\"www.final.com\",\"intiallink\":\"www.final.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save/5d88c86aa2ae132d69fa3f59","level":"debug"}
+{"message":"Handling SAVE request [object Object]","level":"info"}
+{"message":"Handling SAVING ID=5d88c86aa2ae132d69fa3f59","level":"info"}
+{"message":"ORIGINAL VALUES {\"_id\":\"5d88c86aa2ae132d69fa3f59\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"GDP-Group 4\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-11-14T06:00:00.000Z\",\"finallink\":\"www.final.com\",\"intiallink\":\"www.final.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"UPDATED VALUES: {\"coursename\":\"GDP-Group 4\",\"startdate\":\"Sat Sep 07 2019 00:00:00 GMT-0500 (Central Daylight Time)\",\"enddate\":\"Thu Nov 14 2019 00:00:00 GMT-0600 (Central Standard Time)\",\"intiallink\":\"www.final.com\",\"finallink\":\"www.final.com\",\"studentlist\":\"\",\"codeword\":\"\"}","level":"info"}
+{"message":"SAVING UPDATED instructor {\"_id\":\"5d88c86aa2ae132d69fa3f59\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"GDP-Group 4\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-11-14T06:00:00.000Z\",\"finallink\":\"www.final.com\",\"intiallink\":\"www.final.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d8b0219a1eeea27573f598a","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d8b0219a1eeea27573f598a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"bombayqsdf\",\"startdate\":\"2019-09-06T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"3456\",\"codewordsetname\":\"Fruits\",\"__v\":0}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save/5d8b0219a1eeea27573f598a","level":"debug"}
+{"message":"Handling SAVE request [object Object]","level":"info"}
+{"message":"Handling SAVING ID=5d8b0219a1eeea27573f598a","level":"info"}
+{"message":"ORIGINAL VALUES {\"_id\":\"5d8b0219a1eeea27573f598a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"bombayqsdf\",\"startdate\":\"2019-09-06T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"3456\",\"codewordsetname\":\"Fruits\",\"__v\":0}","level":"info"}
+{"message":"UPDATED VALUES: {\"coursename\":\"bombayqsdf\",\"startdate\":\"Fri Sep 06 2019 00:00:00 GMT-0500 (Central Daylight Time)\",\"enddate\":\"Sat Sep 21 2019 00:00:00 GMT-0500 (Central Daylight Time)\",\"intiallink\":\"3456\",\"finallink\":\"34567\",\"studentlist\":\"\",\"codeword\":\"\"}","level":"info"}
+{"message":"SAVING UPDATED instructor {\"_id\":\"5d8b0219a1eeea27573f598a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"bombayqsdf\",\"startdate\":\"2019-09-06T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"34567\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d8b0219a1eeea27573f598a","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d8b0219a1eeea27573f598a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"bombayqsdf\",\"startdate\":\"2019-09-06T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"34567\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save/5d8b0219a1eeea27573f598a","level":"debug"}
+{"message":"Handling SAVE request [object Object]","level":"info"}
+{"message":"Handling SAVING ID=5d8b0219a1eeea27573f598a","level":"info"}
+{"message":"ORIGINAL VALUES {\"_id\":\"5d8b0219a1eeea27573f598a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"bombayqsdf\",\"startdate\":\"2019-09-06T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"34567\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"UPDATED VALUES: {\"coursename\":\"bombayqsdf\",\"startdate\":\"Fri Sep 06 2019 00:00:00 GMT-0500 (Central Daylight Time)\",\"enddate\":\"Sat Sep 21 2019 00:00:00 GMT-0500 (Central Daylight Time)\",\"intiallink\":\"34567\",\"finallink\":\"34567\",\"studentlist\":\"\",\"codeword\":\"\"}","level":"info"}
+{"message":"SAVING UPDATED instructor {\"_id\":\"5d8b0219a1eeea27573f598a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"bombayqsdf\",\"startdate\":\"2019-09-06T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"34567\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}

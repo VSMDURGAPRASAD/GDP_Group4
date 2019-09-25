@@ -89,5 +89,116 @@ router.get('/logout', (req, res) => {
     res.redirect('/users/login');
   });
   
+  //Code for a node mailer 
+  router.post('/forgot',(req,res) => {
+    async.waterfall([
+      function(done){
+        crypto.randomBytes(20, function(err,buf){
+          var token= buf.toString('hex');
+          done(err,token);
+        })
+      },
+      function(token,done){
+        User.findOne({email: req.body.email}, function(err,user){
+          if(!user) {
+            req.flash('error','No  account with email address exist.');
+            return res.redirect('/forgot');
+          }
+          user.resetPasswordToken =token;
+          user.resetPasswordExpires =Date.now( ) +3600000;
+          user.save(function(err){
+            done (err,token,user);
+          })
+        })
+
+      },
+      function(token,user,done) {
+        var smtpTransport =nodemailer.createTransport({
+          service:'Gmail',
+          auth:{
+            user:'learntocodeinfo@gmail.com',
+            pass: process.env.GMAILPW
+
+          }
+        });
+        var mailOptions ={
+          to: user.email,
+          from:'learntocodeinfo@gmail.com',
+          subject:"Nodejs Password Reset",
+          text:'You are reciving this because you forgotten password'+
+          'http://'+ req.headers.host + token +'\n\n'+
+          'If you didnit get'
+
+        };
+        smtpTransport.sendMail(mailOptions,function(err){
+          console.log('mail sent');
+          req.flash('success','An email has been  sent to '+user.email +' with further instrcutions');
+          done(err, 'done');
+        });
+
+      }
+    ], function (err){
+      if(err) return next(err);
+      res.redirect('/forgot');
+    });
+  });
+  router.get('/reset/:token', function(req,res){
+    user.findOne({ resetPasswordToken: req.params.token,resetPasswordExpires: {$gt: Date.now() } }, function(err,user){
+    if(!user) {
+      req.flash('error','Password reset token is  invalid or has exprired');
+      return res.redirect('/forgot');
+    }
+    res.render('reset',{token: req.params.token});
+  });
+})
+
+router.post('reset/:token', function(req,res){
+  async.waterfall([
+    function(done) {
+      user.findOne({ resetPasswordToken: req.params.token,resetPasswordExpires: {$gt: Date.now() } }, function(err,user){
+        if(!user) {
+          req.flash('error','Password reset token is  invalid or has exprired');
+          return res.redirect('back');
+        }
+        if(req.body.password === req.body.confirm) {
+          user.setPassword(req.body.password,function(err){
+            user.resetPasswordToken= undefined;
+            user.resetPasswordExpires =undefine;
+            user.save(function(err){
+              req.logIn(user,function(err){
+                done(err,user);
+              });
+            });
+          });
+        } else {
+          req.flash("error","Passwords do not match");
+          return  res.redirect('back');
+        }
+      });
+    },
+    function(user,done) {
+      var  smtpTransport =nodemailer.createTransport({
+        service:"Gmail",
+        auth :{
+          user:'learntocodeinfo@gmail.com',
+          pass:process.env.GMAILPW
+        }
+      });
+      var mailOptions = {
+        to: user.email,
+        from:'learncodeinfo@gmail.com',
+        subject:'your password changed',
+        text:'Hello,\n\n'+
+        'This is a confirmation that password ' + user.email +'has just changed'
+      };
+      smtpTransport.sendMail(mailOptions,function(err) {
+        req.flash('Success','Sucess your passord has been changed ');
+        done(err);
+      })
+    }
+  ], function(err) {
+    res.redirect('/campgrounds');
+  });
+});
   module.exports = router;
     
