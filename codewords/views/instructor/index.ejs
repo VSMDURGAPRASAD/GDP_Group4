@@ -5,10 +5,11 @@
 <div class="container-fluid">
     
  <br>
+ <h1> Instructor Dashboard</h1>
   
-    <div class="row" style="margin-top: 10px; margin-left: 10px;" >
+    <div class="btn btn-info" style="margin-top: 10px; margin-left: 10px;" >
       
-      <h2 > Courses </h2>
+      
        <a href="instructor/create" style="margin-top: 10px; margin-left: 10px">
         Add Course
         </a>
@@ -50,10 +51,10 @@
   </div> -->
  
   <div class="col-lg-4">
-  <div class="card  mb-3" style="max-width: 27rem; min-height: 27rem">
+  <div class="card bg-light mb-3" style="max-width: 18rem; min-height: 24rem;">
       <div class="card-body">
         
-        <h5 class="card-title"><%=instructor.coursename %></h5>
+        <h5 class="card-header"><%=instructor.coursename %></h5>
         <div class="row">
         <label>Start Date :</label> <label> <%=instructor.startdate %></label>
       </div>
