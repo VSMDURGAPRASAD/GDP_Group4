@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 const express = require("express");
 const http = require('http');
-
+const userModel = require('../models/user');
 
 
 const LOG = require('../utils/logger')
@@ -26,7 +26,7 @@ LOG.debug('Inside database.js')
 // });
 
 
- 
+nev = require('email-verification')(mongoose);
 
 mongoose.connect('mongodb+srv://prasad:prasad@cluster0-a4krm.mongodb.net/test?retryWrites=true&w=majority')
 .then(() => {
@@ -35,7 +35,11 @@ mongoose.connect('mongodb+srv://prasad:prasad@cluster0-a4krm.mongodb.net/test?re
     console.log(err);
 });
 
- 
+
+nex.configure({
+    
+})
+
 // const smp = new sample({
 //     User_name: 'krishna',
 //     User_number: '3'
