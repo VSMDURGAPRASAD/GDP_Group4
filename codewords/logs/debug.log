@@ -5067,3 +5067,74 @@
 {"message":"GET /users/login","level":"debug"}
 {"message":"GET /css/main.css","level":"debug"}
 {"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8ad3465ce5809acc1e463f\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{\"coursename\":\"hello\",\"startdate\":\"12/01/2012\",\"enddate\":\"12/01/2013\",\"intiallink\":\"https://www.youtube.com/user/TechGuyWeb/videos\",\"finallink\":\"https://www.youtube.com/user/TechGuyWeb/videos\",\"studentlist\":\"\"}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8ad36c5ce5809acc1e4640\",\"instructoremail\":\"swathi@gmail.com\",\"coursename\":\"hello\",\"startdate\":\"2012-12-01T06:00:00.000Z\",\"enddate\":\"2013-12-01T06:00:00.000Z\",\"intiallink\":\"https://www.youtube.com/user/TechGuyWeb/videos\",\"__v\":0}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /instructor/delete/5d8ad36c5ce5809acc1e4640","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d8ad36c5ce5809acc1e4640\",\"instructoremail\":\"swathi@gmail.com\",\"coursename\":\"hello\",\"startdate\":\"2012-12-01T06:00:00.000Z\",\"enddate\":\"2013-12-01T06:00:00.000Z\",\"intiallink\":\"https://www.youtube.com/user/TechGuyWeb/videos\",\"__v\":0}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"POST /instructor/delete/5d8ad36c5ce5809acc1e4640","level":"debug"}
+{"message":"Handling DELETE request [object Object]","level":"info"}
+{"message":"Handling REMOVING ID=5d8ad36c5ce5809acc1e4640","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
