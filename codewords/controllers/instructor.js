@@ -49,7 +49,6 @@ api.get('/findone/:id', (req, res) => {
 api.get('/',async (req, res) => {
 
   const data = await Model.find({instructoremail:req.user.email})
-  console.log("sdf")
   res.render('instructor/index.ejs',{val:data})
 })
 
@@ -111,6 +110,9 @@ api.get('/edit/:id',async (req, res) => {
   const id = req.params.id
   //const data = req.app.locals.instructors.query
   const item = await Model.find({ _id:id})
+
+  item.startdate = new Date(item.startdate).getTime(); 
+
   console.log(item)
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR${JSON.stringify(item[0])

@@ -11,14 +11,14 @@ const InstructorSchema = new mongoose.Schema({
     
   },
   startdate: {
-    type: Date,
+    type: String,
     required: false
     
   },
   enddate: {
-    type:Date,
-    required: true,
-    required: false
+    type:String,
+    required: true
+    
    
   },
   intiallink: {

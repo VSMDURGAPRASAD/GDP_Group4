@@ -6308,3 +6308,658 @@
 {"message":"SAVING UPDATED instructor {\"_id\":\"5d8b0219a1eeea27573f598a\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"bombayqsdf\",\"startdate\":\"2019-09-06T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"34567\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
 {"message":"GET /instructor","level":"debug"}
 {"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /favicon.ico","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b753509e7e0396e9db61d\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b756409e7e0396e9db61e\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b759609e7e0396e9db61f\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b75c409e7e0396e9db620\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d88c86aa2ae132d69fa3f59","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d88c86aa2ae132d69fa3f59\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"GDP-Group 4\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-11-14T06:00:00.000Z\",\"finallink\":\"www.final.com\",\"intiallink\":\"www.final.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b75e409e7e0396e9db621\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/users/logout","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/users/users/logout","level":"debug"}
+{"message":"GET /instructor/css/main.css","level":"debug"}
+{"message":"GET /instructor/images/favicon-32x32.png","level":"debug"}
+{"message":"GET /instructor/images/favicon-16x16.png","level":"debug"}
+{"message":"GET /instructor/images/favicon-96x96.png","level":"debug"}
+{"message":"GET /instructor/images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /instructor/images/manifest.json","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /instructor/users/users/users/logout","level":"debug"}
+{"message":"GET /instructor/users/css/main.css","level":"debug"}
+{"message":"GET /instructor/users/images/manifest.json","level":"debug"}
+{"message":"GET /instructor/users/images/favicon-32x32.png","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /instructor/users/images/favicon-16x16.png","level":"debug"}
+{"message":"GET /instructor/users/images/favicon-96x96.png","level":"debug"}
+{"message":"GET /instructor/users/images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /instructor/users/users/users/logout","level":"debug"}
+{"message":"GET /instructor/users/css/main.css","level":"debug"}
+{"message":"GET /instructor/users/images/manifest.json","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b78feddd1cc4e537f7761\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b7916ddd1cc4e537f7762\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b7ac6ddd1cc4e537f7763\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b7ae4ddd1cc4e537f7764\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b7b09ddd1cc4e537f7765\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b916b5f74c3aa0d0502c3\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b91805f74c3aa0d0502c4\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b966d5f74c3aa0d0502c5\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b96d85f74c3aa0d0502c6\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b96ef5f74c3aa0d0502c7\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b97085f74c3aa0d0502c8\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b9b11815c367a53e71907\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b9b23815c367a53e71908\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8b9ebf815c367a53e71909\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8b9eeb815c367a53e7190a\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/register","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/register","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8ba36dc0c38281cb3963e4\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8ba389c0c38281cb3963e5\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d89ad918001b7e599774f3e","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d89ad918001b7e599774f3e\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"UXD\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"intiallink\":\"sdfsdf\",\"__v\":0}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save/5d89ad918001b7e599774f3e","level":"debug"}
+{"message":"Handling SAVE request [object Object]","level":"info"}
+{"message":"Handling SAVING ID=5d89ad918001b7e599774f3e","level":"info"}
+{"message":"ORIGINAL VALUES {\"_id\":\"5d89ad918001b7e599774f3e\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"UXD\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"intiallink\":\"sdfsdf\",\"__v\":0}","level":"info"}
+{"message":"UPDATED VALUES: {\"coursename\":\"UXD\",\"startdate\":\"Sat Sep 07 2019 00:00:00 GMT-0500 (Central Daylight Time)\",\"enddate\":\"Fri Sep 20 2019 00:00:00 GMT-0500 (Central Daylight Time)\",\"intiallink\":\"sdfsdf\",\"finallink\":\"www.final.com\",\"studentlist\":\"\",\"codeword\":\"\"}","level":"info"}
+{"message":"SAVING UPDATED instructor {\"_id\":\"5d89ad918001b7e599774f3e\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"UXD\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"intiallink\":\"www.final.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/delete/5d8b036bf164eb2f276e3cff","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d8b036bf164eb2f276e3cff\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"bombayqsdfsd\",\"startdate\":\"2019-09-06T05:00:00.000Z\",\"enddate\":\"2019-09-21T05:00:00.000Z\",\"intiallink\":\"3456\",\"codewordsetname\":\"Fruits\",\"__v\":0}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/delete/5d8b036bf164eb2f276e3cff","level":"debug"}
+{"message":"Handling DELETE request [object Object]","level":"info"}
+{"message":"Handling REMOVING ID=5d8b036bf164eb2f276e3cff","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"Request to /","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /favicon.ico","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8c481232d91f75d60f1d0e\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8c483132d91f75d60f1d0f\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/delete/5d8c483132d91f75d60f1d0f","level":"debug"}
+{"message":"Handling GET /delete/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR {\"_id\":\"5d8c483132d91f75d60f1d0f\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"Test\",\"startdate\":\"2019-09-06T05:00:00.000Z\",\"enddate\":\"2019-09-28T05:00:00.000Z\",\"intiallink\":\"dkeido\",\"codewordsetname\":\"Fruits\",\"__v\":0}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/delete/5d8c483132d91f75d60f1d0f","level":"debug"}
+{"message":"Handling DELETE request [object Object]","level":"info"}
+{"message":"Handling REMOVING ID=5d8c483132d91f75d60f1d0f","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8c484a32d91f75d60f1d13\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8c486432d91f75d60f1d14\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /instructor/create","level":"debug"}
+{"message":"Handling GET /create[object Object]","level":"info"}
+{"message":"{\"_id\":\"5d8c49fa32d91f75d60f1d18\"}","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /favicon.ico","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d89ad918001b7e599774f3e","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d89ad918001b7e599774f3e\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"UXD\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"intiallink\":\"www.final.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d89ad918001b7e599774f3e","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d89ad918001b7e599774f3e\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"UXD\",\"startdate\":\"2019-09-07T05:00:00.000Z\",\"enddate\":\"2019-09-20T05:00:00.000Z\",\"intiallink\":\"www.final.com\",\"__v\":0,\"studentlist\":\"\"}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /dashboard","level":"debug"}
+{"message":"GET /dashboard","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /instructor/save","level":"debug"}
+{"message":"Handling POST [object Object]","level":"info"}
+{"message":"{}","level":"debug"}
+{"message":"NEW ID undefined","level":"info"}
+{"message":"SAVING NEW instructor {\"_id\":\"5d8c4fdf0c3da3bb9bd6b7de\"}","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d8c4fdf0c3da3bb9bd6b7de","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d8c4fdf0c3da3bb9bd6b7de\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"seid\",\"startdate\":\"09/07/2019\",\"enddate\":\"09/21/2019\",\"intiallink\":\"3456\",\"codewordsetname\":\"Cities\",\"__v\":0}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /instructor/edit/5d8c4fdf0c3da3bb9bd6b7de","level":"debug"}
+{"message":"Handling GET /edit/:id [object Object]","level":"info"}
+{"message":"RETURNING VIEW FOR{\"_id\":\"5d8c4fdf0c3da3bb9bd6b7de\",\"instructoremail\":\"malli@gmail.com\",\"coursename\":\"seid\",\"startdate\":\"09/07/2019\",\"enddate\":\"09/21/2019\",\"intiallink\":\"3456\",\"codewordsetname\":\"Cities\",\"__v\":0}","level":"info"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /favicon.ico","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}

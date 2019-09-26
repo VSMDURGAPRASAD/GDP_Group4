@@ -11,7 +11,7 @@ const api = express.Router()
 const LOG = require('../utils/logger.js')
 const find = require('lodash.find')
 const remove = require('lodash.remove')
-const Model = require('../models/studentcourse.js/index.js.js')
+const Model = require('../models/studentcourse.js')
 const notfoundstring = 'student not found'
 var mongoose = require('mongoose');
 const _ = require('lodash');
@@ -36,6 +36,14 @@ api.get('/findall',async (req, res) => {
    console.log(jsonContent)
   res.send(JSON.stringify(data))
 })
+
+api.get('/',async (req, res) => {
+
+  const data = await Model.find()
+  console.log(data);
+  res.render('student/student.ejs',{val:data})
+})
+
 
 
 
