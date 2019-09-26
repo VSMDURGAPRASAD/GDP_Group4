@@ -1,5 +1,5 @@
 {
-  "name": "node-express-mvc-ejs-bootstrap-starter",
+  "name": "express-mvc-ejs-bootstrap-starter",
   "version": "0.0.1",
   "description": "Node Express MVC EJS Bootstrap Starter app",
   "main": "app.js",
@@ -47,5 +47,7 @@
   },
   "scripts": {
     "start": "node app.js"
-  }
+  },
+  "devDependencies": {},
+  "author": ""
 }
