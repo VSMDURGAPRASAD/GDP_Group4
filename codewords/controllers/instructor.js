@@ -146,7 +146,8 @@ api.post('/save', async (req, res) => {
   item.coursename=fields.coursename
   item.startdate = fields.startdate
   item.enddate = fields.enddate
-  item.intiallink= fields.finallink
+  item.intiallink= fields.intiallink
+  item.finallink= fields.finallink
   item.codewordsetname = fields.codeword
   console.log(item)
   
