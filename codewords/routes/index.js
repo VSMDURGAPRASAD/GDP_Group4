@@ -27,13 +27,23 @@ router.get('/forgot',(req,res, next) => {
 //Manage top-level request first
 router.get('/', ensureAuthenticated,(req, res, next) => {
   LOG.debug('Request to /')
-  res.render('index.ejs', { title: 'Express App' })
+
+  if(req.user.isAdmin){
+    res.redirect('/admin')
+  }
+  else if(req.user.isInstructor){
+    res.redirect('/instructor')
+  }
+  res.redirect('/student')
+
+  //res.render('index.ejs', { title: 'Express App' })
 })
 
 // Defer path requests to a particular controller
 
 router.use('/instructor',ensureAuthenticated, require('../controllers/instructor.js'))
 router.use('/users', require('../controllers/users.js'))
+router.use('/admin', require('../controllers/admin.js'))
 router.use('/student',ensureAuthenticated, require('../controllers/student.js'))
 
 LOG.debug('END routing')

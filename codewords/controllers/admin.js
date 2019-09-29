@@ -50,63 +50,42 @@ api.get('/',async (req, res) => {
 
   console.log(data);
 
-  for (var i = 0; i < data.length; i++) {
+  
 
-    var tempdata = data[i];
-    
-    
-    if(tempdata.courseId.length>3){
-
-      
-      const course =await Course.findOne({_id:tempdata.courseId});
-      if(course){
-        var check = {};
-        check.studentEmail= tempdata.studentEmail;
-        check.codeword=tempdata.codeword;
-        check.coursename=course.coursename;
-        check.intiallink= course.intiallink;
-        check.finallink=course.intiallink;//change to final link after data is reset
-       
-      uidata.push(check);
-      console.log(course);
-      console.log("check");
-      console.log(check);
-      }
-       
-
-    }
-    
-     
-
-  }
-
-  res.render('student/student.ejs',{val:uidata})
+  res.render('admin/admin.ejs',{layout:false,val:uidata})
 })
 
+api.get('/addinstructor',async (req, res) => {
 
-api.get('/requestForInstructorAcess', async (req, res) => {
- 
-    console.log(req.user)
+    const data = await Model.find();
+  
+    const uidata= [];
+  
+  
+  
+  
+    console.log(data);
+  
+    
+  
+    res.render('admin/addinstructor.ejs',{layout:false,val:uidata})
+  })
 
-    var tempUser = req.user;
+  api.get('/removeinstructor',async (req, res) => {
 
-    tempUser.requestforInstructorAcess = true;
-
-    try{
-
-      await tempUser.save()
-    }
-    catch{
-
-      res.status(500).send(err);
-    }
-
-   
-
-    console.log('request sent')
-    res.send('ok')
+    const data = await Model.find();
+  
+    const uidata= [];
+  
+  
+  
+  
+    console.log(data);
+  
+    
+  
+    res.render('admin/removeinstructor.ejs',{layout:false,val:uidata})
 })
-
 
 
 module.exports = api

@@ -17,6 +17,18 @@ const UserSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
+  isInstructor: {
+    type: Boolean,
+    default: false
+  },
+  isAdmin: {
+    type: Boolean,
+    default: false
+  },
+  requestforInstructorAcess: {
+    type : Boolean,
+    required : false
+  },
   resetPasswordToken: String,
   resetPasswordExpires: Date
 });

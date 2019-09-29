@@ -11,7 +11,7 @@ router.get('/login', forwardAuthenticated, (req, res) => res.render('login',{lay
 // Register Page
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
 router.post('/register', (req, res) => {
-    const { name, email, password, password2 } = req.body;
+    const { name, email, password, password2, isInstructor, isAdmin } = req.body;
     let errors = [];
   
     if (!name || !email || !password || !password2) {
@@ -49,7 +49,10 @@ router.post('/register', (req, res) => {
           const newUser = new User({
             name,
             email,
-            password
+            password,
+            isInstructor,
+            isAdmin
+
           });
   
           bcrypt.genSalt(10, (err, salt) => {
@@ -75,7 +78,7 @@ router.post('/register', (req, res) => {
 // Login
 router.post('/login', (req, res, next) => {
     passport.authenticate('local', {
-      successRedirect: '/instructor',
+      successRedirect: '/',
       failureRedirect: '/users/login',
       failureFlash: true
     })(req, res, next);

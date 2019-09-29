@@ -10,6 +10,14 @@ const mongoose = require('mongoose')
 const LOG = require('./utils/logger.js')
 const flash = require('connect-flash');
 var multer = require('multer');
+var nodemailer = require('nodemailer');
+var session = require('express-session')
+var nodemailer = require('nodemailer');
+var passport = require('passport');
+// var LocalStrategy = require('passport-local').Strategy;
+// var bcrypt = require('bcrypt-nodejs');
+// var async = require('async');
+// var crypto = require('crypto');
 
 passport = require('passport')
 require('./config/passport')(passport);

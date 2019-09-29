@@ -6,6 +6,8 @@ module.exports = {
       return next();
     }
 
+    
+
     //req.flash('error_msg', 'Please log in to view that resource');
    // req.session.save(function () {
       res.redirect('/users/login');

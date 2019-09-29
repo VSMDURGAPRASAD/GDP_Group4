@@ -1,10 +1,14 @@
 <div class="container-fluid">
     
 </br>
-  <h2> Instructor Dashboard</h1>
+  <h2> Student Dashboard</h1>
    
 <div>
-    <button type="button" class="btn btn-primary btn-lg" style="float:right;">Instructor Access</button>
+    
+    
+      <button type="button" onclick="requestForacess()" class="btn btn-primary btn-lg" style="float:right;">Instructor Access</button>
+    
+   
 </div>
 <div class="container-fluid">
  
@@ -13,7 +17,7 @@
   <% for ( let i = 0; i < val.length; i++) {   
     studentcourse = val[i];   %>
     <div class="col-lg-4">
-    <div class="card" style="max-width: 23rem; min-height: 23rem;">
+    <div class="card" style="max-width: 15rem; min-height: 10rem;">
     
     <div class="card-body">
     <h4 class="card-title"> <%= studentcourse.coursename%></h4>
@@ -48,7 +52,18 @@
 
 function toggler(divId) {
     $("#" + divId).toggle();
+
+    
 } 
+
+function requestForacess(){
+
+  $.ajax({url: "/student/requestForInstructorAcess", success: function(result){
+      
+    alert(result)
+     
+  }});
+}
 </script>
 
 <style>
