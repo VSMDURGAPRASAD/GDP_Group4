@@ -86,6 +86,9 @@ api.get('/addinstructor',async (req, res) => {
   
     res.render('admin/removeinstructor.ejs',{layout:false,val:uidata})
 })
+api.get('/inactiveaccount',async (req, res) => {
+
+})
 
 
 module.exports = api
