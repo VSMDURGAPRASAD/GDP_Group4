@@ -1,5 +1,4 @@
 
-
 <body>
 
     <% include adminnav.ejs %>
@@ -27,6 +26,21 @@
     
     <% } %>
                
-</tbody>
+    </tbody>
 </table>
+
+<script>
+
+
+       
+        
+    function respondToRequest(isagreed,instructorEmail){
+    
+      $.ajax({url: "/admin/requestForInstructorAcess",type: 'POST',data:{IsAgreed:isagreed,InstructorEmail:instructorEmail}, success: function(result){
+          
+        location.reload();
+         
+      }});
+    }
+    </script>
 </body>
