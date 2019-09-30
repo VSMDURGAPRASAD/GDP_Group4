@@ -8058,3 +8058,47 @@
 {"message":"GET /public/style.css","level":"debug"}
 {"message":"GET /public/style.css","level":"debug"}
 {"message":"GET /student/requestForInstructorAcess","level":"debug"}
+{"message":"Environment variables loaded into process.env.","level":"info"}
+{"message":"START routing","level":"debug"}
+{"message":"END routing","level":"debug"}
+{"message":"Loaded routing.","level":"info"}
+{"message":"Inside database.js","level":"debug"}
+{"message":"End of mongoDB","level":"debug"}
+{"message":"START seeder.","level":"info"}
+{"message":"5 instructors seeded","level":"debug"}
+{"message":"END Seeder. Sample data read and verified.","level":"info"}
+{"message":"GET /","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"GET /favicon.ico","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"Request to /","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /public/style.css","level":"debug"}
+{"message":"GET /images/favicon-32x32.png","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /images/favicon-16x16.png","level":"debug"}
+{"message":"GET /images/favicon-96x96.png","level":"debug"}
+{"message":"GET /images/android-icon-192x192.png","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /public/style.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /public/style.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /users/logout","level":"debug"}
+{"message":"GET /users/login","level":"debug"}
+{"message":"GET /css/main.css","level":"debug"}
+{"message":"POST /users/login","level":"debug"}
+{"message":"GET /","level":"debug"}
+{"message":"Request to /","level":"debug"}
+{"message":"GET /instructor","level":"debug"}
+{"message":"GET /public/style.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
+{"message":"GET /student","level":"debug"}
+{"message":"GET /public/style.css","level":"debug"}
+{"message":"GET /images/manifest.json","level":"debug"}
