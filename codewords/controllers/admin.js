@@ -124,6 +124,7 @@ api.post('/requestForInstructorAcess',async(req,res)=>{
   }
  
   //console.log(req.body.InstructorEmail)
+  // Instructor Email
 
   res.send('admin/addinstructor')
 
