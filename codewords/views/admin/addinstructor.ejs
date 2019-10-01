@@ -1,6 +1,7 @@
 
 <body>
 
+<<<<<<< HEAD
         <% include adminnav.ejs %>
 
     <h1>Admin Instructor</h1>
@@ -26,6 +27,33 @@
         
         <% } %>
                    
+=======
+    <% include adminnav.ejs %>
+
+<h1>Admin Instructor</h1>
+
+<table class="table table-striped">
+<thead>
+
+        <tr>
+                <td>Request Email</td>
+        
+               
+            </tr>
+
+</thead>
+<tbody>
+        <% for ( let i = 0; i < val.length; i++) {   
+            instructor = val[i];   %>
+    <tr>
+        <td><%=instructor.email%></td>
+        <td><button type="button" onclick="respondToRequest(true,'<%= instructor.email %>')" class="btn btn-success">Accept</button></td>
+        <td><button type="button" onclick="respondToRequest(false,'<%= instructor.email %>')" class="btn btn-danger">Decline</button></td>
+    </tr>
+    
+    <% } %>
+               
+>>>>>>> 70954c084c23dffa4191fd0fd1227259e9180d41
     </tbody>
 </table>
 
@@ -34,6 +62,7 @@
 
        
         
+<<<<<<< HEAD
         function respondToRequest(isagreed,instructorEmail){
         
           $.ajax({url: "/admin/requestForInstructorAcess",type: 'POST',data:{IsAgreed:isagreed,InstructorEmail:instructorEmail}, success: function(result){
@@ -44,4 +73,15 @@
         }
         </script>
 
+=======
+    function respondToRequest(isagreed,instructorEmail){
+    
+      $.ajax({url: "/admin/requestForInstructorAcess",type: 'POST',data:{IsAgreed:isagreed,InstructorEmail:instructorEmail}, success: function(result){
+          
+        location.reload();
+         
+      }});
+    }
+    </script>
+>>>>>>> 70954c084c23dffa4191fd0fd1227259e9180d41
 </body>
