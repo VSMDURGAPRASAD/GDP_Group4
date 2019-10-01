@@ -13,8 +13,9 @@ const find = require('lodash.find')
 const remove = require('lodash.remove')
 const Model = require('../models/studentcourse.js')
 const Course = require('../models/instructor.js')
-const notfoundstring = 'student not found'
 var mongoose = require('mongoose');
+const Usermodel = mongoose.model('User')
+const notfoundstring = 'student not found'
 const _ = require('lodash');
 let XLSX = require('xlsx')
 const formidable = require('formidable')
@@ -52,19 +53,16 @@ api.get('/',async (req, res) => {
 
   
 
-  res.render('admin/admin.ejs',{layout:false,val:uidata})
+  res.redirect('admin/addinstructor')
 })
 
 api.get('/addinstructor',async (req, res) => {
 
-    const data = await Model.find();
+    const data = await Usermodel.find({requestforInstructorAcess:true});
   
-    const uidata= [];
-  
-  
-  
-  
-    console.log(data);
+    const uidata= data;
+    
+   // console.log(data);
   
     
   
@@ -90,5 +88,46 @@ api.get('/inactiveaccount',async (req, res) => {
 
 })
 
+api.post('/requestForInstructorAcess',async(req,res)=>{
+
+  //console.log(req.body.IsAgreed)
+
+  var items = await Usermodel.find({email:req.body.InstructorEmail}) 
+
+  console.log(req.body.IsAgreed)
+  var item = items[0]
+  if(req.body.IsAgreed=="true"){
+
+    item.requestforInstructorAcess = false;
+    item.isInstructor = true;
+
+    console.log(item)
+    try{
+      await item.save()
+    }
+    catch (err) {
+      res.status(500).send(err);
+    }
+  }
+  else{
+    item.requestforInstructorAcess = false;
+    item.isInstructor = false;
+
+    console.log(item)
+    try{
+      await item.save()
+    }
+    catch (err) {
+      res.status(500).send(err);
+    }
+    
+  }
+ 
+  //console.log(req.body.InstructorEmail)
+
+  res.send('admin/addinstructor')
+
+
+})
 
 module.exports = api

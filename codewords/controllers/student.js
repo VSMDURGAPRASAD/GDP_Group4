@@ -41,7 +41,7 @@ api.get('/findall',async (req, res) => {
 
 api.get('/',async (req, res) => {
 
-  const data = await Model.find();
+  const data = await Model.find({studentEmail:req.user.email});
 
   const uidata= [];
 
