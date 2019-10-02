@@ -8,7 +8,7 @@
  <h1> Instructor Dashboard</h1>
   
     <div class="btn btn-info" style="margin-top: 10px; margin-left: 10px;" >
-      
+       
       
        <a href="instructor/create" style="margin-top: 10px; margin-left: 10px">
         Add Course
@@ -51,11 +51,19 @@
   </div> -->
  
   <div class="col-lg-4">
-  <div class="card bg-light mb-3" style="max-width: 18rem; min-height: 24rem;">
+  <div class="card bg-light mb-3" style="max-width: 14rem; min-height: 10rem;">
       <div class="card-body">
         
         <h5 class="card-header"><%=instructor.coursename %></h5>
+        <br>
+        <br>
         <div class="row">
+          <label>No. of students: </label>
+        </div>
+        <div class="row">
+          <label>No. of students acknowledged codewords: </label>
+        </div>
+        <!-- <div class="row">
         <label>Start Date :</label> <label> <%=instructor.startdate %></label>
       </div>
         <div class="row">
@@ -73,7 +81,8 @@
       </div>
        <div class="row">
         <label>Final Link : </label><a href="#" class="card-link"><%=instructor.finallink %></a>
-      </div>
+      </div>-->
+      <br>
       <a href="instructor/edit/<%=instructor._id %>">
         <button class="btn btn-primary btn-sm float-left"
         id="left" style="color :green"> Edit </button> 
@@ -81,7 +90,7 @@
       <a href="instructor/delete/<%=instructor._id %>">
         <button class="btn btn-primary btn-sm float-left"
         id="right" style="color :crimson"> <span class="glyphicon glyphicon-trash"></span> Delete </button> 
-        </a>
+        </a> 
       </div>
       
     </div>
@@ -97,4 +106,4 @@
 
 </div>
 
-<!-- <% include ../footer %> -->
+ <!-- <% include ../footer %>  -->
