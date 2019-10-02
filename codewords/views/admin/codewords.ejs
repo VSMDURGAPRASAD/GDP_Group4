@@ -1,0 +1,28 @@
+<body>
+
+        <% include adminnav.ejs %>
+
+        <br>
+        <br>
+        <br>
+        <h1> Codewords</h1>
+                <% for ( let i = 0; i < val.length; i++) {   
+                    codeword = val[i];   %>
+            <li>
+                    <%=codeword.codeWordSetName %>
+                <ul>
+                        <% for ( let i = 0; i < codeword.codewords.length; i++) {   
+                            codewordname = codeword.codewords[i];   %>
+                  <li> <%=codewordname%> </li>
+                  
+                <% } %>
+                </ul>
+             </li>
+                
+                
+          
+
+                <% } %>
+       </ul>
+
+</body>

@@ -4,7 +4,7 @@
 
 *  Vinukonda Sai Manikanta Durga Prasad
 * 
-*
+*x
 */
 const express = require('express')
 const api = express.Router()
@@ -13,6 +13,7 @@ const find = require('lodash.find')
 const remove = require('lodash.remove')
 const Model = require('../models/studentcourse.js')
 const Course = require('../models/instructor.js')
+const Codeword = require('../models/codeword.js')
 var mongoose = require('mongoose');
 const Usermodel = mongoose.model('User')
 const notfoundstring = 'student not found'
@@ -87,6 +88,16 @@ api.get('/addinstructor',async (req, res) => {
 api.get('/inactiveaccount',async (req, res) => {
 
 })
+
+
+api.get('/codewords',async (req, res) => {
+
+  const data = await Codeword.find({})
+
+  res.render('admin/codewords.ejs',{layout:false,val:data})
+
+})
+
 
 api.post('/requestForInstructorAcess',async(req,res)=>{
 

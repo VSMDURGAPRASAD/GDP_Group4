@@ -6,8 +6,8 @@ const codewordSchema = new mongoose.Schema({
         require: true,
         minlength: 5
     },
-    codeword: {
-        type: String,
+    codewords: {
+        type: [String],
         require: true,
         minlength: 5
     } 

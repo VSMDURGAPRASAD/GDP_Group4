@@ -49,7 +49,22 @@ api.get('/findone/:id', (req, res) => {
 api.get('/',async (req, res) => {
 
   const data = await Model.find({instructoremail:req.user.email})
-  res.render('instructor/index.ejs',{val:data})
+  var newdata = []
+
+  console.log(data.length)
+  for(i=0;i<data.length;i++){
+
+    let currentdata = data[i];
+     
+     var temp = currentdata._id+""
+    var check = await Studencourse.find({courseId:temp})
+    currentdata.assignedCount = check.length
+     
+     newdata.push(currentdata)
+
+  }
+
+  res.render('instructor/index.ejs',{val:newdata})
 })
 
 // api.get('/index', (req, res) => {
