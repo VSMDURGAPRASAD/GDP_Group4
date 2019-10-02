@@ -61,7 +61,7 @@
           <label>No. of students: </label>
         </div>
         <div class="row">
-          <label>No. of students acknowledged codewords: </label>
+          <label>Students acknowledged codewords: </label><label><%=instructor.assignedCount %></label>
         </div>
         <!-- <div class="row">
         <label>Start Date :</label> <label> <%=instructor.startdate %></label>
@@ -81,15 +81,10 @@
       </div>
        <div class="row">
         <label>Final Link : </label><a href="#" class="card-link"><%=instructor.finallink %></a>
-<<<<<<< HEAD
-      </div>
-      <div class="row">
+      </div> -->
+      <!-- <div class="row">
         <label># Assigned Students : </label><label><%=instructor.assignedCount %></label>
-      </div>
-=======
-      </div>-->
-      <br>
->>>>>>> 48c1a9bc08bf06d564951fdcca62541e6d19edf6
+      </div> -->
       <a href="instructor/edit/<%=instructor._id %>">
         <button class="btn btn-primary btn-sm float-left"
         id="left" style="color :green"> Edit </button> 
@@ -113,4 +108,4 @@
 
 </div>
 
- <!-- <% include ../footer %>  -->
+ <% include ../footer %>  
