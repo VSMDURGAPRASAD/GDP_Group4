@@ -265,7 +265,8 @@ api.post('/save/:id', async (req, res) => {
   item.coursename = req.body.coursename
   item.startdate = req.body.startdate
   item.enddate = req.body.enddate
-  item.intiallink= req.body.finallink
+  item.intiallink= req.body.intiallink
+  item.finallink= req.body.finallink
   item.studentlist = req.body.studentlist
   item.codewordsetname = req.body.codewordsetname
   try {
