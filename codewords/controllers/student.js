@@ -65,7 +65,11 @@ api.get('/',async (req, res) => {
         check.codeword=tempdata.codeword;
         check.coursename=course.coursename;
         check.intiallink= course.intiallink;
-        check.finallink=course.intiallink;//change to final link after data is reset
+        check.finallink=course.intiallink;
+        check.isRead=tempdata.isRead;
+        check.courseId=tempdata.courseId;
+        
+        //change to final link after data is reset
        
       uidata.push(check);
       console.log(course);
@@ -83,6 +87,33 @@ api.get('/',async (req, res) => {
   res.render('student/student.ejs',{val:uidata})
 })
 
+api.post('/revealCode',async(req,res)=>{
+
+  //console.log(req.body.IsAgreed)
+
+
+  console.log(req.body.courseId)
+
+  var items = await Model.find({courseId:req.body.courseId,studentEmail:req.user.email}) 
+ 
+  var item = items[0]
+  
+  item.isRead = true;
+    
+    console.log(item)
+    try{
+      await item.save()
+    }
+    catch (err) {
+      res.status(500).send(err);
+    }
+  
+  //console.log(req.body.InstructorEmail)
+  // Instructor Email
+  res.send('student/')
+
+
+})
 
 api.get('/requestForInstructorAcess', async (req, res) => {
  

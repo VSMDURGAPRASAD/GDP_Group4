@@ -16,6 +16,13 @@ const StudentCourseSchema = new mongoose.Schema({
     required: false
     
   },
+
+  isRead: {
+    type: Boolean,
+    required: false,
+    default:false
+    
+  },
   
 })
 module.exports = mongoose.model('StudentCourse', StudentCourseSchema)

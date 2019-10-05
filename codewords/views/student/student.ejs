@@ -6,7 +6,7 @@
 <div>
     
     
-      <button type="button" onclick="requestForacess()" class="btn btn-primary btn-lg" style="float:right;">Request Instructor Access</button>
+      <button type="button" onclick="requestForacess()" class="btn btn-primary btn-lg" style="float:right;">Instructor Access</button>
     
    
 </div>
@@ -27,15 +27,14 @@
     <a href="#" class="card-link">Final Survey Link : <%= studentcourse.finallink %></a></br>
       <br>
 
-   
-     
-      
-
-      <a href="#" class="btn btn-primary" style="width:100%; height:100%" onclick="toggler('<%=i%>');"> Reveal Codeword </a>
-
-      <div id="<%=i %>"" class='hidden'>
+      <% if (!studentcourse.isRead) { %>
+      <a href="#" class="btn btn-primary" style="width:100%; height:100%" onclick="markAsRead('<%=studentcourse.courseId%>');"> Reveal Codeword </a>
+      <% } %>
+      <% if (studentcourse.isRead) { %>
+      <div id="<%=i %>"">
         <div> <%= studentcourse.codeword %>  </div>
       </div> 
+      <% } %>
     </div>
     
     </div>
@@ -50,11 +49,24 @@
 <script>
 
 
-function toggler(divId) {
-    $("#" + divId).toggle();
 
+
+
+       
+        
+     
+function markAsRead(courseid){
     
-} 
+    $.ajax({url: "/student/revealCode",type: 'POST',data:{courseId:courseid}, success: function(result){
+        
+      location.reload();
+       
+    }});
+  }
+
+
+
+ 
 
 function requestForacess(){
 
