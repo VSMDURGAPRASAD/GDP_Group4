@@ -12,6 +12,7 @@ const LOG = require('../utils/logger.js')
 const find = require('lodash.find')
 const remove = require('lodash.remove')
 const Model = require('../models/instructor.js')
+const Codeword = require('../models/codeword.js')
 const notfoundstring = 'instructor not found'
 var mongoose = require('mongoose');
 const _ = require('lodash');
@@ -59,10 +60,14 @@ api.get('/',async (req, res) => {
      var temp = currentdata._id+""
     var check = await Studencourse.find({courseId:temp})
     currentdata.assignedCount = check.length
+
+
      
      newdata.push(currentdata)
 
   }
+
+ 
 
   res.render('instructor/index.ejs',{val:newdata})
 })
@@ -72,10 +77,12 @@ api.get('/',async (req, res) => {
 // })
 
 // GET create
-api.get('/create', (req, res) => {
+api.get('/create',async (req, res) => {
   LOG.info(`Handling GET /create${req}`)
   const item = new Model()
   LOG.debug(JSON.stringify(item))
+
+  const codeowordvals= await Codeword.find()
    
 
 
@@ -83,7 +90,8 @@ api.get('/create', (req, res) => {
     {
       title: 'Create instructor',
       layout: 'layout.ejs',
-      instructor: item
+      instructor: item,
+      codewords: codeowordvals
     })
 })
 
@@ -127,7 +135,7 @@ api.get('/edit/:id',async (req, res) => {
   const item = await Model.find({ _id:id})
 
   item.startdate = new Date(item.startdate).getTime(); 
-
+  const codwordvals = await Codeword.find()
   console.log(item)
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR${JSON.stringify(item[0])
@@ -136,7 +144,8 @@ api.get('/edit/:id',async (req, res) => {
     {
       title: 'instructors',
       layout: 'layout.ejs',
-      instructors: item[0]
+      instructors: item[0],
+      codewords: codwordvals
     })
 })
 
@@ -163,7 +172,7 @@ api.post('/save', async (req, res) => {
   item.enddate = fields.enddate
   item.intiallink= fields.intiallink
   item.finallink= fields.finallink
-  item.codewordsetname = fields.codeword
+  item.codewordSetname = fields.codeword
   console.log(item)
   
 
@@ -183,10 +192,16 @@ api.post('/save', async (req, res) => {
       studentEmails.push(tempe);
       
     }
+    
+    console.log("test");
+    console.log(item.codewordsetname);
 
+   // var codewordset = Codeword.find({codeWordSetName:""item.codewordsetname""});
 
-    var codewords = searchByKey(item.codewordsetname,jsonContent)
-    console.log(codewords)
+    var codewordstest=await Codeword.find({ codeWordSetName: item.codewordsetname });
+  
+    var codewords = codewordstest[0].codewords;
+    
 
     shuffle(studentEmails);
     shuffle(codewords);

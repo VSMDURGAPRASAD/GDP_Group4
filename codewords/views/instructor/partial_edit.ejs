@@ -27,12 +27,14 @@
       <input type="file" class="form-control" id="studentlist" autocomplete="off" name="studentlist" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
     </div>
     <div class="form-group">
+    
       
       <select class="form-control form-control-lg" id="codeword" autocomplete="off" name="codeword">
           <option value="">Code Word</option>
-          <option value="Fruits">Fruits</option>
-          <option value="Cities">Cities</option>
-          <option value="Cars">Cars</option>
+          <% for ( let i = 0; i < codewords.length; i++) {   
+            currentword = codewords[i];   %>
+          <option value="<%=currentword.codeWordSetName%>">  <%=currentword.codeWordSetName%> </option>
+          <%}%>
         </select>
         
       <!-- <input type="text" class="form-control" id="codewordsetname" name="codewordsetname" value="<%= instructors.codewordsetname %>" required> -->
