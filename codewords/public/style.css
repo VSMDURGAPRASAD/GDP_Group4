@@ -23,6 +23,9 @@ input[type=text]:focus, input[type=password]:focus {
 .hidden {
   display:none;
 }
+.input-group-addon .fa {
+        font-size: 18px;
+    }
 
 /* Overwrite default styles of hr */
 hr {
