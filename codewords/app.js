@@ -46,7 +46,7 @@ app.set('view engine', 'ejs')
 app.engine('ejs', engines.ejs)
 
 // configure middleware.....................................................
-//app.use(favicon(path.join(__dirname, '/public/images/favicon.ico')))
+//\\app.use(favicon(path.join(__dirname, '/public/images/favicon.ico')))
 
 // log every call and pass it on for handling
 app.use((req, res, next) => {
@@ -60,7 +60,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 // specify various resources and apply them to our application
 app.use(bodyParser.json())
-//app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
+app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
 app.use(expressLayouts)
 app.use(errorHandler()) // load error handler
 
