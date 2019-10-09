@@ -61,6 +61,21 @@ api.get('/',async (req, res) => {
     var check = await Studencourse.find({courseId:temp})
     currentdata.assignedCount = check.length
 
+    var readcount = 0;
+
+    for(j=0;j<check.length;j++){
+        
+      if(check[j].isRead){
+
+        readcount = readcount + 1
+
+      }
+      
+
+    }
+
+    currentdata.readCount = readcount;
+
 
      
      newdata.push(currentdata)

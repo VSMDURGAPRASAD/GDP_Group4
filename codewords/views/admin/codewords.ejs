@@ -6,23 +6,36 @@
         <br>
         <br>
         <h1> Codewords</h1>
-                <% for ( let i = 0; i < val.length; i++) {   
-                    codeword = val[i];   %>
-            <li>
-                    <%=codeword.codeWordSetName %>
-                <ul>
-                        <% for ( let i = 0; i < codeword.codewords.length; i++) {   
-                            codewordname = codeword.codewords[i];   %>
-                  <li> <%=codewordname%> </li>
-                  
-                <% } %>
-                </ul>
-             </li>
-                
-                
-          
 
+        <div class="container">
+        <div id="accordion">
+          <% for ( let i = 0; i < val.length; i++) {   
+               codeword = val[i];   %>
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#<%=codeword.codeWordSetName %>" aria-expanded="true" aria-controls="collapseOne">
+                                <%=codeword.codeWordSetName %>
+                      </button>
+                      
+                    </h5>
+                  </div>
+              
+                  <div id="<%=codeword.codeWordSetName %>" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                    
+
+                                <% for ( let i = 0; i < codeword.codewords.length; i++) {   
+                                        codewordname = codeword.codewords[i];   %>
+                                        <p> <%=codewordname%> </p>
+                  
+                                        <% } %>
+
+                    </div>
+                  </div>
+                </div>
                 <% } %>
-       </ul>
+         </div>
+        </div>
 
 </body>
