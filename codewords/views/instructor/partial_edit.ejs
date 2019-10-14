@@ -16,11 +16,11 @@
     </div>
     <div class="form-group">
       <label for="intiallink">IntialLink</label>
-      <input type="text" class="form-control" id="intiallink" autocomplete="off" name="intiallink" value="<%= instructors.intiallink %>" required>
+      <input type="text" class="form-control" id="intiallink" autocomplete="off" name="intiallink" value="<%= instructors.intiallink %>">
     </div>
     <div class="form-group">
       <label for="finallink">FinalLink</label>
-      <input type="text" class="form-control" id="finallink" autocomplete="off" name="finallink" value="<%= instructors.finallink %>" required>
+      <input type="text" class="form-control" id="finallink" autocomplete="off" name="finallink" value="<%= instructors.finallink %>" >
     </div>
     <div class="form-group">
       <label for="studentlist">Assign StudentList</label>
@@ -43,8 +43,15 @@
   <!-- <% include ../footer %> -->
   <script>
     $( function() {
-      $( "#startdate" ).datepicker();
-      $( "#enddate" ).datepicker();
+      $( "#startdate" ).datepicker({
+        minDate: 'today',
+        beforeShowDay: $.datepicker.noWeekends
+      });
+      $( "#enddate" ).datepicker({
+        minDate: 'startdate',
+        beforeShowDay: $.datepicker.noWeekends
+      });
+      
     } );
 
 
