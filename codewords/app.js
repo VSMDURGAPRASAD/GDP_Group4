@@ -104,7 +104,7 @@ const port = app.get('port')
 const host = app.get('host')
 const env = app.get('env')
 
-app.listen(port, host, () => {
+app.listen(process.env.PORT || 8080, host, () => {
   console.log(`\nApp running at http://${host}:${port}/ in ${env} mode`)
   console.log('Press CTRL-C to stop\n')
 })

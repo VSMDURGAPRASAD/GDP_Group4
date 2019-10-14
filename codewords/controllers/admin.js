@@ -96,8 +96,31 @@ api.get('/codewords',async (req, res) => {
 
   res.render('admin/codewords.ejs',{layout:false,val:data})
 
-})
+})                        
 
+api.get('/codewords/edit/:codeWordSetName',async (req, res) => {
+
+  const data = await Codeword.find({})
+
+  res.render('admin/codewordedit.ejs',{layout:false,val:data})
+
+})  
+
+api.get('/codewords/add',async (req, res) => {
+
+  const data =  new Codeword()
+
+  res.render('admin/codewordadd.ejs',{layout:false,val:data})
+
+}) 
+
+api.get('/codewords/delete/:codeWordSetName',async (req, res) => {
+
+  const data = await Codeword.find({})
+
+  res.render('admin/codeworddelete.ejs',{layout:false,val:data})
+
+})  
 
 api.post('/requestForInstructorAcess',async(req,res)=>{
 
