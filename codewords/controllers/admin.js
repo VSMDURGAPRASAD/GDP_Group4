@@ -100,9 +100,12 @@ api.get('/codewords',async (req, res) => {
 
 api.get('/codewords/edit/:codeWordSetName',async (req, res) => {
 
-  const data = await Codeword.find({})
+  const cordwordsetname = req.params.codeWordSetName
+  const data = await Codeword.find({codeWordSetName:cordwordsetname})
+  console.log("edit")
+  console.log(data[0])
 
-  res.render('admin/codewordedit.ejs',{layout:false,val:data})
+  res.render('admin/codewordedit.ejs',{layout:false,val:data[0]})
 
 })  
 

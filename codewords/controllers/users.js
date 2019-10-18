@@ -94,56 +94,57 @@ router.get('/logout', (req, res) => {
   
   //Code for a node mailer 
   router.post('/forgot',(req,res) => {
-    async.waterfall([
-      function(done){
-        crypto.randomBytes(20, function(err,buf){
-          var token= buf.toString('hex');
-          done(err,token);
-        })
-      },
-      function(token,done){
-        User.findOne({email: req.body.email}, function(err,user){
-          if(!user) {
-            req.flash('error','No  account with email address exist.');
-            return res.redirect('/forgot');
-          }
-          user.resetPasswordToken =token;
-          user.resetPasswordExpires =Date.now( ) +3600000;
-          user.save(function(err){
-            done (err,token,user);
-          })
-        })
+    res.render('forgot.ejs');
+    // async.waterfall([
+    //   function(done){
+    //     crypto.randomBytes(20, function(err,buf){
+    //       var token= buf.toString('hex');
+    //       done(err,token);
+    //     })
+    //   },
+    //   function(token,done){
+    //     User.findOne({email: req.body.email}, function(err,user){
+    //       if(!user) {
+    //         req.flash('error','No  account with email address exist.');
+    //         return res.redirect('/forgot');
+    //       }
+    //       user.resetPasswordToken =token;
+    //       user.resetPasswordExpires =Date.now( ) +3600000;
+    //       user.save(function(err){
+    //         done (err,token,user);
+    //       })
+    //     })
 
-      },
-      function(token,user,done) {
-        var smtpTransport =nodemailer.createTransport({
-          service:'Gmail',
-          auth:{
-            user:'learntocodeinfo@gmail.com',
-            pass: process.env.GMAILPW
+    //   },
+    //   function(token,user,done) {
+    //     var smtpTransport =nodemailer.createTransport({
+    //       service:'Gmail',
+    //       auth:{
+    //         user:'learntocodeinfo@gmail.com',
+    //         pass: process.env.GMAILPW
 
-          }
-        });
-        var mailOptions ={
-          to: user.email,
-          from:'learntocodeinfo@gmail.com',
-          subject:"Nodejs Password Reset",
-          text:'You are reciving this because you forgotten password'+
-          'http://'+ req.headers.host + token +'\n\n'+
-          'If you didnit get'
+    //       }
+    //     });
+    //     var mailOptions ={
+    //       to: user.email,
+    //       from:'learntocodeinfo@gmail.com',
+    //       subject:"Nodejs Password Reset",
+    //       text:'You are reciving this because you forgotten password'+
+    //       'http://'+ req.headers.host + token +'\n\n'+
+    //       'If you didnit get'
 
-        };
-        smtpTransport.sendMail(mailOptions,function(err){
-          console.log('mail sent');
-          req.flash('success','An email has been  sent to '+user.email +' with further instrcutions');
-          done(err, 'done');
-        });
+    //     };
+    //     smtpTransport.sendMail(mailOptions,function(err){
+    //       console.log('mail sent');
+    //       req.flash('success','An email has been  sent to '+user.email +' with further instrcutions');
+    //       done(err, 'done');
+    //     });
 
-      }
-    ], function (err){
-      if(err) return next(err);
-      res.redirect('/forgot');
-    });
+    //   }
+    // ], function (err){
+    //   if(err) return next(err);
+    //   res.redirect('/forgot');
+    // });
   });
   router.get('/reset/:token', function(req,res){
     user.findOne({ resetPasswordToken: req.params.token,resetPasswordExpires: {$gt: Date.now() } }, function(err,user){
