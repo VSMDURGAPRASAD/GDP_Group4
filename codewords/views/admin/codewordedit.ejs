@@ -60,9 +60,10 @@ body {
     <div class="container">
         <br />
         <br />
-        <input type="text" placeholder="Set Name">
-        <div class="tag-container">
-          <input  />  
+        <input type="text" placeholder="Set Name" value="<%= val.codeWordSetName %>"> 
+        <div class="tag-container" >
+        
+          <input value="<%= val.codewords %>"  id="selectClick" />  
         </div>
         <button onclick="test()">Submit</button>
       </div>
@@ -70,6 +71,10 @@ body {
 </body>
 
 <script>
+
+function myFunction() {
+  document.getElementById("selectClick").click(); // Click on the checkbox
+}
 
 const tagContainer = document.querySelector('.tag-container');
 const input = document.querySelector('.tag-container input');
@@ -120,6 +125,21 @@ input.addEventListener('keyup', (e) => {
       input.value = '';
     }
 });
+
+input.addEventListener('click', (e) => {
+   
+      e.target.value.split(',').forEach(tag => {
+          if(tag!=""){
+            tags.push(tag);  
+          }
+      
+      });
+      
+      addTags();
+      input.value = '';
+    
+});
+
 document.addEventListener('click', (e) => {
   console.log(e.target.tagName);
   if (e.target.tagName === 'I') {
@@ -132,6 +152,7 @@ document.addEventListener('click', (e) => {
 
 input.focus();
 
+myFunction();
 
 
 </script>
