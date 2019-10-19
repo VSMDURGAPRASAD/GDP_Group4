@@ -125,6 +125,46 @@ api.get('/codewords/delete/:codeWordSetName',async (req, res) => {
 
 })  
 
+api.post('/save', async (req, res) => {
+  LOG.info(`Handling POST ${req}`)
+  LOG.debug(JSON.stringify(req.body))
+  
+  const item = new Codeword()
+  var data = {};
+  console.log('form')
+  new formidable.IncomingForm().parse(req, async(err, fields, files) =>  {
+    if (err) {
+      console.error('Error', err)
+      throw err
+    }
+  console.log('Fields', fields)
+  console.log(req.body)
+ 
+  temps = await Codeword.find({ _id: fields._id })
+  data = temps[0]
+  console.log(data)
+
+  data.codeWordSetName= fields.codeWordSetName
+  data.codewords=fields.codewords.split(",")
+ 
+  try {
+    console.log(data);
+     await data.save();
+    // res.send(item);
+   } catch (err) {
+     res.status(500).send(err);
+   }
+
+  })
+
+ 
+
+ // LOG.info(`SAVING NEW e ${JSON.stringify(item)}`)
+  return res.redirect('codewords')
+})
+
+
+
 api.post('/requestForInstructorAcess',async(req,res)=>{
 
   //console.log(req.body.IsAgreed)
