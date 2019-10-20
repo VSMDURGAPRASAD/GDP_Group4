@@ -43,6 +43,7 @@ router.get('/', ensureAuthenticated,(req, res, next) => {
 
 router.use('/instructor',ensureAuthenticated, require('../controllers/instructor.js'))
 router.use('/users', require('../controllers/users.js'))
+
 router.use('/admin',ensureAuthenticated, require('../controllers/admin.js'))
 router.use('/student',ensureAuthenticated, require('../controllers/student.js'))
 
