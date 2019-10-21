@@ -34,8 +34,8 @@ const app = express()
 app.use(require('cookie-parser')());
 
 // configure app.settings.............................
-// app.set('port', 8080 )
-// app.set('host', '127.0.0.1' )
+ app.set('port', 8080 )
+ app.set('host', '127.0.0.1' )
 
 
 // set the root view folder
@@ -100,11 +100,11 @@ app.use((req, res) => { res.status(404).render('404.ejs') }) // handle page not 
 require('./utils/seeder.js')(app)  // load seed data by passing in the app
 
 // call app.listen to start server
-// const port = app.get('port')
-// const host = app.get('host')
-// const env = app.get('env')
+ const port = app.get('port')
+ const host = app.get('host')
+ const env = app.get('env')
 
-app.listen(process.env.PORT || 8080, () => {
+app.listen(process.env.PORT || 8080, host, () => {
   console.log(`\nApp running at http://${host}:${port}/ in ${env} mode`)
   console.log('Press CTRL-C to stop\n')
 })
