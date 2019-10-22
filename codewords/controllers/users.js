@@ -89,17 +89,20 @@ router.post('/login', (req, res, next) => {
   router.post('/reset',(req,res) =>{
     console.log("came to reset page");
     console.log(req.body.email);
-
-    var transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-             user: 'dpyuvasena@gmail.com',
-             pass: '08814276842'
-         }
-     });
+var temp = {
+  host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
+    requireTLS: true,
+  auth: {
+         user: 'dpyuvasena@gmail.com',
+         pass: '08814276842'
+     }
+ };
+    var transporter = nodemailer.createTransport(temp);
      const mailOptions = {
       from: 'dp.vinukonda@gmail.com', // sender address
-      to: 'to@email.com', // list of receivers
+      to: req.body.email, // list of receivers
       subject: 'Subject of your email', // Subject line
       html: '<p>Your html here</p>'// plain text body
     };
