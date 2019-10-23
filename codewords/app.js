@@ -33,7 +33,7 @@ const app = express()
 //app.use(require('serve-static')(__dirname + '/../../public'));
 app.use(require('cookie-parser')());
 
-// configure app.settings.............................
+//configure app.settings.............................
 // app.set('port', 8080 )
 // app.set('host', '127.0.0.1' )
 
