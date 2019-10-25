@@ -209,11 +209,11 @@ api.post('/save', async (req, res) => {
     }
     
     console.log("test");
-    console.log(item.codewordsetname);
+    console.log(item.codewordSetname);
 
    // var codewordset = Codeword.find({codeWordSetName:""item.codewordsetname""});
 
-    var codewordstest=await Codeword.find({ codeWordSetName: item.codewordsetname });
+    var codewordstest=await Codeword.find({ codeWordSetName: item.codewordSetname });
   
     var codewords = codewordstest[0].codewords;
     
