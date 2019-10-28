@@ -93,6 +93,7 @@ api.get('/inactiveaccount',async (req, res) => {
 api.get('/codewords',async (req, res) => {
 
   const data = await Codeword.find({})
+  console.log(data);
 
   res.render('admin/codewords.ejs',{layout:false,val:data})
 
@@ -125,7 +126,7 @@ api.get('/codewords/delete/:codeWordSetName',async (req, res) => {
 
 })  
 
-api.post('/save', async (req, res) => {
+api.post('/saveCodewords', async (req, res) => {
   LOG.info(`Handling POST ${req}`)
   LOG.debug(JSON.stringify(req.body))
   
@@ -163,6 +164,60 @@ api.post('/save', async (req, res) => {
   return res.redirect('codewords')
 })
 
+
+api.post('/addCodewords', async (req, res) => {
+
+  
+
+  const data = new Codeword()
+  //var data = {};
+  console.log('form')
+  new formidable.IncomingForm().parse(req, async(err, fields, files) =>  {
+    if (err) {
+      console.error('Error', err)
+      throw err
+    }
+
+    console.log('codes',fields)
+   //fields.keys.search("item")
+    
+   var codes = Object.values(fields)
+   
+
+    var length = codes.length;
+    var name = codes[0];
+    var submitType = codes[1];
+    var codewords =  codes.slice(2, length);
+    if(submitType == 'edit'){
+
+     var okk = await Codeword.find({ codeWordSetName: name })
+     console.log('jdkd',okk[0])
+     // console.log('typeee',temps)
+    
+     
+    }
+   
+
+    data.codeWordSetName= name
+    data.codewords=codewords
+
+   
+
+  
+  })
+
+  try {
+    console.log(data);
+     await data.save();
+     return res.redirect('codewords')
+    // res.send(item);
+   } catch (err) {
+     res.status(500).send(err);
+   }
+
+ // LOG.info(`SAVING NEW e ${JSON.stringify(item)}`)
+ 
+})
 
 
 api.post('/requestForInstructorAcess',async(req,res)=>{
