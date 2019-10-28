@@ -3,6 +3,7 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
 const nodemailer = require('nodemailer');
+const LOG = require('../utils/logger')
 // Load User model
 const User = require('../models/user');
 const { forwardAuthenticated } = require('../config/auth');
@@ -11,11 +12,13 @@ const { forwardAuthenticated } = require('../config/auth');
 router.get('/login', forwardAuthenticated, (req, res) => res.render('login',{layout:false}));
 // Register Page
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
+
 router.post('/register', (req, res) => {
-    const { name, email, password, password2, isInstructor, isAdmin } = req.body;
+  LOG.debug('REQUEST.BODY IS: ',req.body);
+    const { name, username, password, password2, isInstructor, isAdmin } = req.body;
     let errors = [];
   
-    if (!name || !email || !password || !password2) {
+    if (!name || !username || !password || !password2) {
       errors.push({ msg: 'Please enter all fields' });
     }
   
@@ -31,25 +34,25 @@ router.post('/register', (req, res) => {
       res.render('register', {
         errors,
         name,
-        email,
+        username,
         password,
         password2
       });
     } else {
-      User.findOne({ email: email }).then(user => {
+      User.findOne({ email: username }).then(user => {
         if (user) {
           errors.push({ msg: 'Email already exists' });
           res.render('register', {
             errors,
             name,
-            email,
+            username,
             password,
             password2
           });
         } else {
           const newUser = new User({
             name,
-            email,
+            username,
             password,
             isInstructor,
             isAdmin
