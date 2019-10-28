@@ -18,7 +18,7 @@ router.post('/register', (req, res) => {
     const { name, username, password, password2, isInstructor, isAdmin } = req.body;
     let errors = [];
   
-    if (!name || !username || !password || !password2) {
+    if (!name && !username && !password && !password2) {
       errors.push({ msg: 'Please enter all fields' });
     }
   
@@ -56,7 +56,6 @@ router.post('/register', (req, res) => {
             password,
             isInstructor,
             isAdmin
-
           });
   
           bcrypt.genSalt(10, (err, salt) => {
@@ -66,10 +65,7 @@ router.post('/register', (req, res) => {
               newUser
                 .save()
                 .then(user => {
-                  // req.flash(
-                  //   'success_msg',
-                  //   'You are now registered and can log in'
-                  // );
+                  req.flash('success_msg','You are now registered and can log in');
                   res.redirect('/users/login');
                 })
                 .catch(err => console.log(err));
@@ -86,9 +82,10 @@ router.post('/login', (req, res, next) => {
       failureRedirect: '/users/login',
       failureFlash: true
     })(req, res, next);
-  
     console.log(res)
   });
+
+  
   router.post('/reset',(req,res) =>{
     console.log("came to reset page");
     console.log(req.body.email);
