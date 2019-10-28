@@ -33,15 +33,9 @@ const app = express()
 //app.use(require('serve-static')(__dirname + '/../../public'));
 app.use(require('cookie-parser')());
 
-<<<<<<< HEAD
-//configure app.settings.............................
-// app.set('port', 8080 )
-// app.set('host', '127.0.0.1' )
-=======
 // configure app.settings.............................
 //  app.set('port', 8080 )
 //  app.set('host', '127.0.0.1' )
->>>>>>> 537ca694faa63b0806e7358a06573d7e4e1ab4fc
 
 
 // set the root view folder
