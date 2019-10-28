@@ -6,12 +6,12 @@
  
   <div class="btn btn-primary btn-lg float-right">
     
-          <button type="button" onclick="requestForacess()" class="btn btn-primary btn-lg" style="float:right;">Request Instructor Privileges</button>
+          <button type="button" onclick="requestForacess()" class="btn btn-primary btn-lg" style="float:right;">Request For Instructor Privileges</button>
   </div>
   <div class="row">
 
-  <% for ( let i = 0; i < val.length; i++) {   
-    studentcourse = val[i];   %>
+  <% for ( let i = 0; i < val.length; i++) {   %>
+    <% studentcourse = val[i];   %>
     <div class="col-md-4">
     <div class="card" style="max-width: 15rem; min-height: 10rem;">
     
@@ -28,7 +28,7 @@
       <% } %>
       <% if (studentcourse.isRead) { %>
       <div id="<%=i %>"">
-        <div> <%= studentcourse.codeword %>  </div>
+        <div> <% = studentcourse.codeword %>  </div>
       </div> 
       <% } %>
     </div>
