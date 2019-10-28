@@ -78,14 +78,14 @@ router.post('/register', (req, res) => {
 // Login
 router.post('/login', (req, res, next) => {
     passport.authenticate('local', {
-      successRedirect: '/',
+      successRedirect: '/student',
       failureRedirect: '/users/login',
       failureFlash: true
     })(req, res, next);
     console.log(res)
   });
 
-  
+
   router.post('/reset',(req,res) =>{
     console.log("came to reset page");
     console.log(req.body.email);
