@@ -95,13 +95,13 @@ var temp = {
     secure: false,
     requireTLS: true,
   auth: {
-         user: 'dpyuvasena@gmail.com',
-         pass: '08814276842'
+         user: 'codewordsteam4@gmail.com',
+         pass: 'Codewords@4'
      }
  };
     var transporter = nodemailer.createTransport(temp);
      const mailOptions = {
-      from: 'dp.vinukonda@gmail.com', // sender address
+      from: 'codewordsteam4@gmail.com', // sender address
       to: req.body.email, // list of receivers
       subject: 'Subject of your email', // Subject line
       html: '<p>Your html here</p>'// plain text body
