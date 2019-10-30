@@ -186,37 +186,80 @@ api.post('/addCodewords', async (req, res) => {
 
     var length = codes.length;
     var name = codes[0];
-    var submitType = codes[1];
-    var codewords =  codes.slice(2, length);
+    var submitType = codes[2];
+    var codewords =  codes.slice(3, length);
+    console.log('type',submitType);
+  
+    
     if(submitType == 'edit'){
 
-     var okk = await Codeword.find({ codeWordSetName: name })
+      
+     var okk = await Codeword.find({ _id:codes[1] })
      console.log('jdkd',okk[0])
+
+     var tempval = okk[0];
+     tempval.codeWordSetName= name
+     tempval.codewords=codewords
      // console.log('typeee',temps)
-    
      
+
+     try {
+      //console.log(data);
+       await tempval.save();
+       return res.redirect('codewords')
+      // res.send(item);
+     } catch (err) {
+       res.status(500).send(err);
+     }
+    
+   
+     
+    }
+    else{
+
+      data.codeWordSetName= name
+      data.codewords=codewords
+
+
+      try {
+        console.log(data);
+         await data.save();
+         return res.redirect('codewords')
+        // res.send(item);
+       } catch (err) {
+         res.status(500).send(err);
+       }
+
     }
    
 
-    data.codeWordSetName= name
-    data.codewords=codewords
+    
 
    
 
   
   })
 
-  try {
-    console.log(data);
-     await data.save();
-     return res.redirect('codewords')
-    // res.send(item);
-   } catch (err) {
-     res.status(500).send(err);
-   }
+ 
 
  // LOG.info(`SAVING NEW e ${JSON.stringify(item)}`)
  
+})
+
+
+
+api.post('/deletecodeword/:id', async (req, res) => {
+  LOG.info(`Handling DELETE request ${req}`)
+  const id = req.params.id
+  LOG.info(`Handling REMOVING ID=${id}`)
+  const values =await Codeword.findOne({ _id: id })
+ // console.log(item)
+  if (!values) { return res.end(notfoundstring) }
+  
+    await Codeword.remove( { _id: id })
+    console.log(`Permanently deleted item ${JSON.stringify(values)}`)
+  
+  return res.redirect('/admin/codewords')
 })
 
 
