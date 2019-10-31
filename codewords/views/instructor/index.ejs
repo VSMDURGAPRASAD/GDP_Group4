@@ -7,16 +7,15 @@
  <br>
  <h1> Instructor Dashboard</h1>
   
-    <div class="btn btn-info" style="margin-top: 10px; margin-left: 10px;" >
        
-      
-       <a href="instructor/create" style="margin-top: 10px; margin-left: 10px">
+      <button type="button" class="btn btn-success"  onclick="addcourse.click()">Add Course</button>
+       <a href="instructor/create" id = addcourse style="margin-top: 10px; margin-left: 10px; visibility: hidden;">
         Add Course
         </a>
+        
       <!-- <p>There are 
         <%= val.length %> courses.
     </p> -->
-  </div>
   <div class="row">
     <% for ( let i = 0; i < val.length; i++) {   
         instructor = val[i];   %>
@@ -93,7 +92,7 @@
         <button class="btn btn-primary btn-sm float-left"
         id="right" style="color :crimson"> <span class="glyphicon glyphicon-trash"></span> Delete </button> 
         </a> 
-        <button type="button" class="btn btn-secondary">DistrubuteCodewords</button>
+        <button type="button" class="btn btn-secondary">Distrubute Codewords</button>
       </div>
       
     </div>

@@ -45,14 +45,34 @@
   <!-- <% include ../footer %> -->
   <script>
     $( function() {
+      // $( "#startdate" ).datepicker({
+      //   minDate: 'today',
+      //   beforeShowDay: $.datepicker.noWeekends
+      // });
+      // $( "#enddate" ).datepicker({
+      //   minDate: 'startdate',
+      //   beforeShowDay: $.datepicker.noWeekends
+      // });
       $( "#startdate" ).datepicker({
-        minDate: 'today',
-        beforeShowDay: $.datepicker.noWeekends
-      });
-      $( "#enddate" ).datepicker({
-        minDate: 'startdate',
-        beforeShowDay: $.datepicker.noWeekends
-      });
+      
+      minDate: 'today',
+      beforeShowDay: $.datepicker.noWeekends,
+      // defaultDate: "+1w",
+      // changeMonth: true,
+      // numberOfMonths: 3,
+      onClose: function( selectedDate ) {
+        $( "#enddate" ).datepicker( "option", "minDate" , selectedDate  );
+      }
+    });
+    $( "#enddate").datepicker({
+      // defaultDate: "+1w",
+      // changeMonth: true,
+      // numberOfMonths: 3,
+      beforeShowDay: $.datepicker.noWeekends,
+      onClose: function( selectedDate ) {
+        $( "#startdate" ).datepicker( "option", "maxDate", selectedDate );
+      }
+    });
       
     } );
 

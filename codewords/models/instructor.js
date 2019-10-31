@@ -32,8 +32,7 @@ const InstructorSchema = new mongoose.Schema({
     
   },
   studentlist: {
-    type: String,
-    required: false
+    type: [mongoose.Schema.Types.ObjectId], ref: "StudentCourse", required: true,
   },
   codewordsetname: {
     type: String,
@@ -41,3 +40,4 @@ const InstructorSchema = new mongoose.Schema({
   }
 })
 module.exports = mongoose.model('Instructor', InstructorSchema)
+

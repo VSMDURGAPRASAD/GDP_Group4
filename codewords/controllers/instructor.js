@@ -13,6 +13,7 @@ const find = require('lodash.find')
 const remove = require('lodash.remove')
 const Model = require('../models/instructor.js')
 const Codeword = require('../models/codeword.js')
+const student = require('../models/studentcourse.js')
 const notfoundstring = 'instructor not found'
 var mongoose = require('mongoose');
 const _ = require('lodash');
@@ -197,14 +198,14 @@ api.post('/save', async (req, res) => {
     var studentEmails= [];
   console.log(wb.Strings);
   console.log(wb.Strings.Count);
-
-    for (i = 2; i < parseInt(wb.Strings.length)-1; i++) {
+    let i = 3;
+    while ( i < parseInt(wb.Strings.length)) {
       console.log(i);
     //  console.log(wb.Strings)
-     var tempe =  wb.Strings[i].t;
+     var tempe =  wb.Strings[i].h;
     
       studentEmails.push(tempe);
-      
+      i = i+2;
     }
     
     console.log("test");
@@ -221,14 +222,14 @@ api.post('/save', async (req, res) => {
 
     shuffle(studentEmails);
     shuffle(codewords);
+    
 
-    try {
+    
+
    
-      await item.save();
-     // res.send(item);
-    } catch (err) {
-      res.status(500).send(err);
-    }
+
+  
+    
   
     console.log("saves");
     console.log(studentEmails);
@@ -241,7 +242,7 @@ api.post('/save', async (req, res) => {
     console.log(item._id);
     studentcourse.studentEmail = studentEmails[j];
     studentcourse.courseId = item._id + "";
-    studentcourse.codeword = codewords[j];
+    // studentcourse.codeword = codewords[j];
 
     studentcoursearray.push(studentcourse);
 
@@ -266,11 +267,24 @@ api.post('/save', async (req, res) => {
       if (err){ 
           return console.error(err);
       } else {
+
         console.log("Multiple documents inserted to Collection");
       }
     });
 
+    var studentcourseIds=[];
+    for(let i=0; i < studentcoursearray.length; i++){
+          studentcourseIds.push(studentcoursearray[i]._id);
+    }
 
+    item.studentlist = studentcourseIds
+    try {
+   
+      await item.save();
+     // res.send(item);
+    } catch (err) {
+      res.status(500).send(err);
+    }
 
 
   })
