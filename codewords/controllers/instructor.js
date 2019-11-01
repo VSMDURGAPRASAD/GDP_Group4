@@ -142,6 +142,30 @@ api.get('/details/:id', (req, res) => {
     })
 })
 
+// GET /delete/:id
+api.get('/viewstudents/:id',async (req, res) => {
+  LOG.info(`Handling GET /viewstudents/:id ${req}`)
+  const id = req.params.id
+  const data = req.app.locals.instructors.query
+  const item =await Model.findOne( { _id: id })
+  if (!item) { return res.end(notfoundstring) }
+  LOG.info(`RETURNING VIEW FOR ${JSON.stringify(item)}`)
+  let students = []
+  for(let i =0; i< item.studentlist.length; i++){
+    const studentDetails = await Studencourse.findOne({_id: item.studentlist[i]})
+    if (!studentDetails) { return res.end(notfoundstring) }
+    
+    students.push(studentDetails);
+  }
+  LOG.info(students);
+  return res.render('instructor/viewstudents.ejs',
+    {
+      title: 'View Students for a course',
+      layout: 'layout.ejs',
+      instructor: students
+    })
+})
+
 // GET one
 api.get('/edit/:id',async (req, res) => {
   LOG.info(`Handling GET /edit/:id ${req}`)
@@ -195,8 +219,10 @@ api.post('/save', async (req, res) => {
     var wb = XLSX.readFile(f.path);
     
     var studentEmails= [];
+    let studentNames = [];
   console.log(wb.Strings);
   console.log(wb.Strings.Count);
+<<<<<<< HEAD
 
     for (i = 2; i < parseInt(wb.Strings.length)-1; i++) {
       console.log(i);
@@ -205,8 +231,27 @@ api.post('/save', async (req, res) => {
     
       studentEmails.push(tempe);
       
+=======
+    let variable = 3;
+    while ( variable  < parseInt(wb.Strings.length)) {
+      console.log(variable);
+    //  console.log(wb.Strings)
+     var tempe =  wb.Strings[variable].h;
+    
+      studentEmails.push(tempe);
+      variable  = variable +2;
+>>>>>>> c35939cc5f7dc20efd833fc88f432c40154cac07
     }
     
+    let variable1 = 2;
+    while ( variable1  < parseInt(wb.Strings.length)) {
+      console.log(variable1);
+    //  console.log(wb.Strings)
+     let temp = wb.Strings[variable1].t;
+    
+      studentNames.push(temp);
+      variable1  = variable1 +2;
+    }
     console.log("test");
     studentEmails.length;
     console.log(studentEmails);
@@ -239,6 +284,7 @@ api.post('/save', async (req, res) => {
     var studentcourse = new Studencourse()
      console.log(j);
     console.log(item._id);
+    studentcourse.name = studentNames[j];
     studentcourse.studentEmail = studentEmails[j];
     studentcourse.courseId = item._id + "";
     studentcourse.codeword = codewords[j];

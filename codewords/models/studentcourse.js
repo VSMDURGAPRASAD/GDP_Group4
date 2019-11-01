@@ -10,6 +10,11 @@ const StudentCourseSchema = new mongoose.Schema({
     
     
   },
+
+  name: {
+    type: String,
+    required: true
+  },
   
   codeword: {
     type: String,

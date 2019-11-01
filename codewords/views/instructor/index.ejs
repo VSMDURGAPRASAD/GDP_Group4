@@ -65,6 +65,13 @@
         <div class="row">
           <label>No. of students: </label> <label><%=instructor.assignedCount %></label>
         </div>
+        <div class = "row">
+          <a href="instructor/viewstudents/<%=instructor._id %>">
+            <button class="btn btn-primary btn-sm float-left"
+            id="right" style="color :rgb(20, 90, 220)"> <span class="glyphicon glyphicon-trash"></span> View Students </button> 
+            </a> 
+        </div>
+        
         <div class="row">
           <label>Fraction acknowledged: </label><label><%=instructor.readCount %></label>
         </div>
@@ -90,6 +97,7 @@
       <!-- <div class="row">
         <label># Assigned Students : </label><label><%=instructor.assignedCount %></label>
       </div> -->
+      <div class="row">
       <a href="instructor/edit/<%=instructor._id %>">
         <button class="btn btn-primary btn-sm float-left"
         id="left" style="color :green"> Edit </button> 
@@ -98,7 +106,11 @@
         <button class="btn btn-primary btn-sm float-left"
         id="right" style="color :crimson"> <span class="glyphicon glyphicon-trash"></span> Delete </button> 
         </a> 
+      </div>
+      <div class="row">
         <button type="button" class="btn btn-secondary">Distrubute Codewords</button>
+      </div>
+        
       </div>
       
     </div>

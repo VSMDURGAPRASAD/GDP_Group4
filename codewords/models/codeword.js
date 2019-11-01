@@ -9,7 +9,9 @@ const codewordSchema = new mongoose.Schema({
     codewords: {
         type: [String],
         require: true,
-        minlength: 5
+        minlength: 5,
+        maxlength: 20
+        
     } 
     
 });
