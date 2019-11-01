@@ -8,7 +8,10 @@ const User = require('../models/user');
 const { forwardAuthenticated } = require('../config/auth');
 
 // Login Page
-router.get('/login', forwardAuthenticated, (req, res) => res.render('login',{layout:false}));
+router.get('/login', forwardAuthenticated, (req, res) => {
+  console.log(req.flash('error'))
+  res.render('login',{layout:false})
+});
 // Register Page
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
 router.post('/register', (req, res) => {
@@ -77,14 +80,34 @@ router.post('/register', (req, res) => {
     }
   });
 // Login
+
 router.post('/login', (req, res, next) => {
-    passport.authenticate('local', {
-      successRedirect: '/',
-      failureRedirect: '/users/login',
-      failureFlash: true
-    })(req, res, next);
+    // passport.authenticate('local', {
+    //   successRedirect: '/',
+    //   failureRedirect: '/users/login',
+    //   failureFlash: true,
+    //   failureFlash: 'Invalid username or password.'
+    // })(req, res, next);
   
-    console.log(res)
+   
+
+
+    passport.authenticate('local', function(err, user, info) {
+      if (err) { return next(err); }
+      
+      if (!user) { 
+        res.status(400);
+        res.send('Invalid Username or Password');
+      }
+      req.logIn(user, function(err) {
+        if (err) { return next(err); }
+        return res.redirect('/');
+      });
+    })(req, res, next);
+   // console.log(res);
+  
+
+
   });
   router.post('/reset',(req,res) =>{
     console.log("came to reset page");
