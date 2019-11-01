@@ -1,0 +1,33 @@
+<% include ../header %>
+<br/>
+<br/>
+<table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+                <% for ( let i = 0; i < instructor.length; i++) {   
+                    %>
+                  <tr>
+                        <th scope="row"><%=i+1%></th>
+                        <td><%=instructor[i].name%></td>
+                        <td><%=instructor[i].studentEmail%></td>
+                      </tr>
+                  <%}%>
+          
+          
+        </tbody>
+      </table>
+
+    <br/>      
+    <br/>
+    <br/>
+    <form method="get" action="/instructor">
+    <input type="submit" value="Return to list" class="btn btn-caution" />
+    </form>
+
+<!-- <% include ../footer %> -->
