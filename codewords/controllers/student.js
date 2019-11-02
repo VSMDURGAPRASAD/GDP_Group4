@@ -41,6 +41,7 @@ api.get('/findall',async (req, res) => {
 
 api.get('/',async (req, res) => {
 
+  console.log(req.user.email);
   const data = await Model.find({studentEmail:req.user.email});
 
   const uidata= [];
@@ -87,7 +88,7 @@ api.get('/',async (req, res) => {
   res.render('student/student.ejs',{val:uidata})
 })
 
-api.post('/revealCode',async(req,res)=>{
+api.post('/revealCode',async (req,res)=>{
 
   //console.log(req.body.IsAgreed)
 
@@ -103,15 +104,18 @@ api.post('/revealCode',async(req,res)=>{
     console.log(item)
     try{
       await item.save()
+
+      res.redirect('/student')
+     
+
     }
     catch (err) {
       res.status(500).send(err);
     }
-  
+    
   //console.log(req.body.InstructorEmail)
   // Instructor Email
-  res.send('student/')
-
+  
 
 })
 

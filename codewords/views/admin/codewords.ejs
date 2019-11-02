@@ -24,7 +24,7 @@
         <button type="button" class="close" data-dismiss="modal"  onclick="location.reload()">&times;</button>
       </div>
       <div class="modal-body">
-        <form name="codeword" method="POST"  enctype="multipart/form-data" action="/admin/addCodewords">
+        <form name="codeword" id="codeword" onsubmit="return false">
 
             <div class="form-group">
                 <label for="codewordname">Codeword Group Name</label>
@@ -49,11 +49,13 @@
                   <input type='text' class='form-control' title="Codeword should not contain similiar letter conectuively ike AA" pattern="^(?:(\w)(?!\1))+$" placeholder= "Codeword Name" name='item0' id="item0"/>                
                </div>
              </div>
+             <label id="validationMessage" style="color:red"></label>
              <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.reload()">Close</button>
-              <button type="submit" class="btn btn-default" >Save</button>
+              <button type="submit" class="btn btn-default" onclick="submitval()" >Save</button>
             </div>
         </form>
+      
       </div>
      
     </div>
@@ -76,10 +78,11 @@
                       
                     
                       
-                   <form name="codeword" method="POST"  enctype="multipart/form-data" action="/admin/deletecodeword/<%=codeword._id %>">
+                   <form name="codeworddelete" method="POST"  enctype="multipart/form-data" action="/admin/deletecodeword/<%=codeword._id %>">
                         <button  type="button" class="btn btn-link"data-toggle="collapse" data-target="#<%=codeword.codeWordSetName %>" aria-expanded="true" aria-controls="collapseOne">
-                         <h6><%=codeword.codeWordSetName %></h6> 
+                         <label><%=codeword.codeWordSetName %></label> 
                          </button>
+                        
                         <button type="button" onclick="editsetup('<%=i%>')" class="btn btn-info btn-lg" style="float: right" data-toggle="modal" data-backdrop="static"  data-target="#myModal">Edit</button>
                         
                       <button type="submit" class="btn btn-info btn-lg"style="float: right"> Delete</button>
@@ -174,6 +177,32 @@ function editsetup(i){
 
 }
   //return false;
+
+  
+  function submitval(){
+    $.ajax({
+      url: '/admin/addCodewords',
+      type: 'POST',
+      data : $('#codeword').serialize(),
+      success: function(response){
+        $('#myModal').modal('hide')
+        console.log('form submitted.');
+        location.reload();
+
+       // location.pathname = "/"
+      },
+      error: function(response){
+        console.log(response);
+       // window.alert('bamboy');
+       document.getElementById('validationMessage').innerHTML=response.responseText
+      //  alert('Invalid Form Submission')
+      }
+    });
+    return false;
+
+  }
+   
+</script>
 
 
 

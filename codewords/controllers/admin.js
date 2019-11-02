@@ -129,6 +129,7 @@ api.get('/codewords/delete/:codeWordSetName',async (req, res) => {
 api.post('/saveCodewords', async (req, res) => {
   LOG.info(`Handling POST ${req}`)
   LOG.debug(JSON.stringify(req.body))
+  console.log('req',req);
   
   const item = new Codeword()
   var data = {};
@@ -172,29 +173,32 @@ api.post('/addCodewords', async (req, res) => {
   const data = new Codeword()
   //var data = {};
   console.log('form')
-  new formidable.IncomingForm().parse(req, async(err, fields, files) =>  {
-    if (err) {
-      console.error('Error', err)
-      throw err
-    }
+  console.log(req.body)
+  // new formidable.IncomingForm().parse(req, async(err, fields, files) =>  {
+  //   if (err) {
+  //     console.error('Error', err)
+  //     throw err
+  //   }
 
+  var fields = req.body
+   
     console.log('codes',fields)
    //fields.keys.search("item")
     
-   var codes = Object.values(fields)
+   //var codes = Object.values(fields)
    
 
-    var length = codes.length;
-    var name = codes[0];
-    var submitType = codes[2];
-    var codewords =  codes.slice(3, length);
+    //var length = codes.length;
+    var name = fields.codewordname;
+    var submitType = fields.submittype;
+    var codewords =  matchKey(fields, "item");;
     console.log('type',submitType);
   
     
     if(submitType == 'edit'){
 
       
-     var okk = await Codeword.find({ _id:codes[1] })
+     var okk = await Codeword.find({ _id:fields.codewordId })
      console.log('jdkd',okk[0])
 
      var tempval = okk[0];
@@ -217,6 +221,17 @@ api.post('/addCodewords', async (req, res) => {
     }
     else{
 
+      var temp = await Codeword.find({ codeWordSetName: name})
+      console.log('codeword',temp)
+      if(temp[0]){
+        if(temp[0].codeWordSetName){
+
+          return res.status(400).send("CodeWord with setname already exists")
+        }
+      }
+      
+
+
       data.codeWordSetName= name
       data.codewords=codewords
 
@@ -224,7 +239,7 @@ api.post('/addCodewords', async (req, res) => {
       try {
         console.log(data);
          await data.save();
-         return res.redirect('codewords')
+         return res.send('success');
         // res.send(item);
        } catch (err) {
          res.status(500).send(err);
@@ -238,7 +253,7 @@ api.post('/addCodewords', async (req, res) => {
    
 
   
-  })
+ // })
 
  
 
@@ -246,6 +261,14 @@ api.post('/addCodewords', async (req, res) => {
  
 })
 
+function matchKey(objectToSearch, keyToFind) {
+  var returnValues =[];
+  for (var k in objectToSearch) {
+      if ( k.toLowerCase().indexOf(keyToFind.toLowerCase()) !== -1) 
+      returnValues.push(objectToSearch[k]);
+  }
+  return returnValues;
+}
 
 
 api.post('/deletecodeword/:id', async (req, res) => {
