@@ -8,6 +8,7 @@
 */
 const express = require('express')
 const api = express.Router()
+const app = express()
 const LOG = require('../utils/logger.js')
 const find = require('lodash.find')
 const remove = require('lodash.remove')
@@ -21,7 +22,8 @@ let XLSX = require('xlsx')
 const formidable = require('formidable')
 var fs = require('fs');
 var path = require('path');
-var Studencourse = require('../models/studentcourse.js')
+var Studencourse = require('../models/studentcourse.js');
+const upload = require("express-fileupload");
 
 //var util = require("util");
 //var fs = require("fs"); 
@@ -29,6 +31,9 @@ var Studencourse = require('../models/studentcourse.js')
 // RESPOND WITH JSON DATA  --------------------------------------------
 
 // GET all JSON
+
+app.use(upload())
+
 api.get('/findall',async (req, res) => {
   res.setHeader('Content-Type', 'application/json')
   const data = await Model.find({})
@@ -192,18 +197,51 @@ api.get('/edit/:id',async (req, res) => {
 // HANDLE EXECUTE DATA MODIFICATION REQUESTS --------------------------------------------
 
 // POST new
+
+api.get('/openfile',(req, res, next) => {
+  let fileName = "uploads/" + req.query.file_name;
+  fs.readFile(fileName, (err, FileData) => {
+    //res.writeHead(200, {'Content_Type': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet/xlsx'});
+    if(err){
+      console.log(err);
+    }
+    
+
+  res.setHeader('Content-disposition', 'attachment; filename=' + fileName);
+    res.writeHead(200, [['Content-Type',  'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet']]);
+    res.end( FileData );
+
+    
+  });
+});
+
+
+
 api.post('/save', async (req, res) => {
   LOG.info(`Handling POST ${req}`)
   LOG.debug(JSON.stringify(req.body))
-  
   const item = new Model()
   LOG.info(`NEW ID ${req.body._id}`)
   console.log('form')
-  new formidable.IncomingForm().parse(req, async(err, fields, files) =>  {
+  var formss = new formidable.IncomingForm();
+  formss.uploadDir = "./uploads";
+  formss.keepExtensions = true;
+  formss.maxFieldsSize = 10*1024*1024;
+  formss.multiples = false;
+  formss.parse(req, async(err, fields, files) =>  {
     if (err) {
       console.error('Error', err)
       throw err
     }
+    
+      var fileNames = [];
+    fileNames.push(files.path)
+      
+
+    let arr2 = JSON.stringify(files.studentlist)
+    const urlName = arr2.substring(arr2.indexOf("uploads\\")+9, arr2.indexOf("name")-3)
+        
+    
     console.log('Fields', fields)
     console.log('Files', files)
   item.instructoremail=req.user.email
@@ -213,8 +251,14 @@ api.post('/save', async (req, res) => {
   item.intiallink= fields.intiallink
   item.finallink= fields.finallink
   item.codewordSetname = fields.codeword
+  item.fileUrl = urlName
+
   console.log(item)
-  
+  if(files){
+    console.log(files.name)
+  }else{
+    console.log('No file found');
+  }
 
    var f = files[Object.keys(files)[0]];
     var wb = XLSX.readFile(f.path);

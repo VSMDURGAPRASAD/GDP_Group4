@@ -15,7 +15,8 @@
             <!-- COMMON TO EDIT AND CREATE -->
             <%include partial_edit.ejs %>
             <p class="text-left">You have already added <%= instructors.studentlist.length %> students to this course. If you wish to add more upload another file. </p> 
-    <a href="/instructor/viewstudents/<%= instructors._id %>"> VIEW STUDENTS
+            <a href="/instructor/openfile?file_name=<%= instructors.fileUrl %>"> DOWNLOAD FILE
+            <br><a href="/instructor/viewstudents/<%= instructors._id %>"> VIEW STUDENTS
       <!-- <button class="btn btn-primary btn-sm float-left"
       id="right" style="color :rgb(20, 90, 220)" o="instructor/viewstudents/<%= instructors._id %>; return false;"> View Students </button>  -->
       </a> 
