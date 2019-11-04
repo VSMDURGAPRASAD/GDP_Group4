@@ -249,7 +249,7 @@ api.post('/save', async (req, res) => {
   item.intiallink= fields.intiallink
   item.finallink= fields.finallink
   item.codewordSetname = fields.codeword
-  item.fileUrl = urlName
+  // item.fileUrl = urlName
 
   console.log(item)
   if(files){

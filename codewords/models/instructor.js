@@ -34,10 +34,7 @@ const InstructorSchema = new mongoose.Schema({
   studentlist: {
     type: [mongoose.Schema.Types.ObjectId], ref: "StudentCourse", required: true,
   },
-  
-  fileUrl: {
-    type: String, required: true
-  },
+
   
   codewordsetname: {
     type: String,
