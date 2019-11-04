@@ -232,8 +232,8 @@ api.post('/save', async (req, res) => {
       throw err
     }
     
-      var fileNames = [];
-    fileNames.push(files.path)
+    //   var fileNames = [];
+    // fileNames.push(files.path)
       
 
     let arr2 = JSON.stringify(files.studentlist)
