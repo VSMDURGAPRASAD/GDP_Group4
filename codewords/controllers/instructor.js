@@ -222,7 +222,7 @@ api.post('/save', async (req, res) => {
   LOG.info(`NEW ID ${req.body._id}`)
   console.log('form')
   var formss = new formidable.IncomingForm();
-  formss.uploadDir = "../codewords/uploads";
+  formss.uploadDir = "uploads";
   formss.keepExtensions = true;
   formss.maxFieldsSize = 10*1024*1024;
   formss.multiples = false;
