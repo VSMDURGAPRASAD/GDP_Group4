@@ -78,6 +78,29 @@ router.post('/register', (req, res) => {
         }
       });
     }
+    var temp = {
+      host: 'smtp.gmail.com',
+        port: 587,
+        secure: false,
+        requireTLS: true,
+      auth: {
+             user: 'codewordsteam4@gmail.com',
+             pass: 'Codewords@4'
+         }
+     };
+        var transporter = nodemailer.createTransport(temp);
+         const mailOptions = {
+          from: 'codewordsteam4@gmail.com', // sender address
+          to: req.body.email, // list of receivers
+          subject: 'Sucessful Registration', // Subject line
+          html: '<p> Hai You are Sucessfully registered for the Codeward Application </p>'// plain text body
+        };
+        transporter.sendMail(mailOptions, function (err, info) {
+          if(err)
+            console.log(err)
+          else
+            console.log(info);
+       });
   });
 // Login
 
@@ -127,7 +150,7 @@ var temp = {
       from: 'codewordsteam4@gmail.com', // sender address
       to: req.body.email, // list of receivers
       subject: 'Subject of your email', // Subject line
-      html: '<p>Your html here</p>'// plain text body
+      html: '<p>User Has been forgotten pssword</p>'// plain text body
     };
     transporter.sendMail(mailOptions, function (err, info) {
       if(err)
