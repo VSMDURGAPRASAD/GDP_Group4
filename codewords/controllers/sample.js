@@ -9,5 +9,7 @@ const notfoundstring = 'sample'
 // GET to this controller base URI (the default)
 api.get('/', (req, res) => {
   res.render('index.ejs')
+  // names[Math.round(Math.random() * (names.length - 1))]
+  // random method
 })
 module.exports = api
