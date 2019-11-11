@@ -179,12 +179,14 @@ api.get('/viewstudents/:id',async (req, res) => {
   if (!item) { return res.end(notfoundstring) }
   LOG.info(`RETURNING VIEW FOR ${JSON.stringify(item)}`)
   let students = []
-  for(let i =0; i< item.studentlist.length; i++){
-    const studentDetails = await Studencourse.findOne({_id: item.studentlist[i]})
-    if (!studentDetails) { return res.end(notfoundstring) }
+  // for(let i =0; i< item.studentlist.length; i++){
+  //   const studentDetails = await Studencourse.findOne({_id: item.studentlist[i]})
+  //   if (!studentDetails) { return res.end(notfoundstring) }
     
-    students.push(studentDetails);
-  }
+  //   students.push(studentDetails);
+  // }
+  students = await Studencourse.find({courseId: id})
+
   LOG.info(students);
   return res.render('instructor/viewstudents.ejs',
     {
@@ -222,10 +224,10 @@ api.post('/save', async (req, res) => {
   LOG.info(`NEW ID ${req.body._id}`)
   console.log('form')
   var formss = new formidable.IncomingForm();
-  formss.uploadDir = "/app/codewords/uploads";
-  formss.keepExtensions = true;
-  formss.maxFieldsSize = 10*1024*1024;
-  formss.multiples = false;
+  //formss.uploadDir = "/app/codewords/uploads";
+  //formss.keepExtensions = true;
+  //formss.maxFieldsSize = 10*1024*1024;
+  //formss.multiples = false;
   formss.parse(req, async(err, fields, files) =>  {
     if (err) {
       console.error('Error', err)
@@ -236,8 +238,8 @@ api.post('/save', async (req, res) => {
     // fileNames.push(files.path)
       
 
-    let arr2 = JSON.stringify(files.studentlist)
-    const urlName = arr2.substring(arr2.indexOf("uploads\\")+9, arr2.indexOf("name")-3)
+    //let arr2 = JSON.stringify(files.studentlist)
+   // const urlName = arr2.substring(arr2.indexOf("uploads\\")+9, arr2.indexOf("name")-3)
         
     
     console.log('Fields', fields)
@@ -333,6 +335,7 @@ api.post('/save', async (req, res) => {
     studentcourse.studentEmail = studentEmails[j];
     studentcourse.courseId = item._id + "";
     studentcourse.codeword = codewords[j];
+    studentcourse.iscodeRevealed = false;
 
 
     studentcoursearray.push(studentcourse);
@@ -367,7 +370,7 @@ api.post('/save', async (req, res) => {
           studentcourseIds.push(studentcoursearray[i]._id);
     }
 
-    item.studentlist = studentcourseIds
+    //item.studentlist = studentcourseIds
     try {
    
       await item.save();
@@ -398,6 +401,84 @@ function searchByKey(key,arr) {
   return false;
 }
 
+api.post('/distributecodewords/:id', async (req, res) => {
+
+  const id = req.params.id
+
+
+  Studencourse.updateMany({"courseId":id},{iscodeRevealed: true},function (err, docs) {
+    if (err){ 
+        return console.error(err);
+    } else {
+      res.status(200).send("OK");
+      console.log("Multiple documents updated");
+    }
+  });
+});
+  api.post('/removestudentfromcourse/:id', async (req, res) => {
+
+    const id = req.params.id
+
+    var findcourse =await Studencourse.find({"_id":id})
+    var course = findcourse[0]
+    console.log('studentcourse', course)
+  
+    //Model.update( { "_id": course.courseId }, { $pullAll: { studentlist: course._id } } )
+
+    console.log("val",id);
+    Studencourse.remove({"_id":id},function (err, docs) {
+      if (err){ 
+          return console.error(err);
+      } else {
+        res.status(200).send("OK");
+        console.log("Removed");
+      }
+    });
+
+  // var studentcourses = await Studencourse.find({"courseId":id})
+
+  // var courses = [];
+
+  // console.log('cousrese',studentcourses)
+
+
+
+  // for (var i = 0; i < studentcourses.length; i++) {
+
+  //   var temp1 = new Studencourse()
+
+  //   var temp1 = studentcourses[i]
+  //   temp1.iscodeRevealed = true;
+
+  //   courses.push(temp1);
+
+
+
+
+  // }
+  // try
+  // {
+  //   Studencourse.updateMany(courses, function (err, docs) {
+  //     if (err){ 
+  //         return console.error(err);
+  //     } else {
+  //       console.log("Multiple documents updated");
+  //     }
+  //   });
+
+  // }
+  // catch (err) {
+  //   res.status(500).send(err);
+  // }
+  
+  
+
+  
+  //item.unitPrice = parseInt(req.body.unitPrice)
+ //s LOG.info(`SAVING UPDATED instructor ${JSON.stringify(item)}`)
+ // return res.redirect('/instructor')
+})
+
 // POST update
 api.post('/save/:id', async (req, res) => {
   LOG.info(`Handling SAVE request ${req}`)
@@ -416,7 +497,7 @@ api.post('/save/:id', async (req, res) => {
   item.enddate = req.body.enddate
   item.intiallink= req.body.intiallink
   item.finallink= req.body.finallink
-  item.studentlist = req.body.studentlist
+  //item.studentlist = req.body.studentlist
   item.codewordsetname = req.body.codewordsetname
   try {
    

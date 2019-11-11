@@ -31,9 +31,9 @@ const InstructorSchema = new mongoose.Schema({
     required: false
     
   },
-  studentlist: {
-    type: [mongoose.Schema.Types.ObjectId], ref: "StudentCourse", required: true,
-  },
+  // studentlist: {
+  //   type: [mongoose.Schema.Types.ObjectId], ref: "StudentCourse", required: true,
+  // },
 
   
   codewordsetname: {

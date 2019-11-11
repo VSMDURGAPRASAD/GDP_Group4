@@ -108,7 +108,7 @@
         </a> 
       </div>
       <div class="row">
-        <button type="button" class="btn btn-secondary">Distrubute Codewords</button>
+        <button type="button" class="btn btn-secondary" onclick="distribute('<%=instructor._id %>')">Distrubute Codewords</button>
       </div>
         
       </div>
@@ -125,5 +125,34 @@
 
 
 </div>
+
+<script>
+
+function distribute(id){
+    $.ajax({
+      url: '/instructor/removestudentfromcourse/'+id,
+      type: 'POST',
+    //  data : $('#codeword').serialize(),
+      success: function(response){
+
+        location.reload();
+        // $('#myModal').modal('hide')
+        // console.log('form submitted.');
+        // location.reload();
+
+       // location.pathname = "/"
+      },
+      error: function(response){
+        console.log(response);
+       // window.alert('bamboy');
+      // document.getElementById('validationMessage').innerHTML=response.responseText
+      //  alert('Invalid Form Submission')
+      }
+    });
+    return false;
+
+  }
+
+</script>
 
  

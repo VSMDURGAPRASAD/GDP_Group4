@@ -10,6 +10,10 @@ const StudentCourseSchema = new mongoose.Schema({
     
     
   },
+
+  iscodeRevealed: {
+    type: Boolean
+  },
   
   codeword: {
     type: String,

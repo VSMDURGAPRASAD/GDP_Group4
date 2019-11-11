@@ -56,7 +56,7 @@ api.get('/',async (req, res) => {
     var tempdata = data[i];
     
     
-    if(tempdata.courseId.length>3){
+    if(tempdata.courseId.length>3&&tempdata.iscodeRevealed==true){
 
       
       const course =await Course.findOne({_id:tempdata.courseId});
