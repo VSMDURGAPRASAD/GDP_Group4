@@ -27,10 +27,9 @@
 <label for="studentlist">Assign StudentList</label>
 <input type="file" class="form-control" id="studentlist" autocomplete="off" name="studentlist" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
 </div>
+<label>Codeword Set</label>
 <div class="form-group">
-
-
-<select class="form-control" id="codeword" autocomplete="off" name="codeword">
+<select class="form-control" id="codeword" autocomplete="off" name="codeword" required>
    
     <% for ( let i = 0; i < codewords.length; i++) {   
       currentword = codewords[i];   %>
