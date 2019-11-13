@@ -145,7 +145,29 @@ var countval =  document.getElementById('add').childElementCount;
  
 }
 
+function addsetup(){
+document.getElementById("titleval").innerHTML="Add Codewords"
+document.getElementById('val').innerHTML = 1;
+}
 
 
-//return false;
+
+function editsetup(i){
+document.getElementById("titleval").innerHTML="Edit Codewords"
+document.getElementById("submittype").value = "edit"
+document.getElementById("codewordId").value =  document.getElementById("hiddenId"+i).value;
+
+var tee = "hiddenCode"+i
+console.log(tee);
+var params = document.getElementById(tee).value
+
+document.getElementById("codewordname").value=params;
+
+var codewordsval =  document.getElementById("hiddenValues"+i).value;
+console.log(codewordsval);
+var nameArr = codewordsval.split(',');
+console.log(nameArr);
+for(i =1;i<nameArr.length;i++){
+incremental(nameArr[i],i);
+}
 
