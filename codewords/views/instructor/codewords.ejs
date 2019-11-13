@@ -113,3 +113,39 @@
   
   </body>
   <script>
+
+function incremental(initialvalue){
+
+  
+var addid = parseInt(document.getElementById("increment").value);
+//document.getElementById("increment").value = temp+1;
+//console.log(temp);
+if(!initialvalue){
+  initialvalue=""
+}
+
+
+var node = document.createElement("INPUT");
+//var textnode = document.createTextNode("Water");
+// node.appendChild(textnode);
+var addList = document.getElementById('add');
+var countval =  document.getElementById('add').childElementCount;
+  var docstyle = addList.style.display;
+  if (docstyle == 'none') addList.style.display = '';
+
+ 
+
+  var text = document.createElement('div');
+  text.className = 'form-group';
+  text.innerHTML = "<input type='text' class='form-control' placeholder='Codeword Name' value='"+initialvalue+"' name='item"+countval+"' style='padding:5px;' />";
+
+  addList.appendChild(text);
+
+  document.getElementById('val').innerHTML = countval+1;
+ 
+}
+
+
+
+//return false;
+
