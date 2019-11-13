@@ -23,7 +23,7 @@ var fs = require('fs');
 var path = require('path');
 var Studencourse = require('../models/studentcourse.js');
 const upload = require("express-fileupload");
-
+//const Codeword = require('../models/codeword.js');
 //var util = require("util");
 //var fs = require("fs"); 
 
@@ -224,10 +224,10 @@ api.post('/save', async (req, res) => {
   LOG.info(`NEW ID ${req.body._id}`)
   console.log('form')
   var formss = new formidable.IncomingForm();
-  // formss.uploadDir = "/app/codewords/uploads";
-  // formss.keepExtensions = true;
-  // formss.maxFieldsSize = 10*1024*1024;
-  // formss.multiples = false;
+ // formss.uploadDir = "/app/codewords/uploads";
+  //formss.keepExtensions = true;
+  //formss.maxFieldsSize = 10*1024*1024;
+  //formss.multiples = false;
   formss.parse(req, async(err, fields, files) =>  {
     if (err) {
       console.error('Error', err)
@@ -510,7 +510,16 @@ api.post('/save/:id', async (req, res) => {
   LOG.info(`SAVING UPDATED instructor ${JSON.stringify(item)}`)
   return res.redirect('/instructor')
 })
+api.get('/codewords',async (req, res) => {
 
+  const data = await Codeword.find({})
+  console.log(data);
+
+  
+
+  res.render('instructor/codewords.ejs',{layout:'layout.ejs',val:data})
+
+}) 
 // DELETE id (uses HTML5 form method POST)
 api.post('/delete/:id', async (req, res) => {
   LOG.info(`Handling DELETE request ${req}`)
