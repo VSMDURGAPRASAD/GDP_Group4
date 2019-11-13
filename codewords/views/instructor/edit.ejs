@@ -20,22 +20,11 @@
       <!-- <button class="btn btn-primary btn-sm float-left"
       id="right" style="color :rgb(20, 90, 220)" o="instructor/viewstudents/<%= instructors._id %>; return false;"> View Students </button>  -->
       </a> 
-    <div class="form-group">
-    
-      
-      <select class="form-control" id="codeword" autocomplete="off" name="codeword">
-         
-          <% for ( let i = 0; i < codewords.length; i++) {   
-            currentword = codewords[i];   %>
-          <option value="<%=currentword.codeWordSetName%>">  <%=currentword.codeWordSetName%> </option>
-          <%}%>
 
-      </select>
-      
       <!-- <input type="text" class="form-control" id="codewordsetname" name="codewordsetname" value="<%= instructors.codewordsetname %>" required> -->
     </div>
               <input type="submit" value="Save" class="btn btn-primary" />
-              <input type="cancel" value="Cancel" class="btn btn-danger"   />
+              <input type="button" onclick="window.location.href='/instructor'" value="Cancel" class="btn btn-danger"   />
         </form>
         <br/>
         
