@@ -169,5 +169,46 @@ var nameArr = codewordsval.split(',');
 console.log(nameArr);
 for(i =1;i<nameArr.length;i++){
 incremental(nameArr[i],i);
+
 }
+
+document.getElementById("item0").value=nameArr[0];
+
+ 
+ document.getElementById('val').innerHTML = countval+1;
+  
+
+}
+  //return false;
+
+  
+  function submitval(){
+    $.ajax({
+      url: '/admin/addCodewords',
+      type: 'POST',
+      data : $('#codeword').serialize(),
+      success: function(response){
+        $('#myModal').modal('hide')
+        console.log('form submitted.');
+        location.reload();
+
+       // location.pathname = "/"
+      },
+      error: function(response){
+        console.log(response);
+       // window.alert('bamboy');
+       document.getElementById('validationMessage').innerHTML=response.responseText
+      //  alert('Invalid Form Submission')
+      }
+    });
+    return false;
+
+  }
+   
+</script>
+
+
+
+
+</script>
 
