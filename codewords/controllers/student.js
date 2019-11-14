@@ -56,7 +56,7 @@ api.get('/',async (req, res) => {
     var tempdata = data[i];
     
     
-    if(tempdata.courseId.length>3&&tempdata.iscodeRevealed==true){
+    if(tempdata.courseId.length>3){
 
       
       const course =await Course.findOne({_id:tempdata.courseId});
@@ -69,7 +69,9 @@ api.get('/',async (req, res) => {
         check.finallink=course.intiallink;
         check.isRead=tempdata.isRead;
         check.courseId=tempdata.courseId;
-        
+        if(tempdata.iscodeRevealed==false){
+          check.codeword="Codeword Not Distributed Yet"
+        }
         //change to final link after data is reset
        
       uidata.push(check);

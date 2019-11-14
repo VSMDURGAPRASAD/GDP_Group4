@@ -130,7 +130,7 @@
 
 function distribute(id){
     $.ajax({
-      url: '/instructor/removestudentfromcourse/'+id,
+      url: '/instructor/distributecodewords/'+id,
       type: 'POST',
     //  data : $('#codeword').serialize(),
       success: function(response){

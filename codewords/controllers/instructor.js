@@ -404,7 +404,7 @@ function searchByKey(key,arr) {
 api.post('/distributecodewords/:id', async (req, res) => {
 
   const id = req.params.id
-
+  console.log('revealing');
 
   Studencourse.updateMany({"courseId":id},{iscodeRevealed: true},function (err, docs) {
     if (err){ 
