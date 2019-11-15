@@ -262,33 +262,35 @@ api.post('/save', async (req, res) => {
 
    var f = files[Object.keys(files)[0]];
     var wb = XLSX.readFile(f.path);
-    
-    var studentEmails= [];
-    let studentNames = [];
-  console.log(wb.Strings);
+    const sheetnames = wb.SheetNames;
 
-  console.log(wb.Strings.Count);
-  console.log(wb.Strings.length);
+    var data = XLSX.utils.sheet_to_json(wb.Sheets[sheetnames[0]])
 
-  let variable = 2;
-    while ( variable  <= parseInt(wb.Strings.length)/2) {
-      console.log(variable);
-    //  console.log(wb.Strings)
-     var tempe =  wb.Strings[variable].h;
-    
-      studentEmails.push(tempe);
-      variable  = variable +1;
-    }
+  
+  // console.log(wb.Strings);
 
-    let variable1 = (parseInt(wb.Strings.length)/2)+1;
-    while ( variable1  < parseInt(wb.Strings.length)) {
-      console.log(variable1);
-    //  console.log(wb.Strings)
-     let temp = wb.Strings[variable1].t;
+  // console.log(wb.Strings.Count);
+  // console.log(wb.Strings.length);
+
+  // let variable = 2;
+  //   while ( variable  <= parseInt(wb.Strings.length)/2) {
+  //     console.log(variable);
+  //   //  console.log(wb.Strings)
+  //    var tempe =  wb.Strings[variable].h;
     
-      studentNames.push(temp);
-      variable1  = variable1 +1;
-    }
+  //     studentEmails.push(tempe);
+  //     variable  = variable +1;
+  //   }
+
+  //   let variable1 = (parseInt(wb.Strings.length)/2)+1;
+  //   while ( variable1  < parseInt(wb.Strings.length)) {
+  //     console.log(variable1);
+  //   //  console.log(wb.Strings)
+  //    let temp = wb.Strings[variable1].t;
+    
+  //     studentNames.push(temp);
+  //     variable1  = variable1 +1;
+  //   }
 
     // for (i = 2; i < parseInt(wb.Strings.length)-1; i++) {
     //   console.log(i);
@@ -299,10 +301,10 @@ api.post('/save', async (req, res) => {
       
     // }
     
-    console.log("test");
-    studentEmails.length;
-    console.log(studentEmails);
-    console.log(item.codewordSetname);
+    // console.log("test");
+    // studentEmails.length;
+    // console.log(studentEmails);
+    // console.log(item.codewordSetname);
 
    // var codewordset = Codeword.find({codeWordSetName:""item.codewordsetname""});
 
@@ -311,7 +313,7 @@ api.post('/save', async (req, res) => {
     var codewords = codewordstest[0].codewords;
     
 
-    shuffle(studentEmails);
+    shuffle(data);
     shuffle(codewords);
 
     // try {
@@ -323,16 +325,16 @@ api.post('/save', async (req, res) => {
     // }
   
     console.log("saves");
-    console.log(studentEmails);
+    console.log(data);
     var studentcoursearray=[];
 
-    for(j=0; j<studentEmails.length; j++){
+    for(j=0; j<data.length; j++){
      
     var studentcourse = new Studencourse()
      console.log(j);
     console.log(item._id);
-    studentcourse.name = studentNames[j];
-    studentcourse.studentEmail = studentEmails[j];
+    studentcourse.name = data[j].name;
+    studentcourse.studentEmail = data[j].emailid;
     studentcourse.courseId = item._id + "";
     studentcourse.codeword = codewords[j];
     studentcourse.iscodeRevealed = false;
