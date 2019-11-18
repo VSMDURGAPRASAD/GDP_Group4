@@ -141,7 +141,11 @@ api.get('/requestForInstructorAcess', async (req, res) => {
    
 
     console.log('request sent')
+<<<<<<< HEAD
     res.send('Request Sent')
+=======
+    res.send('Reqest Sent')
+>>>>>>> e5dc77e328285f2e8ec8034021f00c9340282e33
 })
 
 
