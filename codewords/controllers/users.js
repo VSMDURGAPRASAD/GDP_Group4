@@ -12,9 +12,16 @@ router.get('/login', forwardAuthenticated, (req, res) => {
   console.log(req.flash('error'))
   res.render('login',{layout:false})
 });
+
+router.get('/registersuccess', forwardAuthenticated, (req, res) => {
+ 
+  res.render('register_success',{layout:false})
+});
+
 // Register Page
-router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
+router.get('/register', forwardAuthenticated, (req, res) => res.render('register',{layout:false}));
 router.post('/register', (req, res) => {
+    console.log("check register")
     const { name, email, password, password2, isInstructor, isAdmin } = req.body;
     let errors = [];
   
@@ -41,14 +48,19 @@ router.post('/register', (req, res) => {
     } else {
       User.findOne({ email: email }).then(user => {
         if (user) {
-          errors.push({ msg: 'Email already exists' });
-          res.render('register', {
-            errors,
-            name,
-            email,
-            password,
-            password2
-          });
+          // errors.push({ msg: 'Email already exists' });
+          // res.render('register', {
+          //   errors,
+          //   name,
+          //   email,
+          //   password,
+          //   password2
+          // });
+
+          console.log("Test")
+          res.status(400);
+          res.send('Invalid Username or Password');
+
         } else {
           const newUser = new User({
             name,

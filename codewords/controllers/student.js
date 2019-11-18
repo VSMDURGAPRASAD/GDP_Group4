@@ -141,7 +141,7 @@ api.get('/requestForInstructorAcess', async (req, res) => {
    
 
     console.log('request sent')
-    res.send('ok')
+    res.send('Request Sent')
 })
 
 
