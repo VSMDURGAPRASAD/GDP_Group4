@@ -59,7 +59,7 @@ router.post('/register', (req, res) => {
 
           console.log("Test")
           res.status(400);
-          res.send('Invalid Username or Password');
+        return  res.send('User with this email already exists');
 
         } else {
           const newUser = new User({

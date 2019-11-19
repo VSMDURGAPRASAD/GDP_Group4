@@ -22,9 +22,25 @@
         <div class="col-sm-6 m-auto">
           <div class="card card-body">
             <h2 class="text-center"> Registration Sucess</h2>
-            <h3 class="text-center" style="color:blue"> A mail has been sent to your Email Id</h2>
+            <h3 class="text-center" style="color:dodgerblue"> A mail has been sent to your Email Id</h3>
+            <h4 class="text-center" style="color:dodgerblue"> You will be redirected to Login Now!</h4>
             <p class="text-center text-muted">
               Please Redirect to Login -  <a href="/users/login">Login</a>
             </p>
           </div>
         </div>
+
+        <script>
+       
+        window.setTimeout( myFunction,3000)
+        
+        function myFunction() {
+  //alert('Hello');
+
+  location.pathname = "/users/login"
+ 
+
+}
+
+//myFunction();
+        </script>
