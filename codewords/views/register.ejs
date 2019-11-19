@@ -90,8 +90,15 @@
         },
         error: function(response){
           console.log(response)
+          var vallist = JSON.parse(response.responseText)
+
+          for(i=0;i<vallist.length;i++){
+
+              validationmessage= vallist[i].msg+" | "
+
+          }
   
-          document.getElementById('validationMessage').innerHTML=response.responseText
+          document.getElementById('validationMessage').innerHTML=validationmessage
        
         }
       });
