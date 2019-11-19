@@ -104,7 +104,7 @@ require('./utils/seeder.js')(app)  // load seed data by passing in the app
 //  const host = app.get('host')
 //  const env = app.get('env')
 
-app.listen(process.env.PORT || 8080, () => {
+app.listen(process.env.PORT || 8088, () => {
   // console.log(`\nApp running at http://${host}:${port}/ in ${env} mode`)
   console.log('Press CTRL-C to stop\n')
 })

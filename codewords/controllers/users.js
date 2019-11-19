@@ -38,13 +38,9 @@ router.post('/register', (req, res) => {
     }
   
     if (errors.length > 0) {
-      res.render('register', {
-        errors,
-        name,
-        email,
-        password,
-        password2
-      });
+      res.status(400);
+     return res.send(errors)
+      
     } else {
       User.findOne({ email: email }).then(user => {
         if (user) {
@@ -59,7 +55,7 @@ router.post('/register', (req, res) => {
 
           console.log("Test")
           res.status(400);
-          res.send('Invalid Username or Password');
+        return  res.send(  errors.push({ msg: 'User with this email already exists' }));
 
         } else {
           const newUser = new User({
@@ -82,7 +78,7 @@ router.post('/register', (req, res) => {
                   //   'success_msg',
                   //   'You are now registered and can log in'
                   // );
-                  res.redirect('/users/login');
+                  //res.redirect('/users/login');
                 })
                 .catch(err => console.log(err));
             });
