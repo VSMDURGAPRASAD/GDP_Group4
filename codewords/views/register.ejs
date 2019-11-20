@@ -91,10 +91,11 @@
         error: function(response){
           console.log(response)
           var vallist = JSON.parse(response.responseText)
-
+          console.log(vallist);
+           var validationmessage="";
           for(i=0;i<vallist.length;i++){
 
-              validationmessage= vallist[i].msg+" | "
+              validationmessage= validationmessage+vallist[i].msg+" | "
 
           }
   

@@ -20,7 +20,8 @@ router.get('/registersuccess', forwardAuthenticated, (req, res) => {
 
 // Register Page
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register',{layout:false}));
-router.post('/register', (req, res) => {
+router.post('/register',async (req, res) => 
+{
     console.log("check register")
     const { name, email, password, password2, isInstructor, isAdmin } = req.body;
     let errors = [];
@@ -37,13 +38,12 @@ router.post('/register', (req, res) => {
       errors.push({ msg: 'Password must be at least 6 characters' });
     }
   
-    if (errors.length > 0) {
-      res.status(400);
-     return res.send(errors)
-      
-    } else {
-      User.findOne({ email: email }).then(user => {
-        if (user) {
+    
+       var user = await User.findOne({ email: email });
+       console.log("user", user);
+        if (user)
+        
+    {
           // errors.push({ msg: 'Email already exists' });
           // res.render('register', {
           //   errors,
@@ -55,9 +55,28 @@ router.post('/register', (req, res) => {
 
           console.log("Test")
           res.status(400);
-        return  res.send(  errors.push({ msg: 'User with this email already exists' }));
+          errors.push({ msg: 'User with this email already exists' })
+          if (errors.length > 0) {
+            res.status(400);
+            
+            
+          } 
+          return res.send(errors);
 
-        } else {
+        } else 
+    {
+
+      if (errors.length > 0) {
+        res.status(400);
+        return res.send(errors);
+        
+      } 
+      else{
+
+      
+
+     
+
           const newUser = new User({
             name,
             email,
@@ -83,33 +102,41 @@ router.post('/register', (req, res) => {
                 .catch(err => console.log(err));
             });
           });
-        }
-      });
-    }
-    var temp = {
-      host: 'smtp.gmail.com',
-        port: 587,
-        secure: false,
-        requireTLS: true,
-      auth: {
-             user: 'codewordsteam4@gmail.com',
-             pass: 'Codewords@4'
-         }
-     };
-        var transporter = nodemailer.createTransport(temp);
-         const mailOptions = {
-          from: 'codewordsteam4@gmail.com', // sender address
-          to: req.body.email, // list of receivers
-          subject: 'Sucessful Registration', // Subject line
-          html: '<p> Hai You are Sucessfully registered for the Codeward Application </p>'// plain text body
-        };
-        transporter.sendMail(mailOptions, function (err, info) {
-          if(err)
-            console.log(err)
-          else
-            console.log(info);
-       });
-  });
+
+          var temp = {
+            host: 'smtp.gmail.com',
+              port: 587,
+              secure: false,
+              requireTLS: true,
+            auth: {
+                   user: 'codewordsteam4@gmail.com',
+                   pass: 'Codewords@4'
+               }
+           };
+              var transporter = nodemailer.createTransport(temp);
+               const mailOptions = {
+                from: 'codewordsteam4@gmail.com', // sender address
+                to: req.body.email, // list of receivers
+                subject: 'Sucessful Registration', // Subject line
+                html: '<p> Hai You are Sucessfully registered for the Codeward Application </p>'// plain text body
+              };
+              transporter.sendMail(mailOptions, function (err, info) {
+                if(err)
+                  console.log(err)
+                else
+                  console.log(info);
+             });
+
+             res.status(200);
+        return res.send();
+            }
+   }
+      
+
+      
+});
+    
+  
 // Login
 
 router.post('/login', (req, res, next) => {

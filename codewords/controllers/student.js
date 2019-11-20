@@ -87,7 +87,20 @@ api.get('/',async (req, res) => {
 
   }
 
-  res.render('student/student.ejs',{val:uidata})
+  
+
+  if(req.user.isInstructor){
+
+    res.render('student/student.ejs',{ val:uidata,isinstructor:true})
+
+  }
+  else{
+
+    res.render('student/student.ejs',{ layout: 'studentheader.ejs',val:uidata,isinstructor:false})
+
+  }
+
+
 })
 
 api.post('/revealCode',async (req,res)=>{

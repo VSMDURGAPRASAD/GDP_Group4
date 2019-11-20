@@ -1,13 +1,17 @@
+
+
 <div class="container-fluid">
 </br>
   <h2> Student Dashboard</h1>
 
 <div class="container-fluid">
  
+  <% if(!isinstructor) { %>
   <div class="btn btn-primary btn-lg float-right">
     
           <button type="button" onclick="requestForacess()" class="btn btn-primary btn-lg" style="float:right;">Request Instructor Privileges</button>
   </div>
+  <% } %>
   <p><% val %></p>
   <div class="row">
     
