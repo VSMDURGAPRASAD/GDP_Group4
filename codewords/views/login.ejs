@@ -7,7 +7,7 @@
   integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
 
 <!-- Bootstrap Material Design requires jQuery -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -18,14 +18,14 @@
 <!-- Bootstrap Material Design  -->
 <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
   integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <div class="row mt-5">
   <div class="col-sm-6 m-auto">
     <div class="card card-body">
       <h2 class="text-center"> Codeword Application</h2>
 
 
-      <form  id="form" onsubmit="return false">
+      <form id="form" onsubmit="return false">
         <div class="form-group">
           <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -52,25 +52,25 @@
       </p>
     </div>
   </div>
-<script>
-  function submitval(){
-    $.ajax({
-      url: '/users/login',
-      type: 'POST',
-      data : $('#form').serialize(),
-      success: function(response){
-        console.log('form submitted.');
-        location.pathname = "/"
-      },
-      error: function(response){
-        console.log(response)
+  <script>
+    function submitval() {
+      $.ajax({
+        url: '/users/login',
+        type: 'POST',
+        data: $('#form').serialize(),
+        success: function (response) {
+          console.log('form submitted.');
+          location.pathname = "/"
+        },
+        error: function (response) {
+          console.log(response)
 
-        document.getElementById('validationMessage').innerHTML=response.responseText
-     
-      }
-    });
-    return false;
+          document.getElementById('validationMessage').innerHTML = response.responseText
 
-  }
-   
-</script>
+        }
+      });
+      return false;
+
+    }
+
+  </script>
