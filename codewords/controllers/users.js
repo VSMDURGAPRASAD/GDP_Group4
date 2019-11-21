@@ -103,12 +103,13 @@ router.post("/register", async (req, res) => {
         }
       };
       var transporter = nodemailer.createTransport(temp);
+      let link = "https://codewordapplication.herokuapp.com/users/activateemail/" + req.body.email
       const mailOptions = {
         from: "codewordsteam4@gmail.com", // sender address
         to: req.body.email, // list of receivers
         subject: "Sucessful Registration", // Subject line
         html:
-          "<p> Hi,<br>You are Sucessfully registered for the Codeward Application </p>" // plain text body
+          "<p> Hi,<br>You are Sucessfully registered for the Codeward Application </p><br>" + + "<a href='" + link + "'>Click here</a> to activate user." // plain text body
       };
       transporter.sendMail(mailOptions, function(err, info) {
         if (err) console.log(err);
@@ -138,6 +139,10 @@ router.post("/login", (req, res, next) => {
     if (!user) {
       res.status(400);
       res.send("Invalid Username or Password");
+    }
+    if(!user.isActive){
+      res.status(400);
+      res.send("Please check your email if you are a first time user.");
     }
     req.logIn(user, function(err) {
       if (err) {
@@ -334,6 +339,19 @@ router.post("/reset/success", forwardAuthenticated, (req, res) => {
     res.redirect("/users/login");
   }
    
+});
+
+router.get("/activateemail/:email", forwardAuthenticated, (req, res) => {
+  console.log(req.params.email)
+  User.update( { "email": req.params.email }, { $set: { "isActive": true } } ).then(user => {
+    // req.flash(
+    //   'success_msg',
+    //   'You are now registered and can log in'
+    // );
+    //res.redirect('/users/login');
+    res.render("activateuser", { layout: false });
+  })
+  .catch(err => console.log(err));
 });
 
 module.exports = router;
