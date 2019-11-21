@@ -326,7 +326,7 @@ router.post("/reset/success", forwardAuthenticated, (req, res) => {
       bcrypt.hash(password, salt, (err, hash) => {
         if (err) throw err;
         let newPassword = hash;
-        User.update( { "email": email }, { $set: { "password": newPassword } } ).then(user => {
+        User.update( { "email": email }, { $set: { "password": newPassword, "isActive": true } } ).then(user => {
           // req.flash(
           //   'success_msg',
           //   'You are now registered and can log in'
