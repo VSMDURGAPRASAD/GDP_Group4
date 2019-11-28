@@ -14,13 +14,20 @@
   <label for="enddate">EndDate</label>
   <input type="text" class="form-control" id="enddate" autocomplete="off" name="enddate" value="<%= instructors.enddate %>" required>     
 </div>
+<!--Div Tag Added wrap -->
+<div class="wrap">
+  <div class="left">
 <div class="form-group">
 <label for="intiallink">IntialLink</label>
 <input type="text" class="form-control" id="intiallink" autocomplete="off" name="intiallink" value="<%= instructors.intiallink %>">
 </div>
+</div>
+<div class ="right">
 <div class="form-group">
 <label for="finallink">FinalLink</label>
 <input type="text" class="form-control" id="finallink" autocomplete="off" name="finallink" value="<%= instructors.finallink %>" >
+</div>
+</div>
 </div>
 <%include instructions.ejs%>
 <div class="form-group">
