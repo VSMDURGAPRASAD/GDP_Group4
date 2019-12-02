@@ -8,7 +8,7 @@ const User = require("../models/user");
 const { forwardAuthenticated } = require("../config/auth");
 
 // Login Page
-router.get("/login", forwardAuthenticated, (req, res) => {
+  router.get("/login", forwardAuthenticated, (req, res) => {
   console.log(req.flash("error"));
   res.render("login", { layout: false });
 });
