@@ -20,7 +20,7 @@
     "consolidate": "latest",
     "cookie-parser": "^1.4.4",
     "dotenv": "latest",
-    "ejs": "latest",
+    "ejs": "2.7.2",
     "errorhandler": "latest",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
