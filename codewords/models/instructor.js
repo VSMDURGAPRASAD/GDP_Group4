@@ -39,7 +39,8 @@ const InstructorSchema = new mongoose.Schema({
   codewordsetname: {
     type: String,
     required : false
-  }
+  },
+ 
 })
 module.exports = mongoose.model('Instructor', InstructorSchema)
 

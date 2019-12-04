@@ -107,10 +107,18 @@
         id="right" style="color :crimson"> <span class="glyphicon glyphicon-trash"></span> Delete </button> 
         </a> 
       </div>
+      <% if(!instructor.iscodeRevealed) { %>
+     
       <div class="row">
         <button type="button" class="btn btn-secondary" onclick="distribute('<%=instructor._id %>')">Distrubute Codewords</button>
       </div>
-        
+        <%}%> 
+        <% if(instructor.iscodeRevealed) { %>
+          <div class="row">
+            <p> Codewords Distributed</p>
+          </div>
+<%}%>
+
       </div>
       
     </div>

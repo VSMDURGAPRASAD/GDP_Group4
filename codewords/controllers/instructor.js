@@ -66,6 +66,8 @@ api.get('/',async (req, res) => {
     var check = await Studencourse.find({courseId:temp})
     currentdata.assignedCount = check.length
 
+    
+
     var readcount = 0;
 
     for(j=0;j<check.length;j++){
@@ -80,6 +82,7 @@ api.get('/',async (req, res) => {
     }
 
     currentdata.readCount = readcount;
+    currentdata.iscodeRevealed = check[0].iscodeRevealed
 
 
      
