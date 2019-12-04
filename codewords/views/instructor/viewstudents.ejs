@@ -62,7 +62,7 @@
        <label id="validationMessage" style="color:red"></label>
        <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.reload()">Close</button>
-        <button type="submit" class="btn btn-default" onclick="submitval()" >Save</button>
+        <button type="submit" class="btn btn-default" onclick="addStudent('<%=instructor[i]._id%>')" >Save</button>
       </div>
   </form>
 
@@ -127,6 +127,27 @@
           });
           return false;
       
+        }
+
+        function addStudent(id) {
+          $.ajax({
+            url: '/instructor/add-students/'+id,
+            type: 'POST',
+          //  data : $('#codeword').serialize(),
+            success: function(response){
+              // $('#myModal').modal('hide')
+              // console.log('form submitted.');
+              location.reload();
+      
+             // location.pathname = "/"
+            },
+            error: function(response){
+              console.log(response);
+             // window.alert('bamboy');
+            // document.getElementById('validationMessage').innerHTML=response.responseText
+            //  alert('Invalid Form Submission')
+            }
+          });
         }
       
       </script>

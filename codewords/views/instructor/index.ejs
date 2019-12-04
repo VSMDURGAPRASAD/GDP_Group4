@@ -63,7 +63,7 @@
         <br>
         <br>
         <div class="row">
-          <label>No. of students: </label> <label><%=instructor.assignedCount %></label>
+          <label>Total No.of students: </label> <label><%=instructor.assignedCount %></label>
         </div>
         <!-- <div class = "row">
           <a href="instructor/viewstudents/<%=instructor._id %>">
@@ -73,7 +73,7 @@
         </div> -->
         
         <div class="row">
-          <label>Fraction acknowledged: </label><label><%=instructor.readCount %></label>
+          <label>Fraction acknowledged: </label><label><%=instructor.readCount %>/<label><%=instructor.assignedCount %></label></label>
         </div>
         <!-- <div class="row">
         <label>Start Date :</label> <label> <%=instructor.startdate %></label>
@@ -111,6 +111,7 @@
      
       <div class="row">
         <button type="button" class="btn btn-secondary" onclick="distribute('<%=instructor._id %>')">Distrubute Codewords</button>
+     
       </div>
         <%}%> 
         <% if(instructor.iscodeRevealed) { %>
@@ -137,20 +138,23 @@
 <script>
 
 function distribute(id){
+ 
     $.ajax({
       url: '/instructor/distributecodewords/'+id,
       type: 'POST',
     //  data : $('#codeword').serialize(),
       success: function(response){
-
-        location.reload();
+        //document.getElementById("done").innerHTML= "Codewords are Distributed"
+        //location.reload();
         // $('#myModal').modal('hide')
         // console.log('form submitted.');
         // location.reload();
 
        // location.pathname = "/"
+      //  document.getElementById("code").hidden = true
       },
       error: function(response){
+
         console.log(response);
        // window.alert('bamboy');
       // document.getElementById('validationMessage').innerHTML=response.responseText
