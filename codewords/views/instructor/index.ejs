@@ -63,7 +63,7 @@
         <br>
         <br>
         <div class="row">
-          <label>No. of students: </label> <label><%=instructor.assignedCount %></label>
+          <label>Total No.of students: </label> <label><%=instructor.assignedCount %></label>
         </div>
         <!-- <div class = "row">
           <a href="instructor/viewstudents/<%=instructor._id %>">
@@ -108,9 +108,8 @@
         </a> 
       </div>
       <div class="row">
-        <button type="button" id="code" class="btn btn-secondary" onclick="distribute('<%=instructor._id %>')">Distrubute Codewords</button>
-     <div id="done">
-     </div>
+        <button type="button" class="btn btn-secondary" onclick="distribute('<%=instructor._id %>')">Distrubute Codewords</button>
+     
       </div>
         
       </div>
@@ -131,19 +130,20 @@
 <script>
 
 function distribute(id){
-  document.getElementById("code").hidden = true
+ 
     $.ajax({
       url: '/instructor/distributecodewords/'+id,
       type: 'POST',
     //  data : $('#codeword').serialize(),
       success: function(response){
-        document.getElementById("done").innerHTML= "Codewords are Distributed"
+        //document.getElementById("done").innerHTML= "Codewords are Distributed"
         //location.reload();
         // $('#myModal').modal('hide')
         // console.log('form submitted.');
         // location.reload();
 
        // location.pathname = "/"
+      //  document.getElementById("code").hidden = true
       },
       error: function(response){
 
