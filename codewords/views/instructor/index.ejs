@@ -73,7 +73,7 @@
         </div> -->
         
         <div class="row">
-          <label>Fraction acknowledged: </label><label><%=instructor.readCount %></label>
+          <label>Fraction acknowledged: </label><label><%=instructor.readCount %>/<label><%=instructor.assignedCount %></label></label>
         </div>
         <!-- <div class="row">
         <label>Start Date :</label> <label> <%=instructor.startdate %></label>
@@ -108,7 +108,9 @@
         </a> 
       </div>
       <div class="row">
-        <button type="button" class="btn btn-secondary" onclick="distribute('<%=instructor._id %>')">Distrubute Codewords</button>
+        <button type="button" id="code" class="btn btn-secondary" onclick="distribute('<%=instructor._id %>')">Distrubute Codewords</button>
+     <div id="done">
+     </div>
       </div>
         
       </div>
@@ -129,13 +131,14 @@
 <script>
 
 function distribute(id){
+  document.getElementById("code").hidden = true
     $.ajax({
       url: '/instructor/distributecodewords/'+id,
       type: 'POST',
     //  data : $('#codeword').serialize(),
       success: function(response){
-
-        location.reload();
+        document.getElementById("done").innerHTML= "Codewords are Distributed"
+        //location.reload();
         // $('#myModal').modal('hide')
         // console.log('form submitted.');
         // location.reload();
@@ -143,6 +146,7 @@ function distribute(id){
        // location.pathname = "/"
       },
       error: function(response){
+
         console.log(response);
        // window.alert('bamboy');
       // document.getElementById('validationMessage').innerHTML=response.responseText

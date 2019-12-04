@@ -417,6 +417,7 @@ api.post('/distributecodewords/:id', async (req, res) => {
     }
   });
 });
+
   api.post('/removestudentfromcourse/:id', async (req, res) => {
 
     const id = req.params.id
@@ -539,6 +540,37 @@ api.post('/delete/:id', async (req, res) => {
   }
   return res.redirect('/instructor')
 })
+
+api.post('/add-students/:id', async (req, res) => {
+
+  console.log('adding student record', req.body);
+
+  console.debug(JSON.stringify(req.body))
+  const item = new Studencourse()
+  console.info(`NEW ID ${req.body._id}`)
+  
+  item.isRead = false
+  item.name = req.body.name
+  item.studentEmail = req.body.studentEmail
+  item.courseId = req.params.id
+  item.codeword = null
+  item.iscodeRevealed = false
+
+  item.save((err) => {
+    if (err) {
+      return res.end('ERROR: item could not be saved ' + err.message)
+    }
+    LOG.info(`SAVING NEW item ${JSON.stringify(item)}`)
+    return res.send({
+      status: 200,
+      message: "student added successfully"
+    });
+    // return res.redirect('/instructor/viewstudents/5dd6d9bd445f8d0017d7d374')
+  })
+
+
+
+});
 
 module.exports = api
   
