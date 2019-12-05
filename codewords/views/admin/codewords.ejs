@@ -28,12 +28,15 @@
             <% include instructions.ejs %>
 
             <div class="form-group">
-                <label for="codewordname">Codeword Group Name</label>
+                <label for="codewordname">Codeword Group Name</label> 
                 <input type="text" class="form-control" id="codewordname" autocomplete="off" name="codewordname" value="<%= instructors.codewordname %>" required>
               </div>
 
              
-                
+              <div class="form-group">
+                  <label for="codewordlist">Attach List</label>
+                  <input type="file" class="form-control" id="codewordlist" autocomplete="off" name="codewordlist" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+               </div>
                 <input type="hidden" class="form-control" id="codewordId" autocomplete="off" name="codewordId" value="<%= instructors.Id %>" required>
               
               
@@ -65,11 +68,16 @@
 </div>
 
         <div class="container">
+
+           
+            <br><br>
+     
+
         <div id="accordion">
           <% for ( let i = 0; i < val.length; i++) {   
                codeword = val[i];   %>
                 <div class="card">
-                  <div class="card-header" id="headingOne">
+                  <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#<%=codeword.codeWordSetName %>" aria-expanded="true" aria-controls="collapseOne">
                     <input type="hidden" id="hiddenCode<%=i%>" value="<%=codeword.codeWordSetName %>"/>
                     <input type="hidden" id="hiddenValues<%=i%>"  value ="<%=codeword.codewords %>"/>
                     <input type="hidden" id="hiddenId<%=i%>" value="<%=codeword._id %>"/>
@@ -80,7 +88,7 @@
                     
                       
                    <form name="codeworddelete" method="POST"  enctype="multipart/form-data" action="/admin/deletecodeword/<%=codeword._id %>">
-                        <button  type="button" class="btn btn-link"data-toggle="collapse" data-target="#<%=codeword.codeWordSetName %>" aria-expanded="true" aria-controls="collapseOne">
+                        <button  type="button" class="btn btn-link">
                          <label><%=codeword.codeWordSetName %></label> 
                          </button>
                         
@@ -92,16 +100,17 @@
                     
                   </div>
               
-                  <div id="<%=codeword.codeWordSetName %>" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                    
+                  <div id="<%=codeword.codeWordSetName %>" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body row">
+                   
 
                                 <% for ( let i = 0; i < codeword.codewords.length; i++) {   
                                         codewordname = codeword.codewords[i];   %>
-                                        <p> <%=codewordname%> </p>
-                  
+                                        <div class="col-lg-2 label other" style="float: left; margin:4px;"> 
+                                        <span ><%=codewordname%></span>
+                                      </div>
                                         <% } %>
-
+                                      
                     </div>
                   </div>
                 </div>
@@ -111,6 +120,15 @@
 
 </body>
 <script>
+
+$(function()
+{
+    $(".toggle").click(function() 
+    {  
+        // hides children divs if shown, shows if hidden 
+        $(this).children("div").toggle(); 
+    }); 
+});
  
 function incremental(initialvalue){
 
@@ -181,10 +199,19 @@ function editsetup(i){
 
   
   function submitval(){
+
+    var form = $('#codeword')[0];
+
+    var formdata = new FormData(form);
+
     $.ajax({
       url: '/admin/addCodewords',
       type: 'POST',
-      data : $('#codeword').serialize(),
+      enctype: 'multipart/form-data',
+      processData: false,  // Important!
+      contentType: false,
+      cache: false,
+      data :formdata,
       success: function(response){
         $('#myModal').modal('hide')
         console.log('form submitted.');
