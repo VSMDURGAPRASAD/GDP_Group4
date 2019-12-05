@@ -546,32 +546,32 @@ api.post('/delete/:id', async (req, res) => {
 
 api.post('/add-students/:id', async (req, res) => {
 
-  console.log('adding student record', req.body);
-
-  console.debug(JSON.stringify(req.body))
   const item = new Studencourse()
   console.info(`NEW ID ${req.body._id}`)
-  
-  item.isRead = false
-  item.name = req.body.name
-  item.studentEmail = req.body.studentEmail
-  item.courseId = req.params.id
-  item.codeword = null
-  item.iscodeRevealed = false
 
-  item.save((err) => {
-    if (err) {
-      return res.end('ERROR: item could not be saved ' + err.message)
-    }
-    LOG.info(`SAVING NEW item ${JSON.stringify(item)}`)
-    return res.send({
-      status: 200,
-      message: "student added successfully"
-    });
-    // return res.redirect('/instructor/viewstudents/5dd6d9bd445f8d0017d7d374')
-  })
+  if (req.body && req.body.name && req.body.studentEmail) {
 
+    item.isRead = false
+    item.name = req.body.name
+    item.studentEmail = req.body.studentEmail
+    item.courseId = req.params.id
+    item.codeword = null
+    item.iscodeRevealed = false
 
+    item.save((err) => {
+      if (err) {
+        return res.end('ERROR: item could not be saved ' + err.message)
+      }
+      LOG.info(`SAVING NEW item ${JSON.stringify(item)}`)
+      return res.send({
+        status: 200,
+        message: "student added successfully"
+      });
+      // return res.redirect('/instructor/viewstudents/5dd6d9bd445f8d0017d7d374')
+    })
+  } else {
+    return res.status(400).send("missing required fields name or email");
+  }
 
 });
 
