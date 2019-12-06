@@ -7,7 +7,7 @@
   <% if(!isinstructor) { %>
   <div class="btn btn-primary btn-lg float-right">
     
-          <button type="button" onclick="requestForacess()" class="btn btn-primary btn-lg" style="float:right;">Request Instructor Privileges</button>
+          <button type="button" onclick="requestForacess()" class="btn btn-primary btn-lg" style="float:right; background-color:black;color:white">Request Instructor Privileges</button>
   </div>
   <% } %>
   <p><% val %></p>
@@ -31,7 +31,7 @@
       <br>
 
       <% if (!studentcourse.isRead) { %>
-      <a href="#" class="btn btn-primary" style="width:100%; height:100%" onclick="markAsRead('<%=studentcourse.courseId%>');"> Reveal Codeword </a>
+      <a href="#" class="btn btn-primary" style="width:100%; height:100%; background-color:black; color:white" onclick="markAsRead('<%=studentcourse.courseId%>');"> Reveal Codeword </a>
       <% } %>
       <% if (studentcourse.isRead) { %>
       <div id="<%=i %>">

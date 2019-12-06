@@ -218,6 +218,9 @@ api.post('/addCodewords', async (req, res) => {
           tempval.codeWordSetName = name
           tempval.codewords = codewords
           // console.log('typeee',temps)
+          if (hasDuplicates(codewords)) {
+            return res.status(400).send("Has Duplicate codewords")
+        }
 
           try {
               //console.log(data);
