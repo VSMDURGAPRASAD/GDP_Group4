@@ -60,6 +60,10 @@ $( function() {
 //   minDate: 'startdate',
 //   beforeShowDay: $.datepicker.noWeekends
 // });
+var someDate = new Date();
+
+$( "#startdate" ).val((someDate.getMonth()+1)+"/"+someDate.getDate()+"/"+someDate.getFullYear());
+$('#enddate').val(((someDate.getMonth()+5)%12)+"/"+someDate.getDate()+"/"+(someDate.getFullYear()+1));
 $( "#startdate" ).datepicker({
 
 minDate: 'today',
