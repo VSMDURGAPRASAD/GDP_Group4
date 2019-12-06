@@ -34,8 +34,9 @@
       <a href="#" class="btn btn-primary" style="width:100%; height:100%" onclick="markAsRead('<%=studentcourse.courseId%>');"> Reveal Codeword </a>
       <% } %>
       <% if (studentcourse.isRead) { %>
-      <div id="<%=i %>"">
-        <div style="border-radius:50%;background-color:black;color:white;height: 30px;width:130px;font-size: 18px;margin-left:30px;text-align: center;" ><%= studentcourse.codeword %>  </div>
+      <div id="<%=i %>">
+          <p id="<%=i %>" hidden=true></p>
+        <button  onclick="copyToClipboard('#<%=i %>')" style="border-radius:50%;background-color:black;color:white;height: 30px;width:130px;font-size: 18px;margin-left:30px;text-align: center;" ><%= studentcourse.codeword %>  </button>
       </div> 
       <% } %>
     </div>
@@ -50,13 +51,6 @@
 
 
 <script>
-
-
-
-
-
-       
-        
      
 function markAsRead(courseid){
     
@@ -67,10 +61,6 @@ function markAsRead(courseid){
     }});
   }
 
-
-
- 
-
 function requestForacess(){
 
   $.ajax({url: "/student/requestForInstructorAcess", success: function(result){
@@ -78,6 +68,15 @@ function requestForacess(){
     alert(result)
      
   }});
+}
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  alert("Copied the text:");
 }
 </script>
 
