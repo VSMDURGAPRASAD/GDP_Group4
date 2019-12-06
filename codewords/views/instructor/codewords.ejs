@@ -47,7 +47,7 @@
                 <button  type="button"onclick="incremental()" style="float: right;">Add</button>
                 <input type="hidden" value="<%=t%>" id="increment"/>
                 <input type="hidden" value="add" id="submittype" name="submittype"/>
-                <div id="add">
+                <div id="add" style="overflow-y: scroll;max-height: 190px; margin-top:10px">
                 <div class="form-group">
                     <input type='text' class='form-control' title="Codeword should not contain similiar letter conectuively ike AA" pattern="^(?:(\w)(?!\1))+$" placeholder= "Codeword Name" name='item0' id="item0"/>                
                  </div>
@@ -84,6 +84,7 @@
                      <form name="codeworddelete" method="POST"  enctype="multipart/form-data" action="/admin/deletecodeword/<%=codeword._id %>">
                           <button  type="button" class="btn btn-link"data-toggle="collapse" data-target="#<%=codeword.codeWordSetName %>" aria-expanded="true" aria-controls="collapseOne">
                            <label><%=codeword.codeWordSetName %></label> 
+                           <label>:<%= codeword.codewords.length %></label> 
                            </button>
                           
                           <button type="button" onclick="editsetup('<%=i%>')" class="btn btn-info btn-lg" style="float: right" data-toggle="modal" data-backdrop="static"  data-target="#myModal">Edit</button>
@@ -95,12 +96,15 @@
                     </div>
                 
                     <div id="<%=codeword.codeWordSetName %>" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div class="card-body">
+                      <div class="card-body row">
                       
   
                                   <% for ( let i = 0; i < codeword.codewords.length; i++) {   
                                           codewordname = codeword.codewords[i];   %>
-                                          <p> <%=codewordname%> </p>
+                                          <div class="col-lg-2 label other" style="float: left; margin:4px;text-align: center;background-color: #e7e7e7;padding: 5px;
+                                          color: black;"> 
+                                            <span><%=codewordname%></span>
+                                          </div>
                     
                                           <% } %>
   
@@ -139,8 +143,8 @@ var countval =  document.getElementById('add').childElementCount;
   text.className = 'form-group';
   text.innerHTML = "<input type='text' class='form-control' placeholder='Codeword Name' value='"+initialvalue+"' name='item"+countval+"' style='padding:5px;' />";
 
-  addList.appendChild(text);
-
+  // addList.appendChild(text);
+  addList.insertBefore(text, addList.childNodes[0]);
   document.getElementById('val').innerHTML = countval+1;
  
 }
@@ -183,10 +187,24 @@ document.getElementById("item0").value=nameArr[0];
 
   
   function submitval(){
+
+
+    
+    var form = $('#codeword')[0];
+
+    console.log('========form=========',form)
+
+
+    var formdata = new FormData(form);
+
     $.ajax({
       url: '/admin/addCodewords',
       type: 'POST',
-      data : $('#codeword').serialize(),
+      enctype: 'multipart/form-data',
+      processData: false,  // Important!
+      contentType: false,
+      cache: false,
+      data :formdata,
       success: function(response){
         $('#myModal').modal('hide')
         console.log('form submitted.');
@@ -202,6 +220,37 @@ document.getElementById("item0").value=nameArr[0];
       }
     });
     return false;
+
+
+
+    // var form = $('#codeword')[0];
+    // console.log('========form=========',form)
+
+    // var formdata = new FormData(form);
+
+    // $.ajax({
+    //   url: '/admin/addCodewords',
+    //   type: 'POST',
+    //   enctype: 'multipart/form-data',
+    //   processData: false,  // Important!
+    //   contentType: false,
+    //   cache: false,
+    //   data : formdata,
+    //   success: function(response){
+    //     $('#myModal').modal('hide')
+    //     console.log('form submitted.');
+    //     location.reload();
+
+    //    // location.pathname = "/"
+    //   },
+    //   error: function(response){
+    //     console.log(response);
+    //    // window.alert('bamboy');
+    //    document.getElementById('validationMessage').innerHTML=response.responseText
+    //   //  alert('Invalid Form Submission')
+    //   }
+    // });
+    // return false;
 
   }
    

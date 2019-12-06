@@ -25,8 +25,8 @@
     <h4 class="card-title"> <%= studentcourse.coursename%></h4>
     
     <!-- Links -->
-    <a href="#" class="card-link">Intial Survey Link : <%= studentcourse.intiallink %> </a></br>
-    <a href="#" class="card-link">Final Survey Link : <%= studentcourse.finallink %></a></br>
+    Intial Survey Link: <a href="#" class="card-link" target="_"> <%= studentcourse.intiallink %> </a></br>
+    Final Survey Link: <a href="#" class="card-link" target="_"> <%= studentcourse.finallink %></a></br>
       <br>
 
       <% if (!studentcourse.isRead) { %>
