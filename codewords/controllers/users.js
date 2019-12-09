@@ -164,12 +164,13 @@ router.post("/reset", (req, res) => {
     requireTLS: true,
     auth: {
       user: "codewordsteam4@gmail.com",
-      pass: "Codewords@4"
+      pass: "Codewords@123"
     }
   };
   var transporter = nodemailer.createTransport(temp);
    let link = "https://codewordapplication.herokuapp.com/users/resetpassword/" + req.body.email
-   //let link = "http://localhost:8088/users/resetpassword/" + req.body.email
+  
+  // let link = "http://localhost:8088/users/resetpassword/" + req.body.email
   const mailOptions = {
     from: "codewordsteam4@gmail.com", // sender address
     to: req.body.email, // list of receivers
