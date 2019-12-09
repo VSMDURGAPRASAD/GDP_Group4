@@ -19,5 +19,5 @@
 3. After step 2 set path to client (cd ..\codewords) and use npm install command to install all the dependency modules in the project which is used in package.json.   
 4. Now start the Server using npm start command.  
 - Now open chrome and use localhost:8088
-
+- Heruko Link: https://codewordapplication.herokuapp.com/users/login
    
