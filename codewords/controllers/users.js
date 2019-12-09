@@ -109,7 +109,7 @@ router.post("/register", async (req, res) => {
         to: req.body.email, // list of receivers
         subject: "Sucessful Registration", // Subject line
         html:
-        "<p> Hi,<br>You are Sucessfully registered for the Codeward Application </p><br>" + + "<a href='" + link + "'>Click here</a> to activate user." // plain text body
+        "<p> Hi,<br>You are Sucessfully registered for the Codeward Application </p><br>" + "<a href='" + link + "'>Click here</a> to activate user." // plain text body
       };
       transporter.sendMail(mailOptions, function(err, info) {
         if (err) console.log(err);

@@ -26,8 +26,20 @@
     <!-- Start date: <a href="#" class="card-link" > <%= studentcourse.startdate %> </a></br>
     End date: <a href="#" class="card-link" > <%= studentcourse.enddate %> </a></br> -->
     <!-- Start date: <a href="#" class="card-link" > <%= studentcourse.startdate %> </a></br> -->
-    Intial Survey Link: <a href="<%= studentcourse.intiallink %>" class="card-link" target="_"> <%= studentcourse.intiallink %> </a></br>
-    Final Survey Link: <a href="<%= studentcourse.finallink %>" class="card-link" target="_"> <%= studentcourse.finallink %></a></br>
+    
+    Intial Survey Link: 
+    <% if(studentcourse.intiallink!=""){ %>
+       <a href="<%= studentcourse.intiallink %>" class="card-link" target="_" style="color :green"> Link Available </a></br>
+       <% } else{%>
+        <p  style="color :crimson"> Link not available</p>
+        <% } %>  
+    
+       Final Survey Link:
+       <% if(studentcourse.finallink!=""){ %>
+        <a href="<%= studentcourse.finallink %>" class="card-link" target="_" style="color :green"> Link Available</a></br>
+        <% } else{%>
+          <p  style="color :crimson"> Link not available</p>
+        <% } %>
       <br>
 
       <% if (!studentcourse.isRead) { %>

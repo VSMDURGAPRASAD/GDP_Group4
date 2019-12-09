@@ -111,13 +111,13 @@
       <% if(!instructor.iscodeRevealed) { %>
      
       <div class="row">
-        <button type="button" class="btn btn-secondary" onclick="distribute('<%=instructor._id %>')">Distrubute Codewords</button>
+        <button type="button" class="btn btn-secondary" style="background-color: white" onclick="distribute('<%=instructor._id %>')">Distrubute Codewords</button>
      
       </div>
         <%}%> 
         <% if(instructor.iscodeRevealed) { %>
           <div class="row">
-            <p> Codewords are Distributed</p>
+            <p> <b>Codewords are Distributed</b></p>
           </div>
 <%}%>
 
