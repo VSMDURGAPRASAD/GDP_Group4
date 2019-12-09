@@ -99,7 +99,7 @@ router.post("/register", async (req, res) => {
         requireTLS: true,
         auth: {
           user: "codewordsteam4@gmail.com",
-          pass: "Codewords@4"
+          pass: "Codewords@123"
         }
       };
       var transporter = nodemailer.createTransport(temp);
@@ -109,7 +109,7 @@ router.post("/register", async (req, res) => {
         to: req.body.email, // list of receivers
         subject: "Sucessful Registration", // Subject line
         html:
-        "<p>Hi </p>" + req.body.email + "<p> we have received a request to reset your password. </p><br> "+"<p>Please click the below link to reset your password.</p>" + "<a href='" + link + "'>Click here</a> to reset password."  // plain text body
+        "<p> Hi,<br>You are Sucessfully registered for the Codeward Application </p><br>" + + "<a href='" + link + "'>Click here</a> to activate user." // plain text body
       };
       transporter.sendMail(mailOptions, function(err, info) {
         if (err) console.log(err);
@@ -174,8 +174,8 @@ router.post("/reset", (req, res) => {
   const mailOptions = {
     from: "codewordsteam4@gmail.com", // sender address
     to: req.body.email, // list of receivers
-    subject: "Subject of your email", // Subject line
-    html: "<p>User Has been forgotten pssword.</p><br> " + "<a href='" + link + "'>Click here</a> to reset password."  // plain text body
+    subject: "Reset Password", // Subject line
+    html: "<p>Hi </p>" + req.body.email + "<p> we have received a request to reset your password. </p><br> "+"<p>Please click the below link to reset your password.</p>" + "<a href='" + link + "'>Click here</a> to reset password."  // plain text body
   };
   transporter.sendMail(mailOptions, function(err, info) {
     if (err) console.log(err);
