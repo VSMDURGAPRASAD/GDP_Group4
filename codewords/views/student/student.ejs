@@ -1,7 +1,7 @@
 <div class="container-fluid">
-</br>
-  <h2> Student Dashboard</h1>
-
+  <br><br> &nbsp
+  <h2> Student Dashboard</h2>
+  
 <div class="container-fluid">
  
   <% if(!isinstructor) { %>
@@ -9,39 +9,40 @@
     <button type="button" onclick="requestForacess()" class="btn btn-primary" style="float:right; background-color:black; color:white">Request Instructor Privileges</button>
   </div>
   <% } %>
+<br><br>
 
-  <br><br>
+    
   <p><% val %></p>
   <div class="row" style=" padding-left: 15px">
         
 
   <% for ( let i = 0; i < val.length; i++) {   
     studentcourse = val[i];   %>
-    <div class="col-md-4" style="padding-left: 15px; padding-bottom: 15px;">
+    <div class="col-md-3" style="padding-left: 15px; padding-bottom: 15px;">
     <div class="card" style=" padding: 15px">
     
     <div class="card-body">
     <h4 class="card-title"> <%= studentcourse.coursename%></h4>
     
     <!-- Links -->
-    <!-- Start date: <a href="#" class="card-link" > <%= studentcourse.startdate %> </a></br>
-    End date: <a href="#" class="card-link" > <%= studentcourse.enddate %> </a></br> -->
-    <!-- Start date: <a href="#" class="card-link" > <%= studentcourse.startdate %> </a></br> -->
+    <!-- Start date: <a href="#" class="card-link" > <%= studentcourse.startdate %> </a>  
+    End date: <a href="#" class="card-link" > <%= studentcourse.enddate %> </a>   -->
+    <!-- Start date: <a href="#" class="card-link" > <%= studentcourse.startdate %> </a>   -->
     
     Intial Survey Link: 
     <% if(studentcourse.intiallink!=""){ %>
-       <a href="<%= studentcourse.intiallink %>" class="card-link" target="_" style="color :green"> <b>Take me there</b> </a></br>
+       <a href="<%= studentcourse.intiallink %>" class="card-link" target="_" style="color :green"> <b>Take me there</b> </a> 
        <% } else{%>
         <p  style="color :crimson"> Link not available</p>
         <% } %>  
       
        Final Survey Link:
        <% if(studentcourse.finallink!=""){ %>
-        <a href="<%= studentcourse.finallink %>" class="card-link" target="_" style="color :green"> <b>Take me there</b></a></br>
+        <a href="<%= studentcourse.finallink %>" class="card-link" target="_" style="color :green"> <b>Take me there</b></a> 
         <% } else{%>
-          <p  style="color :crimson"> Link not available</p>
+          <p  style="color :crimson"> Link not available</p> 
         <% } %>
-      <br>
+      
 
       <% if (!studentcourse.isRead) { %>
       <a href="#" class="btn btn-primary" style="width:100%; height:100%; background-color:black; color:white" onclick="markAsRead('<%=studentcourse.courseId%>');"> Reveal Codeword </a>
