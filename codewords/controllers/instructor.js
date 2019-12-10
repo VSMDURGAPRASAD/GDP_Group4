@@ -90,7 +90,7 @@ api.get('/',async (req, res) => {
       currentdata.iscodeRevealed = false;
     }
 
-    
+
 
     
 
@@ -336,6 +336,12 @@ api.post('/save', async (req, res) => {
     // } catch (err) {
     //   res.status(500).send(err);
     // }
+
+    if(data.length>codewords.length){
+
+      return res.status(400).send("Not enough codewords");
+
+    }
   
     console.log("saves");
     console.log(data);
@@ -568,17 +574,28 @@ api.post('/add-students/:id', async (req, res) => {
     item.codeword = null
     item.iscodeRevealed = false
 
-    item.save((err) => {
-      if (err) {
-        return res.end('ERROR: item could not be saved ' + err.message)
-      }
-      LOG.info(`SAVING NEW item ${JSON.stringify(item)}`)
-      return res.send({
-        status: 200,
-        message: "student added successfully"
-      });
-      // return res.redirect('/instructor/viewstudents/5dd6d9bd445f8d0017d7d374')
-    })
+    var isexistAlready =await Studencourse.find({$and:[{courseId:req.params.id},{studentEmail:req.body.studentEmail}]})
+ 
+    console.log('student',isexistAlready[0])
+
+    if(isexistAlready[0]){
+      return res.status(400).send("student with email already present");
+    }
+
+    else{
+      item.save((err) => {
+        if (err) {
+          return res.end('ERROR: item could not be saved ' + err.message)
+        }
+        LOG.info(`SAVING NEW item ${JSON.stringify(item)}`)
+        return res.send({
+          status: 200,
+          message: "student added successfully"
+        });
+        // return res.redirect('/instructor/viewstudents/5dd6d9bd445f8d0017d7d374')
+      })
+    }
+   
   } else {
     return res.status(400).send("missing required fields name or email");
   }

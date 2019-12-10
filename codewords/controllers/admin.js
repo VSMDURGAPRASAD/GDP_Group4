@@ -250,9 +250,10 @@ api.post('/addCodewords', async (req, res) => {
           try {
               console.log(data);
               await data.save();
-              return res.send('success');
+               res.send('success');
               // res.send(item);
           } catch (err) {
+              console.log(err);
               res.status(500).send(err);
           }
       }
