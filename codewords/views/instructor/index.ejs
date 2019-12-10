@@ -5,27 +5,27 @@
     color:red !important;
   }x
   </style> -->
-<br/>
-<br/>
+<br />
+<br />
 
 <div class="container-fluid">
-    
- <br>
- <h1> Instructor Dashboard</h1>
-  
-       
-      <button type="button" class="btn btn-success"  onclick="addcourse.click()">Add Course</button>
-       <a href="instructor/create" id = addcourse style="margin-top: 10px; margin-left: 10px; visibility: hidden;">
-        Add Course
-        </a>
-        
-      <!-- <p>There are 
+
+  <br>
+  <h1> Instructor Dashboard</h1>
+
+
+  <button type="button" class="btn btn-success" onclick="addcourse.click()">Add Course</button>
+  <a href="instructor/create" id=addcourse style="margin-top: 10px; margin-left: 10px; visibility: hidden;">
+    Add Course
+  </a>
+
+  <!-- <p>There are 
         <%= val.length %> courses.
     </p> -->
   <div class="row">
     <% for ( let i = 0; i < val.length; i++) {   
         instructor = val[i];   %>
-      <!-- <div class="panel panel-default">
+    <!-- <div class="panel panel-default">
         <div class="panel-heading"></div>
         <div class="text-muted pull-right"></div>
         <div class="panel-body">
@@ -54,29 +54,30 @@
     <a href="instructor/edit/<%= instructor._id %>" class="btn btn-warning"> Edit </a>
   </div>
   </div> -->
- 
-  <div class="col-lg-4">
-  <div class="card bg-light mb-3" style="max-width: 14rem; min-height: 10rem;">
-      <div class="card-body">
-        
-        <h5 class="card-header"><%=instructor.coursename %></h5>
-        <br>
-        <br>
-        <!-- <div class="row">
+
+    <div class="col-lg-4">
+      <div class="card bg-light mb-3" style="max-width: 14rem; min-height: 10rem;">
+        <div class="card-body">
+
+          <h5 class="card-header"><%=instructor.coursename %></h5>
+          <br>
+          <br>
+          <!-- <div class="row">
           <label>Total No.of students: </label> <label><%=instructor.assignedCount %></label>
         </div> -->
-        <!-- <div class = "row">
+          <!-- <div class = "row">
           <a href="instructor/viewstudents/<%=instructor._id %>">
             <button class="btn btn-primary btn-sm float-left"
             id="right" style="color :rgb(20, 90, 220)"> <span class="glyphicon glyphicon-trash"></span> View Students </button> 
             </a> 
         </div> -->
-        
-        <div class="row">
-          <label>Fraction acknowledged: </label>
-          <button style="border-radius:50%;background-color:black;color:white;height:60px;width:130px;font-size: 18px;margin-left:30px" ><%=instructor.readCount %>/<%=instructor.assignedCount %></button>
-        </div>
-        <!-- <div class="row">
+
+          <div class="row">
+            <label>Fraction acknowledged: </label>
+            <button
+              style="border-radius:50%;background-color:black;color:white;height:60px;width:130px;font-size: 18px;margin-left:30px"><%=instructor.readCount %>/<%=instructor.assignedCount %></button>
+          </div>
+          <!-- <div class="row">
         <label>Start Date :</label> <label> <%=instructor.startdate %></label>
       </div>
         <div class="row">
@@ -95,62 +96,66 @@
        <div class="row">
         <label>Final Link : </label><a href="#" class="card-link"><%=instructor.finallink %></a>
       </div> -->
-      <!-- <div class="row">
+          <!-- <div class="row">
         <label># Assigned Students : </label><label><%=instructor.assignedCount %></label>
       </div> -->
-      <div class="row">
-      <a href="instructor/edit/<%=instructor._id %>">
-        <button class="btn btn-primary btn-sm float-left"
-        id="left" style="color :green"> Edit </button> 
-      </a>
-      <a href="instructor/delete/<%=instructor._id %>">
-        <button class="btn btn-primary btn-sm float-left"
-        id="right" style="color :crimson"> <span class="glyphicon glyphicon-trash"></span> Delete </button> 
-        </a> 
-      </div>
 
-      <div class="row">
 
-          <% if(instructor.intiallink!=""){ %>
-            <a href="<%= instructor.intiallink %>" class="card-link" target="_" style="color :green"> Take me there </a></br>
+          <div class="row">
+
+            <% if(instructor.intiallink!=""){ %>
+            <a href="<%= instructor.intiallink %>" class="card-link" target="_" style="color :green"> Take me there
+            </a></br>
             <% } else{%>
-             <p  style="color :crimson"> Link not available</p>
-             <% } %> &nbsp &nbsp
+            <p style="color :crimson"> Link not available</p>
+            <% } %> &nbsp &nbsp
 
 
-             <% if(instructor.finallink!=""){ %>
-              <a href="<%= instructor.finallink %>" class="card-link" target="_" style="color :green"> Take me there </a></br>
-              <% } else{%>
-               <p  style="color :crimson"> Link not available</p>
-               <% } %> 
- 
-        </div>
+            <% if(instructor.finallink!=""){ %>
+            <a href="<%= instructor.finallink %>" class="card-link" target="_" style="color :green"> Take me there
+            </a></br>
+            <% } else{%>
+            <p style="color :crimson"> Link not available</p>
+            <% } %>
+
+          </div>
 
 
-      <% if(!instructor.iscodeRevealed) { %>
-     
-      <div class="row">
-        <button type="button" class="btn btn-secondary" style="background-color: white" onclick="distribute('<%=instructor._id %>')">Distrubute Codewords</button>
-     
-      </div>
-        <%}%> 
+          <% if(!instructor.iscodeRevealed) { %>
+
+          <div class="row">
+            <button type="button" class="btn btn-secondary" style="background-color: blue; color: yellow;"
+              onclick="distribute('<%=instructor._id %>')">Distrubute Codewords</button>
+
+          </div>
+          <%}%> 
         <% if(instructor.iscodeRevealed) { %>
           <div class="row">
             <p> <b>Codewords are Distributed</b></p>
           </div>
-<%}%>
+          <%}%>
+
+<div class="row">
+    <a href="instructor/edit/<%=instructor._id %>">
+          <button class="btn btn-primary btn-sm float-left" id="left" style="color :green"> Edit </button>
+          </a>
+          <a href="instructor/delete/<%=instructor._id %>">
+            <button class="btn btn-primary btn-sm float-left" id="right" style="color :crimson"> <span
+                class="glyphicon glyphicon-trash"></span> Delete </button>
+          </a>
+        </div>
 
 
 
       </div>
-      
+
     </div>
   </div>
 
-    <% } %>
+  <% } %>
 
-  </div>  
- 
+</div>
+
 
 </div>
 
@@ -159,28 +164,28 @@
 
 <script>
 
-function distribute(id){
- 
+  function distribute(id) {
+
     $.ajax({
-      url: '/instructor/distributecodewords/'+id,
+      url: '/instructor/distributecodewords/' + id,
       type: 'POST',
-    //  data : $('#codeword').serialize(),
-      success: function(response){
+      //  data : $('#codeword').serialize(),
+      success: function (response) {
         //document.getElementById("done").innerHTML= "Codewords are Distributed"
         //location.reload();
         // $('#myModal').modal('hide')
         // console.log('form submitted.');
         // location.reload();
 
-       // location.pathname = "/"
-      //  document.getElementById("code").hidden = true
+        // location.pathname = "/"
+        //  document.getElementById("code").hidden = true
       },
-      error: function(response){
+      error: function (response) {
 
         console.log(response);
-       // window.alert('bamboy');
-      // document.getElementById('validationMessage').innerHTML=response.responseText
-      //  alert('Invalid Form Submission')
+        // window.alert('bamboy');
+        // document.getElementById('validationMessage').innerHTML=response.responseText
+        //  alert('Invalid Form Submission')
       }
     });
     return false;
@@ -188,5 +193,3 @@ function distribute(id){
   }
 
 </script>
-
- 
