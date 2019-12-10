@@ -70,7 +70,7 @@ api.get('/',async (req, res) => {
         check.isRead=tempdata.isRead;
         check.courseId=tempdata.courseId;
         if(tempdata.iscodeRevealed==false){
-          check.codeword="Codeword Not Distributed Yet"
+          check.codeword="Not published"
         }
         //change to final link after data is reset
        
