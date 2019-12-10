@@ -29,14 +29,14 @@
     
     Intial Survey Link: 
     <% if(studentcourse.intiallink!=""){ %>
-       <a href="<%= studentcourse.intiallink %>" class="card-link" target="_" style="color :green"> Link Available </a></br>
+       <a href="<%= studentcourse.intiallink %>" class="card-link" target="_" style="color :green"> Take me there </a></br>
        <% } else{%>
         <p  style="color :crimson"> Link not available</p>
         <% } %>  
     
        Final Survey Link:
        <% if(studentcourse.finallink!=""){ %>
-        <a href="<%= studentcourse.finallink %>" class="card-link" target="_" style="color :green"> Link Available</a></br>
+        <a href="<%= studentcourse.finallink %>" class="card-link" target="_" style="color :green"> Take me there</a></br>
         <% } else{%>
           <p  style="color :crimson"> Link not available</p>
         <% } %>
