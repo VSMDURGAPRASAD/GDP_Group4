@@ -62,9 +62,9 @@
         <h5 class="card-header"><%=instructor.coursename %></h5>
         <br>
         <br>
-        <div class="row">
+        <!-- <div class="row">
           <label>Total No.of students: </label> <label><%=instructor.assignedCount %></label>
-        </div>
+        </div> -->
         <!-- <div class = "row">
           <a href="instructor/viewstudents/<%=instructor._id %>">
             <button class="btn btn-primary btn-sm float-left"
@@ -108,6 +108,25 @@
         id="right" style="color :crimson"> <span class="glyphicon glyphicon-trash"></span> Delete </button> 
         </a> 
       </div>
+
+      <div class="row">
+
+          <% if(instructor.intiallink!=""){ %>
+            <a href="<%= instructor.intiallink %>" class="card-link" target="_" style="color :green"> Take me there </a></br>
+            <% } else{%>
+             <p  style="color :crimson"> Link not available</p>
+             <% } %> &nbsp &nbsp
+
+
+             <% if(instructor.finallink!=""){ %>
+              <a href="<%= instructor.finallink %>" class="card-link" target="_" style="color :green"> Take me there </a></br>
+              <% } else{%>
+               <p  style="color :crimson"> Link not available</p>
+               <% } %> 
+ 
+        </div>
+
+
       <% if(!instructor.iscodeRevealed) { %>
      
       <div class="row">
@@ -120,6 +139,8 @@
             <p> <b>Codewords are Distributed</b></p>
           </div>
 <%}%>
+
+
 
       </div>
       
