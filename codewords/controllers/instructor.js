@@ -81,8 +81,16 @@ api.get('/',async (req, res) => {
 
     }
 
+
+
     currentdata.readCount = readcount;
-    currentdata.iscodeRevealed = check[0].iscodeRevealed
+    if(check[0]){
+      currentdata.iscodeRevealed = check[0].iscodeRevealed
+    }else{
+      currentdata.iscodeRevealed = false;
+    }
+
+    
 
 
      
