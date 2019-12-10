@@ -6,6 +6,9 @@ module.exports = {
    console.log(req.originalUrl)
 
     
+   if(req.originalUrl.includes('/addCodewords')){
+     return next();
+   }
 
     if(req.originalUrl.includes('/instructor')){
 
