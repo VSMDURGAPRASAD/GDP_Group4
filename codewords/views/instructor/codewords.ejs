@@ -138,15 +138,16 @@ var countval =  document.getElementById('add').childElementCount;
   if (docstyle == 'none') addList.style.display = '';
 
  
-
+  var regg = "^(?:(\w)(?!\1))+$"
   var text = document.createElement('div');
   text.className = 'form-group';
-  text.innerHTML = "<input type='text' class='form-control' placeholder='Codeword Name' value='"+initialvalue+"' name='item"+countval+"' style='padding:5px;' />";
-
+  text.innerHTML = "<input type='text' class='form-control' title='Codeword should not contain similiar letter conectuively ike AA'  placeholder='Codeword Name' value='"+initialvalue+"' name='item"+countval+"' style='padding:5px;' />";
+ // text.innerHTML.pattern = regg
   // addList.appendChild(text);
   addList.insertBefore(text, addList.childNodes[0]);
   document.getElementById('val').innerHTML = countval+1;
  
+ // document.getElementById("item"+countval).pattern=regg;
 }
 
 function addsetup(){
@@ -215,7 +216,7 @@ document.getElementById("item0").value=nameArr[0];
       success: function(response){
         $('#myModal').modal('hide')
         console.log('form submitted.');
-        location.reload();
+       location.reload();
 
        // location.pathname = "/"
       },

@@ -126,6 +126,12 @@ api.get('/codewords/delete/:codeWordSetName',async (req, res) => {
 
 })  
 
+function hasRepeatedLetters(str) {
+  var patt = /([a-zA-Z])\\1{"+ (str.length - 1) + "}/;
+  var result = patt.test(str);
+  return result;
+}
+
 api.post('/saveCodewords', async (req, res) => {
   LOG.info(`Handling POST ${req}`)
   LOG.debug(JSON.stringify(req.body))
@@ -222,6 +228,19 @@ api.post('/addCodewords', async (req, res) => {
             return res.status(400).send("Has Duplicate codewords")
         }
 
+        // var isrepeated=false
+        // for(i=0;i<=codewords.length;i++){
+
+        //   if(hasRepeatedLetters(codewords[i]))
+        //   {
+        //     isrepeated = true;
+        //     break;
+        //   }
+        // }
+        // if(isrepeated){
+        //   return res.status(400).send("Has two consicutive same letters")
+            
+        // }
           try {
               //console.log(data);
               await tempval.save();
@@ -244,6 +263,19 @@ api.post('/addCodewords', async (req, res) => {
               return res.status(400).send("Has Duplicate codewords")
           }
 
+          var isrepeated=false
+          for(i=0;i<=codewords.length;i++){
+  
+            if(hasRepeatedLetters(codewords[i]))
+            {
+              isrepeated = true;
+              break;
+            }
+          }
+          if(isrepeated){
+            return res.status(400).send("Has two consicutive same letters")
+              
+          }
           data.codeWordSetName = name
           data.codewords = codewords
 

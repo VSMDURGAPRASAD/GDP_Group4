@@ -254,7 +254,7 @@ api.post('/save', async (req, res) => {
   //formss.keepExtensions = true;
   //formss.maxFieldsSize = 10*1024*1024;
   //formss.multiples = false;
-  formss.parse(req, async(err, fields, files) =>  {
+   formss.parse(req, async(err, fields, files) =>  {
     if (err) {
       console.error('Error', err)
       throw err
@@ -350,9 +350,13 @@ api.post('/save', async (req, res) => {
     //   res.status(500).send(err);
     // }
 
-    if(data.length>codewords.length){
+    console.log('data',data.length)
+    console.log('codewords',codewords.length)
 
-      return res.status(400).send("Not enough codewords");
+    if(data.length>codewords.length){
+      
+
+      return res.status(400).send("Number of codewords is less than students");
 
     }
   
@@ -409,6 +413,7 @@ api.post('/save', async (req, res) => {
    
       await item.save();
      // res.send(item);
+     return res.redirect('/instructor')
     } catch (err) {
       res.status(500).send(err);
     }
@@ -418,7 +423,7 @@ api.post('/save', async (req, res) => {
   })
 
   LOG.info(`SAVING NEW instructor ${JSON.stringify(item)}`)
-  return res.redirect('/instructor')
+  //return res.redirect('/instructor')
 })
 
 
@@ -545,6 +550,192 @@ api.post('/save/:id', async (req, res) => {
   LOG.info(`SAVING UPDATED instructor ${JSON.stringify(item)}`)
   return res.redirect('/instructor')
 })
+
+function hasRepeatedLetters(str) {
+  var patt = /^([a-z])\1+$/;
+  var result = patt.test(str);
+  return result;
+}
+
+api.post('/addCodewords', async (req, res) => {
+  console.log(req);
+  var formss = new formidable.IncomingForm();
+  formss.parse(req, async (err, fields, files) => {
+      if (err) {
+          console.error('Error', err)
+          throw err
+      }
+      console.log('Fields', fields)
+      console.log(req.body)
+
+
+      //var length = codes.length;
+      var name = fields.codewordname;
+      var submitType = fields.submittype;
+      var codewordsraw = matchKey(fields, "item");;
+      console.log('type', submitType);
+
+      
+      var f = files[Object.keys(files)[0]];
+      if (f) {
+        var wb = XLSX.readFile(f.path);
+        const sheetnames = wb.SheetNames;
+        
+        var dataval = XLSX.utils.sheet_to_json(wb.Sheets[sheetnames[0]])
+        console.log(dataval);
+
+        for (i = 0; i < dataval.length; i++) {
+          console.log(dataval[i].codwords)
+          codewordsraw.push(dataval[i].codewords)
+      }
+      
+      }
+
+      var codewords = codewordsraw.filter(function (el) {
+          if (el != null && el != "") {
+              return true;
+          }
+          return false;
+      });
+
+      if (submitType == 'edit') {
+        
+          var okk = await Codeword.find({ _id: fields.codewordId })
+          console.log('jdkd', okk[0])
+
+          var tempval = okk[0];
+          tempval.codeWordSetName = name
+          tempval.codewords = codewords
+          // console.log('typeee',temps)
+          if (hasDuplicates(codewords)) {
+            return res.status(400).send("Has Duplicate codewords")
+        }
+
+        for(i=0;i<=codewords.length;i++){
+
+          if(hasRepeatedLetters(codewords[0]))
+          {
+            return res.status(400).send("Has two consicutive same letters")
+          }
+        }
+        
+
+          try {
+              //console.log(data);
+              await tempval.save();
+              return res.redirect('codewords')
+              // res.send(item);
+          } catch (err) {
+              res.status(500).send(err);
+          }
+      }
+      else {
+          var temp = await Codeword.find({ codeWordSetName: name })
+          console.log('codeword', temp)
+          if (temp[0]) {
+              if (temp[0].codeWordSetName) {
+
+                  return res.status(400).send("CodeWord with setname already exists")
+              }
+          }
+          if (hasDuplicates(codewords)) {
+              return res.status(400).send("Has Duplicate codewords")
+          }
+
+          data.codeWordSetName = name
+          data.codewords = codewords
+
+          try {
+              console.log(data);
+              await data.save();
+               res.send('success');
+              // res.send(item);
+          } catch (err) {
+              console.log(err);
+              res.status(500).send(err);
+          }
+      }
+  })
+
+  const data = new Codeword()
+  //var data = {};
+  console.log('form')
+  console.log(req.body)
+  // new formidable.IncomingForm().parse(req, async(err, fields, files) =>  {
+  //   if (err) {
+  //     console.error('Error', err)
+  //     throw err
+  //   }
+
+  // var fields = req.body
+
+  //   console.log('codes',fields)
+  //  //fields.keys.search("item")
+
+  //  //var codes = Object.values(fields)
+
+
+  //   //var length = codes.length;
+  //   var name = fields.codewordname;
+  //   var submitType = fields.submittype;
+  //   var codewords =  matchKey(fields, "item");;
+  //   console.log('type',submitType);
+
+
+  //   if(submitType == 'edit'){
+
+
+  //    var okk = await Codeword.find({ _id:fields.codewordId })
+  //    console.log('jdkd',okk[0])
+
+  //    var tempval = okk[0];
+  //    tempval.codeWordSetName= name
+  //    tempval.codewords=codewords
+  //    // console.log('typeee',temps)
+
+
+  //    try {
+  //     //console.log(data);
+  //      await tempval.save();
+  //      return res.redirect('codewords')
+  //     // res.send(item);
+  //    } catch (err) {
+  //      res.status(500).send(err);
+  //    }
+
+
+
+  //   }
+  //   else{
+
+  //     var temp = await Codeword.find({ codeWordSetName: name})
+  //     console.log('codeword',temp)
+  //     if(temp[0]){
+  //       if(temp[0].codeWordSetName){
+
+  //         return res.status(400).send("CodeWord with setname already exists")
+  //       }
+  //     }
+
+
+
+  //     data.codeWordSetName= name
+  //     data.codewords=codewords
+
+  //     try {
+  //       console.log(data);
+  //        await data.save();
+  //        return res.send('success');
+  //       // res.send(item);
+  //      } catch (err) {
+  //        res.status(500).send(err);
+  //      }
+  //   }
+  //})
+  // LOG.info(`SAVING NEW e ${JSON.stringify(item)}`)
+
+})
+
 api.get('/codewords',async (req, res) => {
 
   const data = await Codeword.find({})
