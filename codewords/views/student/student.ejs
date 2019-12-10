@@ -6,17 +6,18 @@
  
   <% if(!isinstructor) { %>
   <div class="btn btn-primary btn-lg float-right">
-    
-          <button type="button" onclick="requestForacess()" class="btn btn-primary btn-lg" style="float:right; background-color:black;color:white">Request Instructor Privileges</button>
+    <button type="button" onclick="requestForacess()" class="btn btn-primary" style="float:right; background-color:black; color:white">Request Instructor Privileges</button>
   </div>
   <% } %>
+
+  <br><br>
   <p><% val %></p>
-  <div class="row" style=" padding: 15px">
+  <div class="row" style=" padding-left: 15px">
         
 
   <% for ( let i = 0; i < val.length; i++) {   
     studentcourse = val[i];   %>
-    <div class="col-md-4" style="padding: 15px;">
+    <div class="col-md-4" style="padding-left: 15px; padding-bottom: 15px;">
     <div class="card" style=" padding: 15px">
     
     <div class="card-body">
