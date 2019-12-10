@@ -59,9 +59,9 @@
       <div class="card bg-light mb-3" style="max-width: 14rem; min-height: 10rem;">
         <div class="card-body">
 
-          <h5 class="card-header"><%=instructor.coursename %></h5>
+          <h5 class="card-header"><b><%=instructor.coursename %></b></h5>
           <br>
-          <br>
+          
           <!-- <div class="row">
           <label>Total No.of students: </label> <label><%=instructor.assignedCount %></label>
         </div> -->
@@ -72,7 +72,7 @@
             </a> 
         </div> -->
 
-          <div class="row">
+          <div class="row">&nbsp &nbsp
             <label>Fraction acknowledged: </label>
             <button
               style="border-radius:50%;background-color:black;color:white;height:60px;width:130px;font-size: 18px;margin-left:30px"><%=instructor.readCount %>/<%=instructor.assignedCount %></button>
@@ -100,8 +100,9 @@
         <label># Assigned Students : </label><label><%=instructor.assignedCount %></label>
       </div> -->
 
+<br> 
 
-          <div class="row">
+          <div class="row">&nbsp &nbsp
 
             <% if(instructor.intiallink!=""){ %>
             <a href="<%= instructor.intiallink %>" class="card-link" target="_" style="color :green"> Initial Link
@@ -130,7 +131,7 @@
           </div>
           <%}%> 
         <% if(instructor.iscodeRevealed) { %>
-          <div class="row">
+          <div class="row">&nbsp &nbsp
             <p> <b>Codewords are Distributed</b></p>
           </div>
           <%}%>
