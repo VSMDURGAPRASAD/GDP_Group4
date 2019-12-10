@@ -66,7 +66,7 @@ api.get('/',async (req, res) => {
         check.codeword=tempdata.codeword;
         check.coursename=course.coursename;
         check.intiallink= course.intiallink;
-        check.finallink=course.intiallink;
+        check.finallink=course.finallink;
         check.isRead=tempdata.isRead;
         check.courseId=tempdata.courseId;
         if(tempdata.iscodeRevealed==false){
