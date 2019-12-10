@@ -27,7 +27,7 @@
           <button type="button" class="close" data-dismiss="modal"  onclick="location.reload()">&times;</button>
         </div>
         <div class="modal-body">
-          <form name="codeword" id="codeword" onsubmit="return false">
+          <form name="codeword" id="codeword" onsubmit="submitval();return false">
   
               <div class="form-group">
                   <label for="codewordname">Codeword Group Name</label>
@@ -55,7 +55,7 @@
                <label id="validationMessage" style="color:red"></label>
                <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.reload()">Close</button>
-                <button type="submit" class="btn btn-default" onclick="submitval()" >Save</button>
+                <button type="submit" class="btn btn-default" >Save</button>
               </div>
           </form>
         
@@ -71,7 +71,7 @@
             <% for ( let i = 0; i < val.length; i++) {   
                  codeword = val[i];   %>
                   <div class="card">
-                    <div class="card-header" id="headingOne">
+                    <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#<%=codeword.codeWordSetName %>" aria-expanded="true" aria-controls="collapseOne">
                       <input type="hidden" id="hiddenCode<%=i%>" value="<%=codeword.codeWordSetName %>"/>
                       <input type="hidden" id="hiddenValues<%=i%>"  value ="<%=codeword.codewords %>"/>
                       <input type="hidden" id="hiddenId<%=i%>" value="<%=codeword._id %>"/>
@@ -81,7 +81,7 @@
                         
                       
                         
-                     <form name="codeworddelete" method="POST"  enctype="multipart/form-data" action="/admin/deletecodeword/<%=codeword._id %>">
+                     <form name="codeworddelete" method="POST"  enctype="multipart/form-data" action="/instructor/deletecodeword/<%=codeword._id %>">
                           <button  type="button" class="btn btn-link"data-toggle="collapse" data-target="#<%=codeword.codeWordSetName %>" aria-expanded="true" aria-controls="collapseOne">
                            <label><%=codeword.codeWordSetName %></label> 
                            <label>:<%= codeword.codewords.length %></label> 
@@ -95,7 +95,7 @@
                       
                     </div>
                 
-                    <div id="<%=codeword.codeWordSetName %>" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="<%=codeword.codeWordSetName %>" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body row">
                       
   
@@ -189,8 +189,15 @@ document.getElementById("item0").value=nameArr[0];
   function submitval(){
 
 
+
     
     var form = $('#codeword')[0];
+
+    
+
+    // if(form.validate()){
+    //   return false;
+    // }
 
     console.log('========form=========',form)
 

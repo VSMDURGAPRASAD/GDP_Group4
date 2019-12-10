@@ -49,6 +49,19 @@ api.get('/findone/:id', (req, res) => {
   res.send(JSON.stringify(item))
 })
 
+api.post('/deletecodeword/:id', async (req, res) => {
+  LOG.info(`Handling DELETE request ${req}`)
+  const id = req.params.id
+  LOG.info(`Handling REMOVING ID=${id}`)
+  const values =await Codeword.findOne({ _id: id })
+ // console.log(item)
+  if (!values) { return res.end(notfoundstring) }
+  
+    await Codeword.remove( { _id: id })
+    console.log(`Permanently deleted item ${JSON.stringify(values)}`)
+  
+  return res.redirect('/instructor/codewords')
+})
 // RESPOND WITH VIEWS  --------------------------------------------
 
 // GET to this controller base URI (the default)
