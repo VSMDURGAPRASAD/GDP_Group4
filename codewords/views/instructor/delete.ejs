@@ -1,32 +1,37 @@
+<br>
+&nbsp &nbsp
 <% include ../header %>
-<br/>
-<br/>
-<h2>Confirm deletion of Course</h2>
-<br/>
-<br/> ID:
-<%=  instructor._id %>
-<br> CourseName:
-<%=instructor.coursename %>
-<br/> StartDate:
-<%=instructor.startdate%>
-<br/> EndDate:
- <%=instructor.enddate%>
- <br/> IntialLink:
- <%=instructor.intiallink%>
- <br/> FinalLink:
- <%=instructor.finallink%>
- <br/> Assign Student List:
- <%=instructor.studentlist%>
- <br/> Codeword Set Name:
- <%=instructor.codewordsetname%>
+<br />
+<br />
+<h2 style="padding: 25px;">Confirm deletion of Course</h2>
+<div class="row" style="padding-left:45px">
+  ID:
+  <%=  instructor._id %>
+  <br> CourseName:
+  <%=instructor.coursename %>
+  <br /> StartDate:
+  <%=instructor.startdate%>
+  <br /> EndDate:
+  <%=instructor.enddate%>
+  <br /> IntialLink:
+  <%=instructor.intiallink%>
+  <br /> FinalLink:
+  <%=instructor.finallink%>
+  <br /> Assign Student List:
+  <%=instructor.studentlist%>
+  <br /> Codeword Set Name:
+  <%=instructor.codewordsetname%>
+</div>
+<br>
 
- 
-        <form method="get" action="/instructor">
-              <input type="submit" value="Cancel" class="btn btn-primary" />
-            </form>
 
-            <br/>
-            <form method="POST" action="/instructor/delete/<%= instructor._id %>">
-              <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
-            </form>
+
+<div class="row" style="padding-left: 34px;">
+  <form method="get" action="/instructor">
+  <input type="submit" value="Cancel" class="btn btn-primary" />
+</form>
+<form method="POST" action="/instructor/delete/<%= instructor._id %>">
+  <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
+</form>
+</div>
 <!-- <% include ../footer %> -->
