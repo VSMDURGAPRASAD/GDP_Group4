@@ -92,6 +92,8 @@ api.get('/',async (req, res) => {
 
     
 
+    
+
 
      
      newdata.push(currentdata)
