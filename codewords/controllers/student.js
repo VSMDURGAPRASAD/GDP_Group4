@@ -71,7 +71,7 @@ api.get('/',async (req, res) => {
         check.courseId=tempdata.courseId;
         if(tempdata.iscodeRevealed==false){
           check.codeword="Not published"
-        } 
+        }    
         //change to final link after data is reset
        
       uidata.push(check);
